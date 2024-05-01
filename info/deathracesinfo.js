@@ -1,7 +1,7 @@
 //Death Races Page
 var deathracesInfo = [["Broken Pipes", "Blackmaws", "/locations/camps/brokenpipes.html", [3060, 700], "Scatter Run"],
                       ["Corner Cut", "Colossus", "/locations/camps/cornercut.html", [4020, 950], "Barrel Bash"],
-                      ["Valley of Dust", "Dry Gustie", "/locations/camps/.html", [, ], ""],
+                      ["Valley of Dust", "Dry Gustie", "/locations/camps/valleyofdust.html", [, ], ""],
                       ["", "", "/locations/camps/.html", [, ], ""],
                       ["", "", "/locations/camps/.html", [, ], ""],
                       ["", "", "/locations/camps/.html", [, ], ""],
