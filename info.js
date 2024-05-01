@@ -1,3 +1,4 @@
+//Camps Page
 var campsInfo = [["Undertow", "Outer Graves", "/locations/camps/undertow.html", [3980, 300], "Pump"],
                  ["The Edge", "Blackmaws", "/locations/camps/theedge.html", [3310, 620], "Pump"],
                  ["Bonecrack", "Blackmaws", "/locations/camps/bonecrack.html", [3560, 870], "Pump"],
@@ -37,8 +38,8 @@ var campsInfo = [["Undertow", "Outer Graves", "/locations/camps/undertow.html", 
                  ["Wheel Greaser", "The Heights", "/locations/camps/wheelgreaser.html", [2620, 5480], "Pump"], 
                                      ];
 
-let htmlList = document.getElementById("camps-list")
-let listHMTL = `
+let campHtmlList = document.getElementById("camps-list")
+let campListHMTL = `
     <tr>
         <th style = "text-align: center">
             Name
@@ -53,23 +54,65 @@ let listHMTL = `
             Type
         </th>
     </tr>`
-for(item of campsInfo)
+for(campItem of campsInfo)
 {
-    listHMTL += `
+    campListHMTL += `
     <tr>
         <td> 
-            <a href='${item[2]}'>${item[0]}</a>
+            <a href='${campItem[2]}'>${campItem[0]}</a>
         </td>
         <td>
-            ${item[1]}
+            ${campItem[1]}
         </td>
         <td>
-            (${item[3][0]}, ${item[3][1]})
+            (${campItem[3][0]}, ${campItem[3][1]})
         </td>
         <td>
-            ${item[4]}
+            ${campItem[4]}
         </td>
     </tr>
     `
 }
-htmlList.innerHTML = listHMTL
+campHtmlList.innerHTML = campListHMTL
+
+//Death Races Page
+var deathracesInfo = [["Undertow", "Outer Graves", "/locations/camps/undertow.html", [3980, 300], "Pump"],
+                      ["Undertow", "Outer Graves", "/locations/camps/undertow.html", [3980, 300], "Pump"],
+                                     ];
+
+let deathracesHtmlList = document.getElementById("deathraces-list")
+let deathracesListHMTL = `
+    <tr>
+        <th style = "text-align: center">
+            Name
+        </th>
+        <th style = "text-align: center">
+            Location 
+        </th>
+        <th style = "text-align: center">
+            Coordinates
+        </th>
+        <th style = "text-align: center">
+            Type
+        </th>
+    </tr>`
+for(drItem of deathracesInfo)
+{
+    deathracesListHMTL += `
+    <tr>
+        <td> 
+            <a href='${drItem[2]}'>${drItem[0]}</a>
+        </td>
+        <td>
+            ${drItem[1]}
+        </td>
+        <td>
+            (${drItem[3][0]}, ${drItem[3][1]})
+        </td>
+        <td>
+            ${drItem[4]}
+        </td>
+    </tr>
+    `
+}
+deathracesHtmlList.innerHTML = deathracesListHMTL

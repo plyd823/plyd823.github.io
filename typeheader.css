@@ -12,3 +12,18 @@
     font-size: 30px;
     margin-top: 5px;
 }
+
+/* Simple.CSS overrides */
+:root {
+    --accent: #0d47a1;
+    --accent-hover: #1266e2;
+    --accent-light: #203b64;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+            --accent: #009bcede;
+            --accent-hover: #9fffac;
+            --accent-light: #adffb9;
+    }
+}
