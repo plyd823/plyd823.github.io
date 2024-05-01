@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <style>
+        #map {position: absolute; top: 0; bottom: 0; left: 0; right: 0;}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mad Max Map</title>
+</head>
+<body>
+    <div id = "map"></div>
+    <script>
+        var map = L.map('map').setView([0,0], 1);
+        var layer = L.tileLayer('https://static.trueachievements.com/customimages/068077.jpg', {
+            noWrap: true,
+            maxZoom: 2,
+            maxBounds: [[-5000, -6000], [5000, 6000]]
+        })
+        layer.addTo(map);
+    </script>
+</body>
+</html>

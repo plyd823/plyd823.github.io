@@ -1,0 +1,14 @@
+#titleheader {
+    height: 120px;
+    margin-top: -10px;
+}
+
+#typeheader {
+    height: 50px;
+    text-align: center;
+  }
+
+#typeh1 {
+    font-size: 30px;
+    margin-top: 5px;
+}
