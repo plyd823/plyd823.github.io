@@ -1,5 +1,5 @@
 //Camps Page
-var campsInfo = [["Undertow", "Outer Graves", "locations/camps/undertow.html", [3980, 300], "Pump"],
+var campsInfo = [["Undertow", "Outer Graves", "../locations/camps/undertow.html", [3980, 300], "Pump"],
                  ["The Edge", "Blackmaws", "locations/camps/theedge.html", [3310, 620], "Pump"],
                  ["Bonecrack", "Blackmaws", "locations/camps/bonecrack.html", [3560, 870], "Pump"],
                  ["Gas Works", "Blackmaws", "locations/camps/gasworks.html", [3010, 970], "Top Dog"],
