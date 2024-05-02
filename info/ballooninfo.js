@@ -1,5 +1,5 @@
 //balloons Page
-var balloonsInfo = [["Colossus", [,], 2, 1, 3],
+var balloonsInfo = [["Blackmaws", [,], 2, 1, "../images/balloons/blackmaws.jpg"],
                     ["Wailing Wind", [,], 2, 1, "../images/balloons/wailingwind.jpg"],
                                      ];
 
@@ -18,7 +18,7 @@ let balloonListHMTL = `
         <th style = "text-align: center">
             Total History Relics
         </th>
-        <th style = "text-align: center">
+        <th style = "text-align: center" width = "30%">
             Collectibles
         </th>
     </tr>`
@@ -26,16 +26,16 @@ for(balloonItem of balloonsInfo)
 {
     balloonListHMTL += `
     <tr>
-        <td> 
+        <td style = "text-align: center; font-size: 120%"> 
             ${balloonItem[0]}
         </td>
-        <td>
+        <td style = "text-align: center; font-size: 120%">
             (${balloonItem[1][0]}, ${balloonItem[1][1]})
         </td>
-        <td>
+        <td style = "text-align: center; font-size: 120%">
             ${balloonItem[2]}
         </td>
-        <td>
+        <td style = "text-align: center; font-size: 120%">
             ${balloonItem[3]}
         </td>
         <td>
@@ -45,3 +45,4 @@ for(balloonItem of balloonsInfo)
     `
 }
 balloonHtmlList.innerHTML = balloonListHMTL
+
