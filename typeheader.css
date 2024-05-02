@@ -15,7 +15,7 @@
 
 /* Simple.CSS overrides */
 :root {
-    --accent: #0d47a1;
+    --accent: #f3b50c;
     --accent-hover: #1266e2;
     --accent-light: #203b64;
 }
@@ -26,4 +26,8 @@
             --accent-hover: #9fffac;
             --accent-light: #adffb9;
     }
+}
+
+body {
+    grid-template-columns: 1fr 70% 1fr;
 }
