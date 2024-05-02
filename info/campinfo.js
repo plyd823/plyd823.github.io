@@ -1,6 +1,6 @@
 //Camps Page
 var campsInfo = [["Undertow", "Outer Graves", "../locations/camps/undertow.html", [3980, 300], "Pump"],
-                 ["The Edge", "Blackmaws", "../locations/camps/theedge.html", [3310, 620], "Pump"],
+                 ["The Edge", "Blackmaws", "plyd823.github.io/mad-max-encyclopedia/locations/camps/theedge.html", [3310, 620], "Pump"],
                  ["Bonecrack", "Blackmaws", "../locations/camps/bonecrack.html", [3560, 870], "Pump"],
                  ["Gas Works", "Blackmaws", "../locations/camps/gasworks.html", [3010, 970], "Top Dog"],
                  ["Rust Bird", "Colossus", "../locations/camps/rustbird.html", [4260, 1220], "Legion"],
