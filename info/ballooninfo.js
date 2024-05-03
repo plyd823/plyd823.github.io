@@ -9,7 +9,12 @@ var balloonsInfo = [["Blackmaws", [,], 2, 1, "../images/balloons/blackmaws.jpg"]
                     ["Chalkies", [,], 1, 0, "../images/balloons/chalkies.jpg"],
                     ["Cadavanaugh", [,], 1, 1, "../images/balloons/cadavanaugh.jpg"],
                     ["Reek Hills", [,], 1, 0, "../images/balloons/reekhills.jpg"],
+                    ["Knit Sack", [,], 1, 0, "../images/balloons/knitsack.jpg"],
                     ["Wailing Wind", [,], 2, 1, "../images/balloons/wailingwind.jpg"],
+                    ["Grandrise", [,], 2, 0, "../images/balloons/grandrise.jpg"],
+                    ["The Heights", [,], 4, 1, "../images/balloons/theheights.jpg"],
+                    ["Rot 'N' Rusties", [,], 2, 0, "../images/balloons/rotnrusties.jpg"],
+                    ["The Dumps", [,], 1, 0, "../images/balloons/dumpballoon.jpg"],
                                      ];
 
 let balloonHtmlList = document.getElementById("balloon-list")
