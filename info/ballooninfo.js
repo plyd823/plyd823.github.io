@@ -1,5 +1,14 @@
 //balloons Page
 var balloonsInfo = [["Blackmaws", [,], 2, 1, "../images/balloons/blackmaws.jpg"],
+                    ["Colossus", [,], 3, 0, "../images/balloons/colossus.jpg"],
+                    ["Balefire Flatland", [,], 4, 0, "../images/balloons/balefireflatland.jpg"],
+                    ["Fuel Veins", [,], 2, 0, "../images/balloons/fuelveins.jpg"],
+                    ["Dry Gustie", [,], 4, 0, "../images/balloons/drygustie.jpg"],
+                    ["Parch Moon", [,], 1, 1, "../images/balloons/parchmoon.jpg"],
+                    ["Grit Canyons", [,], 1, 1, "../images/balloons/gritcanyons.jpg"],
+                    ["Chalkies", [,], 1, 0, "../images/balloons/chalkies.jpg"],
+                    ["Cadavanaugh", [,], 1, 1, "../images/balloons/cadavanaugh.jpg"],
+                    ["Reek Hills", [,], 1, 0, "../images/balloons/reekhills.jpg"],
                     ["Wailing Wind", [,], 2, 1, "../images/balloons/wailingwind.jpg"],
                                      ];
 
