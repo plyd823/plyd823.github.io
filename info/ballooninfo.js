@@ -1,5 +1,5 @@
 //balloons Page
-var balloonsInfo = [["Blackmaws", [,], 2, 1, "../images/balloons/blackmaws.jpg"],
+var balloonsInfo = [["Blackmaws", [,], 2, 1, "/images/balloons/blackmaws.jpg"],
                     ["Colossus", [,], 3, 0, "../images/balloons/colossus.jpg"],
                     ["Balefire Flatland", [,], 4, 0, "../images/balloons/balefireflatland.jpg"],
                     ["Fuel Veins", [,], 2, 0, "../images/balloons/fuelveins.jpg"],
