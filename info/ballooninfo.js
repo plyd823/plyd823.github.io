@@ -1,24 +1,8 @@
-//balloons Page
-var balloonsInfo = [["Blackmaws", [,], 2, 1, "/images/balloons/blackmaws.jpg"],
-                    ["Colossus", [,], 3, 0, "../images/balloons/colossus.jpg"],
-                    ["Balefire Flatland", [,], 4, 0, "../images/balloons/balefireflatland.jpg"],
-                    ["Fuel Veins", [,], 2, 0, "../images/balloons/fuelveins.jpg"],
-                    ["Dry Gustie", [,], 4, 0, "../images/balloons/drygustie.jpg"],
-                    ["Parch Moon", [,], 1, 1, "../images/balloons/parchmoon.jpg"],
-                    ["Grit Canyons", [,], 1, 1, "../images/balloons/gritcanyons.jpg"],
-                    ["Chalkies", [,], 1, 0, "../images/balloons/chalkies.jpg"],
-                    ["Cadavanaugh", [,], 1, 1, "../images/balloons/cadavanaugh.jpg"],
-                    ["Reek Hills", [,], 1, 0, "../images/balloons/reekhills.jpg"],
-                    ["Knit Sack", [,], 1, 0, "../images/balloons/knitsack.jpg"],
-                    ["Wailing Wind", [,], 2, 1, "../images/balloons/wailingwind.jpg"],
-                    ["Grandrise", [,], 2, 0, "../images/balloons/grandrise.jpg"],
-                    ["The Heights", [,], 4, 1, "../images/balloons/theheights.jpg"],
-                    ["Rot 'N' Rusties", [,], 2, 0, "../images/balloons/rotnrusties.jpg"],
-                    ["The Dumps", [,], 1, 0, "../images/balloons/dumpballoon.jpg"],
-                                     ];
+import { balloonsInfo as balloons} from "./info.js";
 
-let balloonHtmlList = document.getElementById("balloon-list")
-let balloonListHMTL = `
+export function BalloonsComponent()
+{
+    let balloonListHMTL = `
     <tr>
         <th style = "text-align: center">
             Name
@@ -35,28 +19,85 @@ let balloonListHMTL = `
         <th style = "text-align: center" width = "30%">
             Collectibles
         </th>
-    </tr>`
-for(balloonItem of balloonsInfo)
-{
-    balloonListHMTL += `
-    <tr>
+    </tr>`;
+
+    balloons.forEach(balloon => {
+        balloonListHMTL += `
+        <tr>
         <td style = "text-align: center; font-size: 120%"> 
-            ${balloonItem[0]}
+            ${balloon[0]}
         </td>
         <td style = "text-align: center; font-size: 120%">
-            (${balloonItem[1][0]}, ${balloonItem[1][1]})
+            (${balloon[1][0]}, ${balloon[1][1]})
         </td>
         <td style = "text-align: center; font-size: 120%">
-            ${balloonItem[2]}
+            ${balloon[2]}
         </td>
         <td style = "text-align: center; font-size: 120%">
-            ${balloonItem[3]}
+            ${balloon[3]}
         </td>
         <td>
-            <img src="${balloonItem[4]}" alt="Image of balloon"></img>
+            <img src="${balloon[4]}" alt="Image of balloon"></img>
         </td>
     </tr>
-    `
-}
-balloonHtmlList.innerHTML = balloonListHMTL
+        `
 
+        
+    })
+    return balloonListHMTL
+}
+
+export function BalloonsByLocationComponent(location) 
+{
+    let balloonListHMTL = `
+    <tr>
+        <th style = "text-align: center">
+            Name
+        </th>
+        <th style = "text-align: center">
+            Coordinates 
+        </th>
+        <th style = "text-align: center">
+            Total Scrap
+        </th>
+        <th style = "text-align: center">
+            Total History Relics
+        </th>
+        <th style = "text-align: center" width = "30%">
+            Collectibles
+        </th>
+    </tr>`;
+
+    balloons.forEach(balloon => {
+        if (balloon[5].toLowerCase() == location.toLowerCase())
+        {
+            balloonListHMTL += `
+            <tr>
+            <td style = "text-align: center; font-size: 120%"> 
+                ${balloon[0]}
+            </td>
+            <td style = "text-align: center; font-size: 120%">
+                (${balloon[1][0]}, ${balloon[1][1]})
+            </td>
+            <td style = "text-align: center; font-size: 120%">
+                ${balloon[2]}
+            </td>
+            <td style = "text-align: center; font-size: 120%">
+                ${balloon[3]}
+            </td>
+            <td>
+                <img src="${balloon[4]}" alt="Image of balloon"></img>
+            </td>
+            </tr>
+            `
+        }
+
+        
+    })
+    return balloonListHMTL
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    if(document.getElementById("t_balloons")) document.getElementById("t_balloons").innerHTML = BalloonsComponent();
+    if(document.getElementById("t_balloons_jeet")) document.getElementById("t_balloons_jeet").innerHTML = BalloonsByLocationComponent("jeet");
+})
