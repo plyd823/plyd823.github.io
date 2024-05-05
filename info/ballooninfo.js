@@ -53,7 +53,7 @@ for(balloonItem of balloonsInfo)
             ${balloonItem[3]}
         </td>
         <td>
-            <img src="${balloonItem[4]}" alt="Image of balloon" width = "900000em"></img>
+            <img src="${balloonItem[4]}" alt="Image of balloon"></img>
         </td>
     </tr>
     `
