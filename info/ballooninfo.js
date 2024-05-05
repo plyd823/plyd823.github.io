@@ -100,4 +100,7 @@ export function BalloonsByLocationComponent(location)
 document.addEventListener("DOMContentLoaded", function() {
     if(document.getElementById("t_balloons")) document.getElementById("t_balloons").innerHTML = BalloonsComponent();
     if(document.getElementById("t_balloons_jeet")) document.getElementById("t_balloons_jeet").innerHTML = BalloonsByLocationComponent("jeet");
+    if(document.getElementById("t_balloons_gutgash")) document.getElementById("t_balloons_gutgash").innerHTML = BalloonsByLocationComponent("gutgash");
+    if(document.getElementById("t_balloons_pinkeye")) document.getElementById("t_balloons_pinkeye").innerHTML = BalloonsByLocationComponent("pinkeye");
+    if(document.getElementById("t_balloons_thedumps")) document.getElementById("t_balloons_thedumps").innerHTML = BalloonsByLocationComponent("thedumps");
 })
