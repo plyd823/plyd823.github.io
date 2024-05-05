@@ -83,5 +83,4 @@ document.addEventListener("DOMContentLoaded", function() {
     if(document.getElementById("t_deathraces")) document.getElementById("t_deathraces").innerHTML = deathracesComponent();
     if(document.getElementById("t_deathraces_jeet")) document.getElementById("t_deathraces_jeet").innerHTML = deathracesByLocationComponent("jeet");
     if(document.getElementById("t_deathraces_gutgash")) document.getElementById("t_deathraces_gutgash").innerHTML = deathracesByLocationComponent("gutgash");
-    if(document.getElementById("t_deathraces_pinkeye")) document.getElementById("t_deathraces_pinkeye").innerHTML = deathracesByLocationComponent("pinkeye");
 })

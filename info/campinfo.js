@@ -87,5 +87,4 @@ document.addEventListener("DOMContentLoaded", function() {
     if(document.getElementById("t_camps_jeet")) document.getElementById("t_camps_jeet").innerHTML = campsByLocationComponent("jeet");
     if(document.getElementById("t_camps_gutgash")) document.getElementById("t_camps_gutgash").innerHTML = campsByLocationComponent("gutgash");
     if(document.getElementById("t_camps_pinkeye")) document.getElementById("t_camps_pinkeye").innerHTML = campsByLocationComponent("pinkeye");
-    if(document.getElementById("t_camps_thedumps")) document.getElementById("t_camps_thedumps").innerHTML = campsByLocationComponent("thedumps");
 })
