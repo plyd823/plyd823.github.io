@@ -103,3 +103,13 @@ export const minefieldsInfo = [["East Blackmaws", [,], "/images/minefields/eastb
                       ["West The Heights", [,], "/images/minefields/westtheheightsminefield.jpg", "pinkeye"],
                       ["East The Dump", [,], "/images/minefields/eastthedumpminefield.jpg", "thedumps"], 
                                      ];
+
+export const archangelsInfo = [["The Jack", "N/A", "Baby Bars", "Bantam V6", "Baby Exhaust", "Deep Treadies", "N/A",  "N/A",  "N/A", "Shovelface", "N/A"], 
+                               ["Pinky Finger", "N/A", "N/A", "Major V6", "Big Buddy Exhaust", "Dual Groovies", "Frontier Springs",  "Ripperoni Rims",  "Front and Rear Barbs", "Die Rolla", "Racing Paint"],  
+                               ["The Jack", "N/A", "Baby Bars", "Bantam V6", "Baby Exhaust", "Deep Treadies", "N/A",  "N/A",  "N/A", "Shovelface", "N/A"],  
+                               ["The Jack", "N/A", "Baby Bars", "Bantam V6", "Baby Exhaust", "Deep Treadies", "N/A",  "N/A",  "N/A", "Shovelface", "N/A"],  
+                               ["The Jack", "N/A", "Baby Bars", "Bantam V6", "Baby Exhaust", "Deep Treadies", "N/A",  "N/A",  "N/A", "Shovelface", "N/A"],  
+                               ["The Jack", "N/A", "Baby Bars", "Bantam V6", "Baby Exhaust", "Deep Treadies", "N/A",  "N/A",  "N/A", "Shovelface", "N/A"],  
+                               ["The Jack", "N/A", "Baby Bars", "Bantam V6", "Baby Exhaust", "Deep Treadies", "N/A",  "N/A",  "N/A", "Shovelface", "N/A"],  
+                               ["The Jack", "N/A", "Baby Bars", "Bantam V6", "Baby Exhaust", "Deep Treadies", "N/A",  "N/A",  "N/A", "Shovelface", "N/A"],  
+                               ["The Jack", "N/A", "Baby Bars", "Bantam V6", "Baby Exhaust", "Deep Treadies", "N/A",  "N/A",  "N/A", "Shovelface", "N/A"], ];
