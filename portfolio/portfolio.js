@@ -161,7 +161,7 @@ document.addEventListener('DOMContentLoaded', () =>
     const shuffledVideos = shuffleArray(videos);
 
     const topVideos = shuffledVideos.slice(0,4);
-    const extraVideos = shuffledVideos.slice(4);
+    const extraVideos = shuffledVideos.slice(4, 12);
 
     function populateGrid(grid, videoArray)
     {
