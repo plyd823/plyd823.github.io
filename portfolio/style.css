@@ -84,6 +84,10 @@
     transition: transform 0.3s;
 }
 
+.grid-item:hover {
+    filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.8));
+}
+
 .grid-item img {
     width: 100%;
     display: block;

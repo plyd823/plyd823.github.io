@@ -178,7 +178,9 @@ document.addEventListener('DOMContentLoaded', () =>
             item.innerHTML = `
                 <img src="${video.thumbnail}" alt="${video.title}">
                 <div class="overlay">
-                    <p class="video-views">Views: ${video.views} views</p>
+                    <p class="video-views">
+                        ${video.views}
+                    </p>
                 </div>
             `;
 
