@@ -121,3 +121,28 @@
 .grid-item:hover .overlay {
     opacity: 1;
 }
+
+/*
+* Name Easter Egg Styling
+*/
+.name {
+    transition: transform 0.3s;
+    width: 100px;
+}
+
+.name:hover {
+    transform: scale(1.1);
+    color: rgb(12, 185, 237);
+    cursor:default;
+}
+
+.dog {
+    position: fixed;
+    width: 120px;
+    bottom: 20px;
+    right: 20px;
+
+    pointer-events: none;
+    opacity: 0;
+    transition: transform 0.3s cubic-bezier(0.075, 0.82, 0.165, 1)
+}

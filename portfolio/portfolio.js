@@ -179,7 +179,7 @@ document.addEventListener('DOMContentLoaded', () =>
                 <img src="${video.thumbnail}" alt="${video.title}">
                 <div class="overlay">
                     <p class="video-views">
-                        ${video.views}
+                        ${video.views} views
                     </p>
                 </div>
             `;
@@ -205,3 +205,37 @@ document.addEventListener('DOMContentLoaded', () =>
     populateGrid(gridExtra, extraVideos);
     
 });
+
+// Name Easter Egg code
+document.addEventListener('DOMContentLoaded', () => 
+{
+    const name = document.querySelector('.name');
+    const dog = document.querySelector('.dog');
+
+    const positions = 
+    [
+        { bottom: "20px", right: "20px", top: "auto", left: "auto"},
+        { bottom: "20px", right: "auto", top: "auto", left: "20px"},
+        { bottom: "auto", right: "auto", top: "20px", left: "20px"},
+        { bottom: "auto", right: "20px", top: "20px", left: "auto"}
+    ];
+
+    let currPos = 0;
+
+    name.addEventListener("mouseenter", () =>
+    {
+        dog.style.opacity = 1;
+        dog.style.pointerEvents = "auto";
+    });
+
+    dog.addEventListener("click", () => 
+    {
+        let nextPos = currPos;
+        do
+        {
+            nextPos = Math.floor(Math.random() * positions.length);
+        } while (nextPos === currPos);
+        currPos = nextPos;
+        Object.assign(dog.style, positions[currPos]);
+    });
+})
