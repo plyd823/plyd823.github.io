@@ -1,0 +1,90 @@
+#map { height: 100vh; width: 100%; background: #050505; }
+    .sidebar { 
+        height: 100vh; 
+        display: flex; 
+        flex-direction: column;
+        background: #121212; 
+    }
+
+    #route-list { 
+        flex-grow: 1;
+        overflow-y: auto; 
+    }
+    .active-step { border-left: 4px solid #f59e0b; background: #1f1f1f; }
+    ::-webkit-scrollbar { width: 5px; }
+    ::-webkit-scrollbar-track { background: #121212; }
+    ::-webkit-scrollbar-thumb { background: #f59e0b; }
+    
+    .leaflet-interactive { transition: stroke-dashoffset 0.5s ease; }
+
+    .hud-btn {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 6px 12px;
+        font-size: 10px;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: #71717a;
+        transition: all 0.2s;
+        border-radius: 2px;
+        width: 100%;
+        text-align: left;
+    }
+
+    .hud-btn:hover {
+        color: #e4e4e7;
+        background: rgba(255, 255, 255, 0.05);
+    }
+
+    .led {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: #27272a;
+        border: 1px solid #3f3f46;
+    }
+
+    .hud-btn.active-filter {
+        color: #f59e0b;
+        background: rgba(245, 158, 11, 0.1);
+    }
+
+    .hud-btn.active-filter .led {
+        background: #f59e0b;
+        border-color: #fbbf24;
+        box-shadow: 0 0 8px #f59e0b;
+    }
+
+    #filter-hud {
+        background: rgba(0, 0, 0, 0.85);
+        backdrop-filter: blur(4px);
+    }
+
+    @keyframes hud-glitch {
+        0% { transform: translate(0); opacity: 1; }
+        20% { transform: translate(-2px, 1px); opacity: 0.8; }
+        40% { transform: translate(2px, -1px); filter: contrast(150%) hue-rotate(90deg); }
+        60% { transform: translate(-1px, 1px); opacity: 0.9; }
+        100% { transform: translate(0); opacity: 1; }
+    }
+    .glitch-active { animation: hud-glitch 0.2s linear; }
+
+    #region-hud .hud-btn.active-filter {
+        color: #3b82f6;
+        background: rgba(59, 130, 246, 0.1);
+    }
+
+    #region-hud .hud-btn.active-filter .led {
+        background: #3b82f6;
+        border-color: #60a5fa;
+        box-shadow: 0 0 8px #3b82f6;
+    }
+
+    #region-hud .hud-btn {
+        padding: 4px 10px;
+    }
+
+    #region-list::-webkit-scrollbar { width: 2px; }
+    #region-list::-webkit-scrollbar-thumb { background: #3b82f644; }

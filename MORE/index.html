@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mad Max | Mapnum Opus</title>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+        <script src="https://unpkg.com/leaflet-polylinedecorator@1.6.0/dist/leaflet.polylineDecorator.js"></script>
+
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+
+    <body class="flex bg-black text-gray-200 font-sans overflow-hidden">
+        <!-- LEFT SIDEBAR -->
+        <div class="sidebar w-1/3 flex flex-col border-r border-gray-900" id="sidebar">
+            <!-- Top of Left Sidebar -->
+            <div class="p-6 border-b border-gray-800 bg-zinc-900/50">
+                <h1 class="text-xl font-black text-orange-500 tracking-tighter uppercase italic">
+                    Max's Optimal Route Engine
+                </h1>
+                <p class="text-[10px] text-gray-500 uppercase font-bold tracking-[0.2em] mt-1">
+                    Mad Max Route Engine v0.4
+                </p>
+            </div>
+
+            <!-- Route list with cards -->
+            <div id="route-list" class="flex-grow overflow-y-auto">
+                <!-- Automatically filled in with code -->
+            </div>
+
+            <!-- Sits below route list and contains the collapsable stats -->
+            <div id="route-stats" class="bg-zinc-900 border-t-2 border-orange-500/20 shadow-[0_-15px_40px_rgba(0,0,0,0.8)]">
+                <div onclick="toggleStats()" class="flex justify-between items-center p-4 cursor-pointer hover:bg-white/5 transition-colors">
+                    <div class="flex items-center gap-3">
+                        <span id="stats-chevron" class="text-orange-500 transition-transform duration-300">
+                            ▼
+                        </span>
+                        <span class="text-[10px] font-black text-orange-500 uppercase tracking-[0.4em]">
+                            Route Progress
+                        </span>
+                    </div>
+                    <span id="total-progress-percent" class="text-[10px] font-mono font-black text-orange-500/50">
+                        0% COMPLETE
+                    </span>
+                </div>
+                
+                <div id="stats-content" class="max-h-[500px] overflow-hidden transition-all duration-500 ease-in-out px-6 pb-6">
+                    <div id="stats-container" class="grid grid-cols-3 gap-x-4 gap-y-6">
+                        <!-- Automatically filled in with code -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom watermark -->
+            <div class="p-3 bg-black border-t border-gray-800 text-center">
+                <p class="text-[9px] text-gray-600 uppercase tracking-widest font-bold">
+                    Made by Plyd
+                </p>
+            </div>
+        </div>
+
+        <!-- BUTTONS OVER THE MAP -->
+        <div class="w-2/3 relative h-screen">
+            <div id="map">
+                <!-- Automatically filled in with code -->
+            </div>
+
+            <!-- Bottom right pixel coords display (CURRENT OVERWRITTEN BY NODE LOGGING #TODO: CHANGE BACK) -->
+            <div id="coord-helper" class="absolute bottom-6 right-6 bg-black/90 p-3 text-[11px] text-orange-400 font-mono z-[1000] border border-orange-500/20 rounded-md shadow-2xl">
+                Click map for pixel coordinates
+            </div>
+
+            <!-- Top Right buttons -->
+            <div class="absolute top-6 right-6 z-[1000] flex gap-2">
+                <button onclick="toggleIcons()" id="icon-toggle-btn" 
+                    class="bg-black/80 border border-blue-500/50 text-blue-500 px-3 py-2 text-[10px] font-black uppercase tracking-widest hover:bg-blue-500 hover:text-black transition-all shadow-2xl rounded">
+                    Toggle Icons
+                </button>
+                <button onclick="toggleLines()" id="line-toggle-btn" 
+                    class="bg-black/80 border border-orange-500/50 text-orange-500 px-3 py-2 text-[10px] font-black uppercase tracking-widest hover:bg-orange-500 hover:text-black transition-all shadow-2xl rounded">
+                    Hide Overlay
+                </button>
+            </div>
+            
+            <!-- Bottom Left Filters -->
+            <div id="filter-hud" class="absolute bottom-24 left-6 z-[1000] flex flex-col gap-2 p-1 border border-orange-500/20 bg-black/80 backdrop-blur-sm shadow-2xl rounded-sm">
+                <div class="px-2 py-1 border-b border-orange-500/10 mb-1 flex justify-between items-center">
+                    <span class="text-[8px] font-black text-orange-500/50 uppercase tracking-[0.3em]">
+                        Object Filters
+                    </span>
+                </div>
+                <!-- Object Filters -->
+                <div class="flex flex-col gap-1 w-32">
+
+                    <button onclick="applyFilter('all')" data-type="all" class="hud-btn active-filter">
+                        <div class="led">
+                            <!-- LED button -->
+                        </div> 
+                        <span>
+                            All Signals
+                        </span>
+                    </button>
+
+                    <button onclick="applyFilter('stronghold')" data-type="stronghold" class="hud-btn">
+                        <div class="led">
+                            <!-- LED button -->
+                        </div> 
+                        <span>
+                            Strongholds
+                        </span>
+                    </button>
+
+                    <button onclick="applyFilter('camp')" data-type="camp" class="hud-btn">
+                        <div class="led">
+                            <!-- LED button -->
+                        </div> 
+                        <span>
+                            Camps
+                        </span>
+                    </button>
+
+                    <button onclick="applyFilter('scavloc')" data-type="scavloc" class="hud-btn">
+                        <div class="led">
+                            <!-- LED button -->
+                        </div> 
+                        <span>
+                            Scrap
+                        </span>
+                    </button>
+
+                    <button onclick="applyFilter('minefield')" data-type="minefield" class="hud-btn">
+                        <div class="led">
+                            <!-- LED button -->
+                        </div> 
+                        <span>
+                            Mines
+                        </span>
+                    </button>
+                    
+                    <button onclick="applyFilter('mission')" data-type="mission" class="hud-btn">
+                        <div class="led">
+                            <!-- LED button -->
+                        </div> 
+                        <span>
+                            Missions
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <!-- Region Filters -->
+            <div id="region-hud" class="absolute bottom-24 left-44 z-[1000] flex flex-col gap-2 p-1 border border-blue-500/20 bg-black/80 backdrop-blur-sm shadow-2xl rounded-sm">
+                <div class="px-2 py-1 border-b border-blue-500/10 mb-1">
+                    <span class="text-[8px] font-black text-blue-400/50 uppercase tracking-[0.3em]">
+                        Region Filter
+                    </span>
+                </div>
+                <div id="region-list" class="flex flex-col gap-0.5 w-40 max-h-64 overflow-y-auto">
+                    <!-- Automatically filled in with code -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Make sure to have data before code or else code breaks -->
+        <script src="road_network.js"></script>
+        <script src="map_locations.js"></script>
+
+        <script src="map_generator.js"></script>
+        <script src="constants.js"></script>
+        <script src="pathfinding.js"></script>
+        <script src="ui_manager.js"></script>
+        <script src="map_engine.js"></script>
+        <script src="node_logging.js"></script>
+
+        <script>
+            // Initialize region filter
+            initRegionHUD();
+
+            // render route once all data is loaded
+            renderRoute();
+        </script>
+    </body>
+</html>
