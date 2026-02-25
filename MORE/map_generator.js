@@ -34,9 +34,9 @@ L.imageOverlay('images/road_lines.png', roadBounds, {
 
 // ADD TERRITORY LINES
 const TERR_LINE_CALIBRATION = {
-    scale: 0.7,
-    offsetX: 1330,
-    offsetY: 850
+    scale: 1.0,
+    offsetX: 0,
+    offsetY: 0
 };
 const terr_sw_corner = [
     TERR_LINE_CALIBRATION.offsetY,

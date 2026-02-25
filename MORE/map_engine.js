@@ -364,3 +364,29 @@ function selectStep(stepIndex) {
         markers[stepIndex].openPopup(); 
     }*/
 }
+
+window.addEventListener('keydown', function(e) {
+    if (!activeRoute || activeRoute.length === 0) return;
+
+    let newIndex;
+
+    if(currentActiveIndex === null) {
+        newIndex = 0;
+    } else {
+        newIndex = currentActiveIndex;
+    }
+
+    if (e.key === 'ArrowDown') {
+        e.preventDefault(); // prevents screen scroll
+        if (newIndex < activeRoute.length - 1) {
+            newIndex++;
+            selectStep(newIndex);
+        }
+    } else if (e.key === 'ArrowUp') {
+        e.preventDefault(); // prevents screen scroll
+        if (newIndex > 0) {
+            newIndex--;
+            selectStep(newIndex);
+        }
+    }
+});
