@@ -102,8 +102,62 @@ const icons = {
         iconAnchor: [16, 16], 
         popupAnchor: [0, -15] 
     }),
+    "black magic": L.icon({ 
+        iconUrl: 'icons/objectivemarker.png', 
+        iconSize: [20, 20], 
+        iconAnchor: [16, 16], 
+        popupAnchor: [0, -15] 
+    }),
+    "smoke rises": L.icon({ 
+        iconUrl: 'icons/objectivemarker.png', 
+        iconSize: [20, 20], 
+        iconAnchor: [16, 16], 
+        popupAnchor: [0, -15] 
+    }),
+    "dance with death": L.icon({ 
+        iconUrl: 'icons/objectivemarker.png', 
+        iconSize: [20, 20], 
+        iconAnchor: [16, 16], 
+        popupAnchor: [0, -15] 
+    }),
+    "fumehead's debt": L.icon({ 
+        iconUrl: 'icons/objectivemarker.png', 
+        iconSize: [20, 20], 
+        iconAnchor: [16, 16], 
+        popupAnchor: [0, -15] 
+    }),
+    "immortal enemy": L.icon({ 
+        iconUrl: 'icons/objectivemarker.png', 
+        iconSize: [20, 20], 
+        iconAnchor: [16, 16], 
+        popupAnchor: [0, -15] 
+    }),
+    "the big chief": L.icon({ 
+        iconUrl: 'icons/objectivemarker.png', 
+        iconSize: [20, 20], 
+        iconAnchor: [16, 16], 
+        popupAnchor: [0, -15] 
+    }),
+    "in it for glory": L.icon({ 
+        iconUrl: 'icons/objectivemarker.png', 
+        iconSize: [20, 20], 
+        iconAnchor: [16, 16], 
+        popupAnchor: [0, -15] 
+    }),
+    "all is lost forever": L.icon({ 
+        iconUrl: 'icons/objectivemarker.png',
+        iconSize: [20, 20], 
+        iconAnchor: [16, 16], 
+        popupAnchor: [0, -15] 
+    }),
+    "paint my name in blood": L.icon({ 
+        iconUrl: 'icons/objectivemarker.png', 
+        iconSize: [20, 20], 
+        iconAnchor: [16, 16], 
+        popupAnchor: [0, -15] 
+    }),
     "wasteland mission": L.icon({ 
-        iconUrl: 'icons/wastelandmission.png',
+        iconUrl: 'icons/wastelandmission.png', 
         iconSize: [20, 20], 
         iconAnchor: [16, 16], 
         popupAnchor: [0, -15] 
@@ -128,7 +182,16 @@ const MISSION_TYPES = [
     "magnum opus", 
     "righteous work", 
     "into madness",
-    "wasteland classic"
+    "wasteland classic",
+    "black magic",
+    "smoke rises",
+    "dance with death",
+    "fumehead's debt",
+    "immortal enemy",
+    "the big chief",
+    "in it for glory",
+    "all is lost forever",
+    "paint my name in blood"
 ];
 
 let activeFilters = ['all'];

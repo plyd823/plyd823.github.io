@@ -1623,12 +1623,1174 @@ const locationLibrary = {
 
   //#endregion
 
+  //#region: GUTGASH
 
+  //#region: GUTGASH - Camps
 
+  //#region: Grit Canyons - Camps
+  "CAMP_GOB_STONE": {
+    "name": "Camp - Gob Stone",
+    "type": "camp",
+    "region": "Grit Canyons",
+    "game_coords": { 
+      "x": -5630, 
+      "y": 6069 
+    }
+  },
+  "CAMP_OVERLOOK": {
+    "name": "Camp - Overlook",
+    "type": "camp",
+    "region": "Grit Canyons",
+    "game_coords": { 
+      "x": -5361, 
+      "y": 4206 
+    }
+  },
+  "CAMP_BLACK_COVE": {
+    "name": "Camp - Black Cove",
+    "type": "camp",
+    "region": "Grit Canyons",
+    "game_coords": { 
+      "x": -6127, 
+      "y": 4720 
+    }
+  },
+  //#endregion
 
+  //#region: Parch Moon - Camps
+  "CAMP_ROOK_NEST": {
+    "name": "Camp - Rook Nest",
+    "type": "camp",
+    "region": "Parch Moon",
+    "game_coords": { 
+      "x": -6963, 
+      "y": 5876 
+    }
+  },
+  //#endregion
 
+  //#region: Reek Hills - Camps
+  "CAMP_STORM_SHELTER": {
+    "name": "Camp - Storm Shelter",
+    "type": "camp",
+    "region": "Reek Hills",
+    "game_coords": { 
+      "x": -8570, 
+      "y": 5543 
+    }
+  },
+  "CAMP_SCORCHED_SAND": {
+    "name": "Camp - Scorched Sand",
+    "type": "camp",
+    "region": "Reek Hills",
+    "game_coords": { 
+      "x": -9241, 
+      "y": 4826 
+    }
+  },
+  //#endregion
 
+  //#region: Cadavanaugh - Camps
 
+  //#endregion
+
+  //#region: Chalkies - Camps
+
+  //#endregion
+
+  //#endregion
+
+  //#region: GUTGASH - ScavLoc
+
+  //#region: Grit Canyons - ScavLoc
+  "SL_Z48": {
+    "name": "SL - Z48",
+    "type": "scavloc",
+    "region": "Grit Canyons",
+    "game_coords": { 
+      "x": -5595, 
+      "y": 5304 
+    }
+  },
+  "SL_AA48": {
+    "name": "SL - AA48",
+    "type": "scavloc",
+    "region": "Grit Canyons",
+    "game_coords": { 
+      "x": -5380, 
+      "y": 5353 
+    }
+  },
+  "SL_Y49": {
+    "name": "SL - Y49",
+    "type": "scavloc",
+    "region": "Grit Canyons",
+    "game_coords": { 
+      "x": -5914, 
+      "y": 5493 
+    }
+  },
+  "SL_Z50": {
+    "name": "SL - Z50",
+    "type": "scavloc",
+    "region": "Grit Canyons",
+    "game_coords": { 
+      "x": -5569, 
+      "y": 5833 
+    }
+  },
+  "SL_AC52": {
+    "name": "SL - AC52",
+    "type": "scavloc",
+    "region": "Grit Canyons",
+    "game_coords": { 
+      "x": -5011, 
+      "y": 6114 
+    }
+  },
+  "SL_AC50": {
+    "name": "SL - AC50",
+    "type": "scavloc",
+    "region": "Grit Canyons",
+    "game_coords": { 
+      "x": -5040, 
+      "y": 5806 
+    }
+  },
+  "SL_Z46": {
+    "name": "SL - Z46",
+    "type": "scavloc",
+    "region": "Grit Canyons",
+    "game_coords": { 
+      "x": -5690, 
+      "y": 4991 
+    }
+  },
+  "SL_AB44": {
+    "name": "SL - AB44",
+    "type": "scavloc",
+    "region": "Grit Canyons",
+    "game_coords": { 
+      "x": -5269, 
+      "y": 4535 
+    }
+  },
+  "SL_AD45": {
+    "name": "SL - AD45",
+    "type": "scavloc",
+    "region": "Grit Canyons",
+    "game_coords": { 
+      "x": -4884, 
+      "y": 4707 
+    }
+  },
+  "SL_Z41": {
+    "name": "SL - Z41",
+    "type": "scavloc",
+    "region": "Grit Canyons",
+    "game_coords": { 
+      "x": -5678, 
+      "y": 4058 
+    }
+  },
+  "SL_W42": {
+    "name": "SL - W42",
+    "type": "scavloc",
+    "region": "Grit Canyons",
+    "game_coords": { 
+      "x": -6161, 
+      "y": 4140 
+    }
+  },
+  "SL_W44": {
+    "name": "SL - W44",
+    "type": "scavloc",
+    "region": "Grit Canyons",
+    "game_coords": { 
+      "x": -6278, 
+      "y": 4532 
+    }
+  },
+  "SL_W47": {
+    "name": "SL - W47",
+    "type": "scavloc",
+    "region": "Grit Canyons",
+    "game_coords": { 
+      "x": -6297, 
+      "y": 5079 
+    }
+  },
+  "SL_Z45": {
+    "name": "SL - Z45",
+    "type": "scavloc",
+    "region": "Grit Canyons",
+    "game_coords": { 
+      "x": -5590, 
+      "y": 4691 
+    }
+  },
+  //#endregion
+
+  //#region: Parch Moon - ScavLoc
+  "SL_X55": {
+    "name": "SL - X55",
+    "type": "scavloc",
+    "region": "Parch Moon",
+    "game_coords": { 
+      "x": -6036, 
+      "y": 6703 
+    }
+  },
+  "SL_V54": {
+    "name": "SL - V54",
+    "type": "scavloc",
+    "region": "Parch Moon",
+    "game_coords": { 
+      "x": -6381, 
+      "y": 6550 
+    }
+  },
+  "SL_X55": {
+    "name": "SL - X55",
+    "type": "scavloc",
+    "region": "Parch Moon",
+    "game_coords": { 
+      "x": -6036, 
+      "y": 6703 
+    }
+  },
+  "SL_S53": {
+    "name": "SL - S53",
+    "type": "scavloc",
+    "region": "Parch Moon",
+    "game_coords": { 
+      "x": -6884, 
+      "y": 6289 
+    }
+  },
+  "SL_V52": {
+    "name": "SL - V52",
+    "type": "scavloc",
+    "region": "Parch Moon",
+    "game_coords": { 
+      "x": -5370, 
+      "y": 6089 
+    }
+  },
+  "SL_W50": {
+    "name": "SL - W50",
+    "type": "scavloc",
+    "region": "Parch Moon",
+    "game_coords": { 
+      "x": -6213, 
+      "y": 5676 
+    }
+  },
+  "SL_V50": {
+    "name": "SL - V50",
+    "type": "scavloc",
+    "region": "Parch Moon",
+    "game_coords": { 
+      "x": -6450, 
+      "y": 5733 
+    }
+  },
+  "SL_U47": {
+    "name": "SL - U47",
+    "type": "scavloc",
+    "region": "Parch Moon",
+    "game_coords": { 
+      "x": -6686, 
+      "y": 5129 
+    }
+  },
+  "SL_T44": {
+    "name": "SL - T44",
+    "type": "scavloc",
+    "region": "Parch Moon",
+    "game_coords": { 
+      "x": -6685, 
+      "y": 4519 
+    }
+  },
+  "SL_T41": {
+    "name": "SL - T41",
+    "type": "scavloc",
+    "region": "Parch Moon",
+    "game_coords": { 
+      "x": -6783, 
+      "y": 3888 
+    }
+  },
+  "SL_R42": {
+    "name": "SL - R42",
+    "type": "scavloc",
+    "region": "Parch Moon",
+    "game_coords": { 
+      "x": -7136, 
+      "y": 4181 
+    }
+  },
+  "SL_N46": {
+    "name": "SL - N46",
+    "type": "scavloc",
+    "region": "Parch Moon",
+    "game_coords": { 
+      "x": -7935, 
+      "y": 4917 
+    }
+  },
+  "SL_N50": {
+    "name": "SL - N50",
+    "type": "scavloc",
+    "region": "Parch Moon",
+    "game_coords": { 
+      "x": -7943, 
+      "y": 5724 
+    }
+  },
+  "SL_O50": {
+    "name": "SL - O50",
+    "type": "scavloc",
+    "region": "Parch Moon",
+    "game_coords": { 
+      "x": -7714, 
+      "y": 5829 
+    }
+  },
+  "SL_P53": {
+    "name": "SL - P53",
+    "type": "scavloc",
+    "region": "Parch Moon",
+    "game_coords": { 
+      "x": -7512, 
+      "y": 6360 
+    }
+  },
+  "SL_R48": {
+    "name": "SL - R48",
+    "type": "scavloc",
+    "region": "Parch Moon",
+    "game_coords": { 
+      "x": -7121, 
+      "y": 5414 
+    }
+  },
+  "SL_Q56": {
+    "name": "SL - Q56",
+    "type": "scavloc",
+    "region": "Parch Moon",
+    "game_coords": { 
+      "x": -7482, 
+      "y": 6927 
+    }
+  },
+  //#endregion
+
+  //#region: Reek Hills - ScavLoc
+  "SL_L51": {
+    "name": "SL - L51",
+    "type": "scavloc",
+    "region": "Reek Hills",
+    "game_coords": { 
+      "x": -8319, 
+      "y": 5957 
+    }
+  },
+  "SL_J51": {
+    "name": "SL - J51",
+    "type": "scavloc",
+    "region": "Reek Hills",
+    "game_coords": { 
+      "x": -8847, 
+      "y": 5829 
+    }
+  },
+  "SL_G52": {
+    "name": "SL - G52",
+    "type": "scavloc",
+    "region": "Reek Hills",
+    "game_coords": { 
+      "x": -9400, 
+      "y": 6096 
+    }
+  },
+  "SL_C51": {
+    "name": "SL - C51",
+    "type": "scavloc",
+    "region": "Reek Hills",
+    "game_coords": { 
+      "x": -10157, 
+      "y": 5846 
+    }
+  },
+  "SL_D49": {
+    "name": "SL - D49",
+    "type": "scavloc",
+    "region": "Reek Hills",
+    "game_coords": { 
+      "x": -9851, 
+      "y": 5576 
+    }
+  },
+  "SL_D48": {
+    "name": "SL - D48",
+    "type": "scavloc",
+    "region": "Reek Hills",
+    "game_coords": { 
+      "x": -9948, 
+      "y": 5362 
+    }
+  },
+  "SL_G49": {
+    "name": "SL - G49",
+    "type": "scavloc",
+    "region": "Reek Hills",
+    "game_coords": { 
+      "x": -9948, 
+      "y": 5362 
+    }
+  },
+  "SL_K44": {
+    "name": "SL - K44",
+    "type": "scavloc",
+    "region": "Reek Hills",
+    "game_coords": { 
+      "x": -8567, 
+      "y": 4620 
+    }
+  },
+  "SL_K46": {
+    "name": "SL - K46",
+    "type": "scavloc",
+    "region": "Reek Hills",
+    "game_coords": { 
+      "x": -8486, 
+      "y": 4944 
+    }
+  },
+  "SL_F43": {
+    "name": "SL - F43",
+    "type": "scavloc",
+    "region": "Reek Hills",
+    "game_coords": { 
+      "x": -9605, 
+      "y": 4412 
+    }
+  },
+  "SL_D45": {
+    "name": "SL - D45",
+    "type": "scavloc",
+    "region": "Reek Hills",
+    "game_coords": { 
+      "x": -9844, 
+      "y": 4673 
+    }
+  },
+  "SL_E45": {
+    "name": "SL - E45",
+    "type": "scavloc",
+    "region": "Reek Hills",
+    "game_coords": { 
+      "x": -9747, 
+      "y": 4764 
+    }
+  },
+  "SL_C45": {
+    "name": "SL - C45",
+    "type": "scavloc",
+    "region": "Reek Hills",
+    "game_coords": { 
+      "x": -10120, 
+      "y": 4830 
+    }
+  },
+  //#endregion
+
+  //#region: Cadavanaugh - ScavLoc
+
+  //#endregion
+
+  //#region: Chalkies - ScavLoc
+
+  //#endregion
+
+  //#endregion
+
+  //#region: GUTGASH - Scarecrow
+
+  //#region: Grit Canyons - Scarecrow
+  "SC_AA49": {
+    "name": "SC - AA49",
+    "type": "scarecrow",
+    "region": "Grit Canyons",
+    "game_coords": { 
+      "x": -5494, 
+      "y": 5628 
+    }
+  },
+  "SC_AD49": {
+    "name": "SC - AD49",
+    "type": "scarecrow",
+    "region": "Grit Canyons",
+    "game_coords": { 
+      "x": -5089, 
+      "y": 5606 
+    }
+  },
+  "SC_AA46": {
+    "name": "SC - AA46",
+    "type": "scarecrow",
+    "region": "Grit Canyons",
+    "game_coords": { 
+      "x": -5342, 
+      "y": 4964 
+    }
+  },
+  "SC_AC43": {
+    "name": "SC - AC43",
+    "type": "scarecrow",
+    "region": "Grit Canyons",
+    "game_coords": { 
+      "x": -5109, 
+      "y": 4374 
+    }
+  },
+  "SC_Y41": {
+    "name": "SC - Y41",
+    "type": "scarecrow",
+    "region": "Grit Canyons",
+    "game_coords": { 
+      "x": -5776, 
+      "y": 3876 
+    }
+  },
+  "SC_X42": {
+    "name": "SC - X42",
+    "type": "scarecrow",
+    "region": "Grit Canyons",
+    "game_coords": { 
+      "x": -6022, 
+      "y": 4262 
+    }
+  },
+  //#endregion
+
+  //#region: Parch Moon - Scarecrow
+  "SC_V47": {
+    "name": "SC - V47",
+    "type": "scarecrow",
+    "region": "Parch Moon",
+    "game_coords": { 
+      "x": -6490, 
+      "y": 5177 
+    }
+  },
+  "SC_U42": {
+    "name": "SC - U42",
+    "type": "scarecrow",
+    "region": "Parch Moon",
+    "game_coords": { 
+      "x": -6514, 
+      "y": 4251 
+    }
+  },
+  "SC_U40": {
+    "name": "SC - U40",
+    "type": "scarecrow",
+    "region": "Parch Moon",
+    "game_coords": { 
+      "x": -6615, 
+      "y": 3828 
+    }
+  },
+  "SC_O45": {
+    "name": "SC - O45",
+    "type": "scarecrow",
+    "region": "Parch Moon",
+    "game_coords": { 
+      "x": -7775, 
+      "y": 4669 
+    }
+  },
+  "SC_M47": {
+    "name": "SC - M47",
+    "type": "scarecrow",
+    "region": "Parch Moon",
+    "game_coords": { 
+      "x": -8253, 
+      "y": 5061 
+    }
+  },
+  "SC_N49": {
+    "name": "SC - N49",
+    "type": "scarecrow",
+    "region": "Parch Moon",
+    "game_coords": { 
+      "x": -7939, 
+      "y": 5437 
+    }
+  },
+  "SC_R52": {
+    "name": "SC - R52",
+    "type": "scarecrow",
+    "region": "Parch Moon",
+    "game_coords": { 
+      "x": -7217, 
+      "y": 6036 
+    }
+  },
+  "SC_T51": {
+    "name": "SC - T51",
+    "type": "scarecrow",
+    "region": "Parch Moon",
+    "game_coords": { 
+      "x": -6709, 
+      "y": 5950 
+    }
+  },
+  //#endregion
+
+  //#region: Reek Hills - Scarecrow
+  "SC_G51": {
+    "name": "SC - G51",
+    "type": "scarecrow",
+    "region": "Reek Hills",
+    "game_coords": { 
+      "x": -9333, 
+      "y": 5923 
+    }
+  },
+  "SC_F48": {
+    "name": "SC - F48",
+    "type": "scarecrow",
+    "region": "Reek Hills",
+    "game_coords": { 
+      "x": -9623, 
+      "y": 5415 
+    }
+  },
+  "SC_G44": {
+    "name": "SC - G44",
+    "type": "scarecrow",
+    "region": "Reek Hills",
+    "game_coords": { 
+      "x": -9245, 
+      "y": 4646 
+    }
+  },
+  "SC_D43": {
+    "name": "SC - D43",
+    "type": "scarecrow",
+    "region": "Reek Hills",
+    "game_coords": { 
+      "x": -9848, 
+      "y": 4290 
+    }
+  },
+  "SC_F47": {
+    "name": "SC - F47",
+    "type": "scarecrow",
+    "region": "Reek Hills",
+    "game_coords": { 
+      "x": -9486, 
+      "y": 5104 
+    }
+  },
+  //#endregion
+
+  //#region: Cadavanaugh - Scarecrow
+
+  //#endregion
+
+  //#region: Chalkies - Scarecrow
+
+  //#endregion
+
+  //#endregion
+
+  //#region: GUTGASH - Death Race
+  "DR_CRAGGY_CREW": {
+    "name": "Death Race - Craggy Crew",
+    "type": "death race start",
+    "region": "Grit Canyons",
+    "game_coords": { 
+      "x": -5047, 
+      "y": 6370 
+    }
+  },
+  "DR_SUMMIT_OF_THE_MIGHTY": {
+    "name": "Death Race - Summit of the Mighty",
+    "type": "death race start",
+    "region": "Parch Moon",
+    "game_coords": { 
+      "x": -6569, 
+      "y": 6748 
+    }
+  },
+  "DR_NECK_SNAPPIN": {
+    "name": "Death Race - Neck Snappin'",
+    "type": "death race start",
+    "region": "Reek Hills",
+    "game_coords": { 
+      "x": -9863, 
+      "y": 5001 
+    }
+  },
+  //#endregion
+
+  //#region: GUTGASH - Snipers
+
+  //#region: Grit Canyons - Snipers
+  "SN_Z49": {
+    "name": "SN - Z49",
+    "type": "sniper",
+    "region": "Grit Canyons",
+    "game_coords": { 
+      "x": -5707, 
+      "y": 5541 
+    }
+  },
+  "SN_W41": {
+    "name": "SN - W41",
+    "type": "sniper",
+    "region": "Grit Canyons",
+    "game_coords": { 
+      "x": -6126, 
+      "y": 4047 
+    }
+  },
+  //#endregion
+
+  //#region: Parch Moon - Snipers
+  "SN_U49": {
+    "name": "SN - U49",
+    "type": "sniper",
+    "region": "Parch Moon",
+    "game_coords": { 
+      "x": -6591, 
+      "y": 5612 
+    }
+  },
+  "SN_T41": {
+    "name": "SN - T41",
+    "type": "sniper",
+    "region": "Parch Moon",
+    "game_coords": { 
+      "x": -6830, 
+      "y": 3971 
+    }
+  },
+  //#endregion
+
+  //#region: Reek Hills - Snipers
+  "SN_H51": {
+    "name": "SN - H51",
+    "type": "sniper",
+    "region": "Reek Hills",
+    "game_coords": { 
+      "x": -9172, 
+      "y": 5863 
+    }
+  },
+  "SN_F49": {
+    "name": "SN - F49",
+    "type": "sniper",
+    "region": "Reek Hills",
+    "game_coords": { 
+      "x": -9497, 
+      "y": 5467 
+    }
+  },
+  //#endregion
+
+  //#region: Cadavanaugh - Snipers
+
+  //#endregion
+
+  //#region: Chalkies - Snipers
+
+  //#endregion
+
+  //#endregion
+
+  //#region: GUTGASH - Minefield
+  "MF_Y50": {
+    "name": "Minefield - Y50",
+    "type": "minefield",
+    "region": "Grit Canyons",
+    "game_coords": { 
+      "x": -5876, 
+      "y": 5740 
+    }
+  },
+  "MF_Z43": {
+    "name": "Minefield - Z43",
+    "type": "minefield",
+    "region": "Grit Canyons",
+    "game_coords": { 
+      "x": -5706, 
+      "y": 4307
+    }
+  },
+  "MF_S42": {
+    "name": "Minefield - S42",
+    "type": "minefield",
+    "region": "Parch Moon",
+    "game_coords": { 
+      "x": -6954, 
+      "y": 4054
+    }
+  },
+  "MF_R51": {
+    "name": "Minefield - R51",
+    "type": "minefield",
+    "region": "Parch Moon",
+    "game_coords": { 
+      "x": -7213, 
+      "y": 5830
+    }
+  },
+  "MF_K45": {
+    "name": "Minefield - K45",
+    "type": "minefield",
+    "region": "Reek Hills",
+    "game_coords": { 
+      "x": -8555, 
+      "y": 4798
+    }
+  },
+  "MF_F41": {
+    "name": "Minefield - F41",
+    "type": "minefield",
+    "region": "Reek Hills",
+    "game_coords": { 
+      "x": -9603, 
+      "y": 4009
+    }
+  },
+  //#endregion
+
+  //#region: GUTGASH - Encounters
+
+  //#region: Grit Canyons - Encounters
+  "ENC_AC51": {
+    "name": "Encounter - AC51",
+    "type": "encounter",
+    "region": "Grit Canyons",
+    "game_coords": { 
+      "x": -5009, 
+      "y": 6004 
+    }
+  },
+  "ENC_Z43": {
+    "name": "Encounter - Z43",
+    "type": "encounter",
+    "region": "Grit Canyons",
+    "game_coords": { 
+      "x": -5672, 
+      "y": 4304 
+    }
+  },
+  //#endregion
+
+  //#region: Parch Moon - Encounters
+  "ENC_T50": {
+    "name": "Encounter - T50",
+    "type": "encounter",
+    "region": "Parch Moon",
+    "game_coords": { 
+      "x": -6832, 
+      "y": 5753 
+    }
+  },
+  "ENC_S47": {
+    "name": "Encounter - S47",
+    "type": "encounter",
+    "region": "Parch Moon",
+    "game_coords": { 
+      "x": -6996, 
+      "y": 5083 
+    }
+  },
+  "ENC_T46": {
+    "name": "Encounter - T46",
+    "type": "encounter",
+    "region": "Parch Moon",
+    "game_coords": { 
+      "x": -6857, 
+      "y": 4909 
+    }
+  },
+  "ENC_T41": {
+    "name": "Encounter - T41",
+    "type": "encounter",
+    "region": "Parch Moon",
+    "game_coords": { 
+      "x": -6764, 
+      "y": 4047 
+    }
+  },
+  "ENC_O46": {
+    "name": "Encounter - O46",
+    "type": "encounter",
+    "region": "Parch Moon",
+    "game_coords": { 
+      "x": -7785, 
+      "y": 4951 
+    }
+  },
+  "ENC_M49": {
+    "name": "Encounter - M49",
+    "type": "encounter",
+    "region": "Parch Moon",
+    "game_coords": { 
+      "x": -8158, 
+      "y": 5496 
+    }
+  },
+  "ENC_Q54": {
+    "name": "Encounter - Q54",
+    "type": "encounter",
+    "region": "Parch Moon",
+    "game_coords": { 
+      "x": -7441, 
+      "y": 6518 
+    }
+  },
+  //#endregion
+
+  //#region: Reek Hills - Encounters
+  "ENC_G51": {
+    "name": "Encounter - G51",
+    "type": "encounter",
+    "region": "Reek Hills",
+    "game_coords": { 
+      "x": -9303, 
+      "y": 5949 
+    }
+  },
+  "ENC_E47": {
+    "name": "Encounter - E47",
+    "type": "encounter",
+    "region": "Reek Hills",
+    "game_coords": { 
+      "x": -9764, 
+      "y": 5076 
+    }
+  },
+  "ENC_E46": { // TODO: couldn't find pattern, coords are a guesstimate
+    "name": "Encounter - E46",
+    "type": "encounter",
+    "region": "Reek Hills",
+    "game_coords": { 
+      "x": -9735, 
+      "y": 5041 
+    }
+  },
+  //#endregion
+
+  //#region: Cadavanaugh - Encounters
+
+  //#endregion
+
+  //#region: Chalkies - Encounters
+
+  //#endregion
+
+  //#endregion
+
+  //#region: GUTGASH - Balloon
+  "VO_GRIT_CANYONS": {
+    "name": "Grit Canyons Balloon",
+    "type": "balloon",
+    "region": "Grit Canyons",
+    "game_coords": { 
+      "x": -5759, 
+      "y": 5172 
+    }
+  },
+  "VO_PARCH_MOON": {
+    "name": "Parch Moon Balloon",
+    "type": "balloon",
+    "region": "Parch Moon",
+    "game_coords": { 
+      "x": -6647, 
+      "y": 5405 
+    }
+  },
+  "VO_REEK_HILLS": {
+    "name": "Reek Hills Balloon",
+    "type": "balloon",
+    "region": "Reek Hills",
+    "game_coords": { 
+      "x": -9254, 
+      "y": 5244 
+    }
+  },
+  //#endregion
+
+  //#endregion
+
+  //#region: PINK EYE
+
+  //#region: PINK EYE - Camps
+
+  //#region: Knit Sack - Camps
+
+  //#endregion
+
+  //#region: Rot n Rusties - Camps
+
+  //#endregion
+
+  //#region: The Heights - Camps
+
+  //#endregion
+
+  //#region: Wailing Wind - Camps
+
+  //#endregion
+
+  //#region: Grandrise - Camps
+
+  //#endregion
+
+  //#endregion
+
+  //#region: PINK EYE - ScavLoc
+
+  //#region: Knit Sack - ScavLoc
+
+  //#endregion
+
+  //#region: Rot n Rusties - ScavLoc
+
+  //#endregion
+
+  //#region: The Heights - ScavLoc
+
+  //#endregion
+
+  //#region: Wailing Wind - ScavLoc
+
+  //#endregion
+
+  //#region: Grandrise - ScavLoc
+
+  //#endregion
+
+  //#endregion
+
+  //#region: PINK EYE - Scarecrow
+
+  //#region: Knit Sack - Scarecrow
+
+  //#endregion
+
+  //#region: Rot n Rusties - Scarecrow
+
+  //#endregion
+
+  //#region: The Heights - Scarecrow
+
+  //#endregion
+
+  //#region: Wailing Wind - Scarecrow
+
+  //#endregion
+
+  //#region: Grandrise - Scarecrow
+
+  //#endregion
+
+  //#endregion
+
+  //#region: PINK EYE - Death Race
+
+  //#endregion
+
+  //#region: PINK EYE - Snipers
+
+  //#region: Knit Sack - Snipers
+
+  //#endregion
+
+  //#region: Rot n Rusties - Snipers
+
+  //#endregion
+
+  //#region: The Heights - Snipers
+
+  //#endregion
+
+  //#region: Wailing Wind - Snipers
+
+  //#endregion
+
+  //#region: Grandrise - Snipers
+
+  //#endregion
+
+  //#endregion
+
+  //#region: PINK EYE - Minefield
+
+  //#endregion
+
+  //#region: PINK EYE - Encounters
+
+  //#region: Knit Sack - Encounters
+
+  //#endregion
+
+  //#region: Rot n Rusties - Encounters
+
+  //#endregion
+
+  //#region: The Heights - Encounters
+
+  //#endregion
+
+  //#region: Wailing Wind - Encounters
+
+  //#endregion
+
+  //#region: Grandrise - Encounters
+
+  //#endregion
+
+  //#endregion
+
+  //#region: PINK EYE - Balloon
+
+  //#endregion
+
+  //#endregion
+
+  //#region: The Dumps
+
+  //#region: The Dumps - ScavLoc
+
+  //#endregion
+
+  //#region: The Dumps - Scarecrows
+
+  //#endregion
+
+  //#region: The Dumps - Minefields
+
+  //#endregion
+
+  //#region: The Dumps - Snipers
+
+  //#endregion
+
+  //#region: The Dumps - Encounters
+
+  //#endregion
+
+  //#endregion
 
 
   //#region: Mission Points
@@ -1902,10 +3064,45 @@ const locationLibrary = {
       "y": 4837
     }
   },
+  "MISSION_APT_END": {
+    "name": "Finish A Piece Tougher",
+    "type": "a piece tougher",
+    "region": "Grit Canyons",
+    "game_coords": { 
+      "x": -5464, 
+      "y": 5196
+    }
+  },
   //#endregion
 
   //#region: Black Magic
-  
+  "MISSION_BM_START": {
+    "name": "Start Black Magic",
+    "type": "black magic",
+    "region": "Balefire Flatlands",
+    "game_coords": { 
+      "x": -3621, 
+      "y": 3957
+    }
+  },
+  "MISSION_BM_TEST_THUNDERPOON": {
+    "name": "Test out the Thunderpoon",
+    "type": "black magic",
+    "region": "Balefire Flatlands",
+    "game_coords": { 
+      "x": -3613, 
+      "y": 3881
+    }
+  },
+  "MISSION_BM_TAKE_DOWN_JAW": {
+    "name": "Take Down The Jaw",
+    "type": "black magic",
+    "region": "Fuel Veins",
+    "game_coords": { 
+      "x": -5754, 
+      "y": 2111
+    }
+  },
   //#endregion
 
   //#region: Smoke Rises
@@ -2014,6 +3211,96 @@ const locationLibrary = {
     "game_coords": { 
       "x": -3621, 
       "y": 3958
+    }
+  },
+  "WMISSION_ATA_SALTPETER_AC52": {
+    "name": "Find Saltpeter AC52",
+    "type": "wasteland mission",
+    "region": "Grit Canyons",
+    "game_coords": { 
+      "x": -5014, 
+      "y": 6118
+    }
+  },
+  "WMISSION_ATA_SALTPETER_R53": {
+    "name": "Find Saltpeter R53",
+    "type": "wasteland mission",
+    "region": "Parch Moon",
+    "game_coords": { 
+      "x": -7232, 
+      "y": 6347
+    }
+  },
+  "WMISSION_ATA_SALTPETER_E47": {
+    "name": "Find Saltpeter E47",
+    "type": "wasteland mission",
+    "region": "Reek Hills",
+    "game_coords": { 
+      "x": -9819, 
+      "y": 5216
+    }
+  },
+  //#endregion
+
+  //#region: In The Buzzard's Belly
+  "WMISSION_ITBB_START": {
+    "name": "Start In The Buzzard's Belly",
+    "type": "wasteland mission",
+    "region": "Parch Moon",
+    "game_coords": { 
+      "x": -7062, 
+      "y": 4807
+    }
+  },
+  //#endregion
+
+  //#region: Ironclad Faith
+  "WMISSION_IF_START": {
+    "name": "Start Ironclad Faith",
+    "type": "wasteland mission",
+    "region": "Parch Moon",
+    "game_coords": { 
+      "x": -7060, 
+      "y": 4835
+    }
+  },
+  "WMISSION_IF_EASTERN_TUNNELS": {
+    "name": "Drive to the Eastern Tunnels",
+    "type": "wasteland mission",
+    "region": "Dry Gustie",
+    "game_coords": { 
+      "x": -596, 
+      "y": 3220
+    }
+  },
+  "WMISSION_IF_DRIVE_INTO_TUNNELS": {
+    "name": "Drive in the Tunnels",
+    "type": "wasteland mission",
+    "region": "Dry Gustie",
+    "game_coords": { 
+      "x": -764, 
+      "y": 3347
+    }
+  },
+  "WMISSION_IF_END": {
+    "name": "Push Subway out of Tunnel",
+    "type": "wasteland mission",
+    "region": "Dry Gustie",
+    "game_coords": { 
+      "x": -1180, 
+      "y": 3158
+    }
+  },
+  //#endregion
+
+  //#region: 
+  "WMISSION_ASOTG_START": {
+    "name": "Start A Sign of the Gods",
+    "type": "wasteland mission",
+    "region": "Parch Moon",
+    "game_coords": { 
+      "x": -7060, 
+      "y": 4834
     }
   },
   //#endregion
