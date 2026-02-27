@@ -1691,11 +1691,63 @@ const locationLibrary = {
   //#endregion
 
   //#region: Cadavanaugh - Camps
-
+  "CAMP_PROVING_GROUNDS": {
+    "name": "Camp - Proving Grounds",
+    "type": "camp",
+    "region": "Cadavanaugh",
+    "game_coords": { 
+      "x": -9241, 
+      "y": 4826 
+    }
+  },
+  "CAMP_BLOOD_RIDGE": {
+    "name": "Camp - Blood Ridge",
+    "type": "camp",
+    "region": "Cadavanaugh",
+    "game_coords": { 
+      "x": -9035, 
+      "y": 3416 
+    }
+  },
   //#endregion
 
   //#region: Chalkies - Camps
-
+  "CAMP_LARGE_BLADE": {
+    "name": "Camp - Large Blade",
+    "type": "camp",
+    "region": "Chalkies",
+    "game_coords": { 
+      "x": -5874, 
+      "y": 3563 
+    }
+  },
+  "CAMP_JUGULAR_CANYON": {
+    "name": "Camp - Jugular Canyon",
+    "type": "camp",
+    "region": "Chalkies",
+    "game_coords": { 
+      "x": -6886, 
+      "y": 3456 
+    }
+  },
+  "CAMP_FINGER_PEAK": {
+    "name": "Camp - Finger Peak",
+    "type": "camp",
+    "region": "Chalkies",
+    "game_coords": { 
+      "x": -8035, 
+      "y": 2338 
+    }
+  },
+  "CAMP_BLOOD_BEACH": {
+    "name": "Camp - Blood Beach",
+    "type": "camp",
+    "region": "Chalkies",
+    "game_coords": { 
+      "x": -7193, 
+      "y": 2225 
+    }
+  },
   //#endregion
 
   //#endregion
@@ -2108,13 +2160,236 @@ const locationLibrary = {
   //#endregion
 
   //#region: Cadavanaugh - ScavLoc
-
+  "SL_Q44": {
+    "name": "SL - Q44",
+    "type": "scavloc",
+    "region": "Cadavanaugh",
+    "game_coords": { 
+      "x": -7448, 
+      "y": 4525 
+    }
+  },
+  "SL_C38": {
+    "name": "SL - C38",
+    "type": "scavloc",
+    "region": "Cadavanaugh",
+    "game_coords": { 
+      "x": -9996, 
+      "y": 3375 
+    }
+  },
+  "SL_G33": {
+    "name": "SL - G33",
+    "type": "scavloc",
+    "region": "Cadavanaugh",
+    "game_coords": { 
+      "x": -9243, 
+      "y": 2437 
+    }
+  },
+  "SL_N35": {
+    "name": "SL - N35",
+    "type": "scavloc",
+    "region": "Cadavanaugh",
+    "game_coords": { 
+      "x": -7933, 
+      "y": 2719 
+    }
+  },
+  "SL_Q36": {
+    "name": "SL - Q36",
+    "type": "scavloc",
+    "region": "Cadavanaugh",
+    "game_coords": { 
+      "x": -7482, 
+      "y": 3035 
+    }
+  },
+  "SL_M43": {
+    "name": "SL - M43",
+    "type": "scavloc",
+    "region": "Cadavanaugh",
+    "game_coords": { 
+      "x": -8261, 
+      "y": 4373 
+    }
+  },
+  "SL_P41": {
+    "name": "SL - P41",
+    "type": "scavloc",
+    "region": "Cadavanaugh",
+    "game_coords": { 
+      "x": -7509, 
+      "y": 3860 
+    }
+  },
+  "SL_J42": {
+    "name": "SL - J42",
+    "type": "scavloc",
+    "region": "Cadavanaugh",
+    "game_coords": { 
+      "x": -8677, 
+      "y": 4093 
+    }
+  },
+  "SL_G35": {
+    "name": "SL - G35",
+    "type": "scavloc",
+    "region": "Cadavanaugh",
+    "game_coords": { 
+      "x": -9123, 
+      "y": 2846 
+    }
+  },
+  "SL_L37": {
+    "name": "SL - L37",
+    "type": "scavloc",
+    "region": "Cadavanaugh",
+    "game_coords": { 
+      "x": -8449, 
+      "y": 3210 
+    }
+  },
+  "SL_K33": {
+    "name": "SL - K33",
+    "type": "scavloc",
+    "region": "Cadavanaugh",
+    "game_coords": { 
+      "x": -8553, 
+      "y": 2375 
+    }
+  },
+  "SL_C33": {
+    "name": "SL - C33",
+    "type": "scavloc",
+    "region": "Cadavanaugh",
+    "game_coords": { 
+      "x": -10194, 
+      "y": 2704 
+    }
+  },
   //#endregion
 
   //#region: Chalkies - ScavLoc
-
+  "SL_F30": {
+    "name": "SL - F30",
+    "type": "scavloc",
+    "region": "Chalkies",
+    "game_coords": { 
+      "x": -9356, 
+      "y": 1804 
+    }
+  },
+  "SL_G30": {
+    "name": "SL - G30",
+    "type": "scavloc",
+    "region": "Chalkies",
+    "game_coords": { 
+      "x": -9090, 
+      "y": 1785 
+    }
+  },
+  "SL_J29": {
+    "name": "SL - J29",
+    "type": "scavloc",
+    "region": "Chalkies",
+    "game_coords": { 
+      "x": -8797, 
+      "y": 1689 
+    }
+  },
+  "SL_M30": {
+    "name": "SL - M30",
+    "type": "scavloc",
+    "region": "Chalkies",
+    "game_coords": { 
+      "x": -8246, 
+      "y": 1693 
+    }
+  },
+  "SL_L31`": {
+    "name": "SL - L31",
+    "type": "scavloc",
+    "region": "Chalkies",
+    "game_coords": { 
+      "x": -8424, 
+      "y": 2037 
+    }
+  },
+  "SL_O31": {
+    "name": "SL - O31",
+    "type": "scavloc",
+    "region": "Chalkies",
+    "game_coords": { 
+      "x": -7715, 
+      "y": 2101 
+    }
+  },
+  "SL_S32": {
+    "name": "SL - S32",
+    "type": "scavloc",
+    "region": "Chalkies",
+    "game_coords": { 
+      "x": -6988, 
+      "y": 2232 
+    }
+  },
+  "SL_W33": {
+    "name": "SL - W33",
+    "type": "scavloc",
+    "region": "Chalkies",
+    "game_coords": { 
+      "x": -6206, 
+      "y": 2448 
+    }
+  },
+  "SL_V39": {
+    "name": "SL - V39",
+    "type": "scavloc",
+    "region": "Chalkies",
+    "game_coords": { 
+      "x": -6363, 
+      "y": 3545 
+    }
+  },
+  "SL_V36": {
+    "name": "SL - V36",
+    "type": "scavloc",
+    "region": "Chalkies",
+    "game_coords": { 
+      "x": -6360, 
+      "y": 2937 
+    }
+  },
+  "SL_T38": {
+    "name": "SL - T38",
+    "type": "scavloc",
+    "region": "Chalkies",
+    "game_coords": { 
+      "x": -6809, 
+      "y": 3417 
+    }
+  },
+  "SL_S39": {
+    "name": "SL - S39",
+    "type": "scavloc",
+    "region": "Chalkies",
+    "game_coords": { 
+      "x": -6955, 
+      "y": 3561 
+    }
+  },
+  "SL_R39": {
+    "name": "SL - E39",
+    "type": "scavloc",
+    "region": "Chalkies",
+    "game_coords": { 
+      "x": -7028, 
+      "y": 3607 
+    }
+  },
   //#endregion
-
+  
   //#endregion
 
   //#region: GUTGASH - Scarecrow
@@ -2300,11 +2575,108 @@ const locationLibrary = {
   //#endregion
 
   //#region: Cadavanaugh - Scarecrow
-
+  "SC_P43": {
+    "name": "SC - P43",
+    "type": "scarecrow",
+    "region": "Cadavanaugh",
+    "game_coords": { 
+      "x": -7475, 
+      "y": 4253 
+    }
+  },
+  "SC_R40": {
+    "name": "SC - R40",
+    "type": "scarecrow",
+    "region": "Cadavanaugh",
+    "game_coords": { 
+      "x": -7205, 
+      "y": 3685 
+    }
+  },
+  "SC_N37": {
+    "name": "SC - N37",
+    "type": "scarecrow",
+    "region": "Cadavanaugh",
+    "game_coords": { 
+      "x": -7936, 
+      "y": 3242 
+    }
+  },
+  "SC_K43": {
+    "name": "SC - K43",
+    "type": "scarecrow",
+    "region": "Cadavanaugh",
+    "game_coords": { 
+      "x": -8648, 
+      "y": 4282 
+    }
+  },
+  "SC_J39": {
+    "name": "SC - J39",
+    "type": "scarecrow",
+    "region": "Cadavanaugh",
+    "game_coords": { 
+      "x": -8754, 
+      "y": 3606 
+    }
+  },
+  "SC_G42": {
+    "name": "SC - G42",
+    "type": "scarecrow",
+    "region": "Cadavanaugh",
+    "game_coords": { 
+      "x": -9222, 
+      "y": 4161 
+    }
+  },
   //#endregion
 
   //#region: Chalkies - Scarecrow
-
+  "SC_M31": {
+    "name": "SC - M31",
+    "type": "scarecrow",
+    "region": "Chalkies",
+    "game_coords": { 
+      "x": -8134, 
+      "y": 2090 
+    }
+  },
+  "SC_M34": {
+    "name": "SC - M34",
+    "type": "scarecrow",
+    "region": "Chalkies",
+    "game_coords": { 
+      "x": -8081, 
+      "y": 2592 
+    }
+  },
+  "SC_R36": {
+    "name": "SC - R36",
+    "type": "scarecrow",
+    "region": "Chalkies",
+    "game_coords": { 
+      "x": -7267, 
+      "y": 3065 
+    }
+  },
+  "SC_U33": {
+    "name": "SC - U33",
+    "type": "scarecrow",
+    "region": "Chalkies",
+    "game_coords": { 
+      "x": -6664, 
+      "y": 2436 
+    }
+  },
+  "SC_Y37": {
+    "name": "SC - Y37",
+    "type": "scarecrow",
+    "region": "Chalkies",
+    "game_coords": { 
+      "x": -5861, 
+      "y": 3176 
+    }
+  },
   //#endregion
 
   //#endregion
@@ -2335,6 +2707,24 @@ const locationLibrary = {
     "game_coords": { 
       "x": -9863, 
       "y": 5001 
+    }
+  },
+  "DR_POTHOLE_RIDGE": {
+    "name": "Death Race - Pothole Ridge",
+    "type": "death race start",
+    "region": "Cadavanaugh",
+    "game_coords": { 
+      "x": -8559, 
+      "y": 2519 
+    }
+  },
+  "DR_BUCKLE_DOWN": {
+    "name": "Death Race - Buckle Down",
+    "type": "death race start",
+    "region": "Chalkies",
+    "game_coords": { 
+      "x": -7320, 
+      "y": 2721 
     }
   },
   //#endregion
@@ -2405,11 +2795,45 @@ const locationLibrary = {
   //#endregion
 
   //#region: Cadavanaugh - Snipers
-
+  "SN_M44": {
+    "name": "SN - M44",
+    "type": "sniper",
+    "region": "Cadavanaugh",
+    "game_coords": { 
+      "x": -8219, 
+      "y": 4638 
+    }
+  },
+  "SN_K36": {
+    "name": "SN - K36",
+    "type": "sniper",
+    "region": "Cadavanaugh",
+    "game_coords": { 
+      "x": -8585, 
+      "y": 2988 
+    }
+  },
   //#endregion
 
   //#region: Chalkies - Snipers
-
+  "SN_U37": {
+    "name": "SN - U37",
+    "type": "sniper",
+    "region": "Chalkies",
+    "game_coords": { 
+      "x": -6666, 
+      "y": 3194 
+    }
+  },
+  "SN_S35": {
+    "name": "SN - S35",
+    "type": "sniper",
+    "region": "Chalkies",
+    "game_coords": { 
+      "x": -6985, 
+      "y": 2864 
+    }
+  },
   //#endregion
 
   //#endregion
@@ -2467,6 +2891,42 @@ const locationLibrary = {
     "game_coords": { 
       "x": -9603, 
       "y": 4009
+    }
+  },
+  "MF_N40": {
+    "name": "Minefield - N40",
+    "type": "minefield",
+    "region": "Cadavanaugh",
+    "game_coords": { 
+      "x": -7891, 
+      "y": 3681
+    }
+  },
+  "MF_H39": {
+    "name": "Minefield - H39",
+    "type": "minefield",
+    "region": "Cadavanaugh",
+    "game_coords": { 
+      "x": -8872, 
+      "y": 3502
+    }
+  },
+  "MF_P33": {
+    "name": "Minefield - P33",
+    "type": "minefield",
+    "region": "Chalkies",
+    "game_coords": { 
+      "x": -7588, 
+      "y": 2386
+    }
+  },
+  "MF_S37": {
+    "name": "Minefield - S37",
+    "type": "minefield",
+    "region": "Chalkies",
+    "game_coords": { 
+      "x": -6887, 
+      "y": 3137
     }
   },
   //#endregion
@@ -2591,11 +3051,99 @@ const locationLibrary = {
   //#endregion
 
   //#region: Cadavanaugh - Encounters
-
+  "ENC_O42": {
+    "name": "Encounter - O42",
+    "type": "encounter",
+    "region": "Cadavanaugh",
+    "game_coords": { 
+      "x": -7858, 
+      "y": 4115 
+    }
+  },
+  "ENC_L39": {
+    "name": "Encounter - L39",
+    "type": "encounter",
+    "region": "Cadavanaugh",
+    "game_coords": { 
+      "x": -8335, 
+      "y": 3514 
+    }
+  },
+  "ENC_H38": {
+    "name": "Encounter - H38",
+    "type": "encounter",
+    "region": "Cadavanaugh",
+    "game_coords": { 
+      "x": -8924, 
+      "y": 3372 
+    }
+  },
+  "ENC_J37": { // #TODO: CAN'T CONFIRM LOCATION RIGHT NOW
+    "name": "Encounter - J37",
+    "type": "encounter",
+    "region": "Cadavanaugh",
+    "game_coords": { 
+      "x": -8757, 
+      "y": 3124 
+    }
+  },
+  "ENC_S40": { // #TODO: CAN'T CONFIRM LOCATION RIGHT NOW
+    "name": "Encounter - S40",
+    "type": "encounter",
+    "region": "Cadavanaugh",
+    "game_coords": { 
+      "x": -7055, 
+      "y": 3750 
+    }
+  },
+  "ENC_C33": { // #TODO: CAN'T CONFIRM LOCATION RIGHT NOW
+    "name": "Encounter - C33",
+    "type": "encounter",
+    "region": "Cadavanaugh",
+    "game_coords": { 
+      "x": -10194, 
+      "y": 2704 
+    }
+  },
   //#endregion
 
   //#region: Chalkies - Encounters
-
+  "ENC_R33": {
+    "name": "Encounter - R33",
+    "type": "encounter",
+    "region": "Chalkies",
+    "game_coords": { 
+      "x": -7226, 
+      "y": 2377 
+    }
+  },
+  "ENC_W34": {
+    "name": "Encounter - W34",
+    "type": "encounter",
+    "region": "Chalkies",
+    "game_coords": { 
+      "x": -6203, 
+      "y": 2649 
+    }
+  },
+  "ENC_Y38": { //#TODO: CAN'T CONFIRM
+    "name": "Encounter - Y38",
+    "type": "encounter",
+    "region": "Chalkies",
+    "game_coords": { 
+      "x": -5721, 
+      "y": 3398 
+    }
+  },
+  "ENC_W38": { //#TODO: CAN'T CONFIRM
+    "name": "Encounter - W38",
+    "type": "encounter",
+    "region": "Chalkies",
+    "game_coords": { 
+      "x": -6141, 
+      "y": 3347 
+    }
+  },
   //#endregion
 
   //#endregion
@@ -2626,6 +3174,24 @@ const locationLibrary = {
     "game_coords": { 
       "x": -9254, 
       "y": 5244 
+    }
+  },
+  "VO_CADAVANAUGH": {
+    "name": "Cadavanaugh Balloon",
+    "type": "balloon",
+    "region": "Cadavanaugh",
+    "game_coords": { 
+      "x": -8363, 
+      "y": 3389 
+    }
+  },
+  "VO_CHALKIES": {
+    "name": "Chalkies Balloon",
+    "type": "balloon",
+    "region": "Chalkies",
+    "game_coords": { 
+      "x": -6894, 
+      "y": 2700 
     }
   },
   //#endregion
@@ -3106,11 +3672,54 @@ const locationLibrary = {
   //#endregion
 
   //#region: Smoke Rises
-  
+  "MISSION_SR_START": {
+    "name": "Start Smoke Rises",
+    "type": "smoke rises",
+    "region": "Knit Sack",
+    "game_coords": { 
+      "x": -6816, 
+      "y": 341
+    }
+  },
+  "MISSION_SR_LAUNCHERS": {
+    "name": "Take Down Launchers",
+    "type": "smoke rises",
+    "region": "Knit Sack",
+    "game_coords": { 
+      "x": -6935, 
+      "y": 52
+    }
+  },
+  "MISSION_SR_REACH_STRONGHOLD": {
+    "name": "Reach The Stronghold",
+    "type": "smoke rises",
+    "region": "Knit Sack",
+    "game_coords": { 
+      "x": -6912, 
+      "y": -45
+    }
+  },
+  "MISSION_SR_END": {
+    "name": "Finish Smoke Rises",
+    "type": "smoke rises",
+    "region": "Knit Sack",
+    "game_coords": { 
+      "x": -6909, 
+      "y": -22
+    }
+  },
   //#endregion
 
   //#region: Dance With Death
-  
+  "MISSION_DWD_START": {
+    "name": "Start Dance With Death",
+    "type": "dance with death",
+    "region": "Gastown",
+    "game_coords": { 
+      "x": -3790, 
+      "y": -3254
+    }
+  },
   //#endregion
 
   //#region: Fumehead's Debt
@@ -3293,7 +3902,7 @@ const locationLibrary = {
   },
   //#endregion
 
-  //#region: 
+  //#region: A Sign of the Gods
   "WMISSION_ASOTG_START": {
     "name": "Start A Sign of the Gods",
     "type": "wasteland mission",
@@ -3301,6 +3910,165 @@ const locationLibrary = {
     "game_coords": { 
       "x": -7060, 
       "y": 4834
+    }
+  },
+  //#endregion
+
+  //#region: Playing with Fire
+  "WMISSION_PWF_START": {
+    "name": "Start Playing With Fire",
+    "type": "wasteland mission",
+    "region": "Balefire Flatlands",
+    "game_coords": { 
+      "x": -3621, 
+      "y": 3958
+    }
+  },
+  //#endregion
+
+  //#region: In Due Time
+  "WMISSION_IDT_START": {
+    "name": "Start In Due Time",
+    "type": "wasteland mission",
+    "region": "Knit Sack",
+    "game_coords": { 
+      "x": -6911, 
+      "y": -29
+    }
+  },
+  "WMISSION_IDT_ENTER_TYRANTS_LASH": {
+    "name": "Drive to Tyrant's Lash",
+    "type": "wasteland mission",
+    "region": "Rot 'n' Rusties",
+    "game_coords": { 
+      "x": -5402, 
+      "y": -493
+    }
+  },
+  "WMISSION_IDT_DEFEAT_TOP_DOG": {
+    "name": "Defeat Top Dog",
+    "type": "wasteland mission",
+    "region": "Rot 'n' Rusties",
+    "game_coords": { 
+      "x": -5374, 
+      "y": -488
+    }
+  },
+  "WMISSION_IDT_REACH_SILO": {
+    "name": "Reach The Silo",
+    "type": "wasteland mission",
+    "region": "Rot 'n' Rusties",
+    "game_coords": { 
+      "x": -5297, 
+      "y": -486
+    }
+  },
+  "WMISSION_IDT_ROOF": {
+    "name": "Reach The Roof",
+    "type": "wasteland mission",
+    "region": "Rot 'n' Rusties",
+    "game_coords": { 
+      "x": -5289, 
+      "y": -482
+    }
+  },
+  "WMISSION_IDT_END": {
+    "name": "Finish In Due Time",
+    "type": "wasteland mission",
+    "region": "Knit Sack",
+    "game_coords": { 
+      "x": -6911, 
+      "y": -28
+    }
+  },
+  //#endregion
+
+  //#region: Our Daily Bread
+  "WMISSION_ODB_START": {
+    "name": "Start Our Daily Bread",
+    "type": "wasteland mission",
+    "region": "Knit Sack",
+    "game_coords": { 
+      "x": -6911, 
+      "y": -29
+    }
+  },
+  "WMISSION_ODB_FIRST_SITE": {
+    "name": "Mark First Site",
+    "type": "wasteland mission",
+    "region": "The Dunes",
+    "game_coords": { 
+      "x": -3055, 
+      "y": -433
+    }
+  },
+  "WMISSION_ODB_SECOND_SITE": {
+    "name": "Mark Second Site",
+    "type": "wasteland mission",
+    "region": "The Dunes",
+    "game_coords": { 
+      "x": -1995, 
+      "y": -1461
+    }
+  },
+  "WMISSION_ODB_BINOCULARS": {
+    "name": "Use Binoculars",
+    "type": "wasteland mission",
+    "region": "The Dunes",
+    "game_coords": { 
+      "x": -2273, 
+      "y": -148
+    }
+  },
+  "WMISSION_ODB_FIND_CHURCH": {
+    "name": "Find the Church",
+    "type": "wasteland mission",
+    "region": "The Dunes",
+    "game_coords": { 
+      "x": -2457, 
+      "y": -479
+    }
+  },
+  "WMISSION_ODB_FIND_FOOD": {
+    "name": "Find the Food Stash",
+    "type": "wasteland mission",
+    "region": "The Dunes",
+    "game_coords": { 
+      "x": -2433, 
+      "y": -588
+    }
+  },
+  "WMISSION_ODB_MARK_CHURCH": {
+    "name": "Mark the Church",
+    "type": "wasteland mission",
+    "region": "The Dunes",
+    "game_coords": { 
+      "x": -2452, 
+      "y": -487
+    }
+  },
+  //#endregion
+
+  //#region: As The Wrench Turns
+  "WMISSION_ASWT_START": {
+    "name": "Start As The Wrench Turns",
+    "type": "wasteland mission",
+    "region": "Gastown",
+    "game_coords": { 
+      "x": -3926, 
+      "y": -1332
+    }
+  },
+  //#endregion
+
+  //#region: Where There Is Smoke
+  "WMISSION_WTIS_START": {
+    "name": "Start Where There Is Smoke",
+    "type": "wasteland mission",
+    "region": "Gastown",
+    "game_coords": { 
+      "x": -3940, 
+      "y": -1324
     }
   },
   //#endregion
