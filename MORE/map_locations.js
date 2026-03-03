@@ -3203,15 +3203,75 @@ const locationLibrary = {
   //#region: PINK EYE - Camps
 
   //#region: Knit Sack - Camps
-
+  "CAMP_GRAVE_BRIDGE": {
+    "name": "Camp - Grave Bridge",
+    "type": "camp",
+    "region": "Knit Sack",
+    "game_coords": { 
+      "x": -6062, 
+      "y": 606 
+    }
+  },
+  "CAMP_HAVOC_POINT": {
+    "name": "Camp - Havoc Point",
+    "type": "camp",
+    "region": "Knit Sack",
+    "game_coords": { 
+      "x": -6862, 
+      "y": 905 
+    }
+  },
   //#endregion
 
   //#region: Rot n Rusties - Camps
-
+  "CAMP_TYRANTS_LASH": {
+    "name": "Camp - Tyrant's Lash",
+    "type": "camp",
+    "region": "Rot N Rusties",
+    "game_coords": { 
+      "x": -5403, 
+      "y": -490 
+    }
+  },
+  "CAMP_TWIN_SISTERS": {
+    "name": "Camp - Twin Sisters",
+    "type": "camp",
+    "region": "Rot N Rusties",
+    "game_coords": { 
+      "x": -5674, 
+      "y": -1259 
+    }
+  },
+  "CAMP_DEAD_END": {
+    "name": "Camp - Dead End",
+    "type": "camp",
+    "region": "Rot N Rusties",
+    "game_coords": { 
+      "x": -4854, 
+      "y": 338 
+    }
+  },
   //#endregion
 
   //#region: The Heights - Camps
-
+  "CAMP_SKULL_TOP": {
+    "name": "Camp - Skull Top",
+    "type": "camp",
+    "region": "The Heights",
+    "game_coords": { 
+      "x": -7571, 
+      "y": -1153 
+    }
+  },
+  "CAMP_WHEEL_GREASER": {
+    "name": "Camp - Wheel Greaser",
+    "type": "camp",
+    "region": "The Heights",
+    "game_coords": { 
+      "x": -5487, 
+      "y": -3326 
+    }
+  },
   //#endregion
 
   //#region: Wailing Wind - Camps
@@ -3227,15 +3287,372 @@ const locationLibrary = {
   //#region: PINK EYE - ScavLoc
 
   //#region: Knit Sack - ScavLoc
-
+  "SL_Z30": {
+    "name": "SL - Z30",
+    "type": "scavloc",
+    "region": "Knit Sack",
+    "game_coords": { 
+      "x": -5528, 
+      "y": 1834 
+    }
+  },
+  "SL_Z27": {
+    "name": "SL - Z27",
+    "type": "scavloc",
+    "region": "Knit Sack",
+    "game_coords": { 
+      "x": -5555, 
+      "y": 1284 
+    }
+  },
+  "SL_W31": {
+    "name": "SL - W31",
+    "type": "scavloc",
+    "region": "Knit Sack",
+    "game_coords": { 
+      "x": -6308, 
+      "y": 2040 
+    }
+  },
+  "SL_R30": {
+    "name": "SL - R30",
+    "type": "scavloc",
+    "region": "Knit Sack",
+    "game_coords": { 
+      "x": -7174, 
+      "y": 1841 
+    }
+  },
+  "SL_O30": {
+    "name": "SL - O30",
+    "type": "scavloc",
+    "region": "Knit Sack",
+    "game_coords": { 
+      "x": -7766, 
+      "y": 1855 
+    }
+  },
+  "SL_P29": {
+    "name": "SL - P29",
+    "type": "scavloc",
+    "region": "Knit Sack",
+    "game_coords": { 
+      "x": -7557, 
+      "y": 1534 
+    }
+  },
+  "SL_R26": {
+    "name": "SL - R26",
+    "type": "scavloc",
+    "region": "Knit Sack",
+    "game_coords": { 
+      "x": -7274, 
+      "y": 1067 
+    }
+  },
+  "SL_U28": {
+    "name": "SL - U28",
+    "type": "scavloc",
+    "region": "Knit Sack",
+    "game_coords": { 
+      "x": -6691, 
+      "y": 1511 
+    }
+  },
+  "SL_T26": {
+    "name": "SL - T26",
+    "type": "scavloc",
+    "region": "Knit Sack",
+    "game_coords": { 
+      "x": -6706, 
+      "y": 994 
+    }
+  },
+  "SL_V25": {
+    "name": "SL - V25",
+    "type": "scavloc",
+    "region": "Knit Sack",
+    "game_coords": { 
+      "x": -6332, 
+      "y": 926 
+    }
+  },
+  "SL_V20": {
+    "name": "SL - V20",
+    "type": "scavloc",
+    "region": "Knit Sack",
+    "game_coords": { 
+      "x": -6498, 
+      "y": -85 
+    }
+  },
+  "SL_V23": {
+    "name": "SL - V23",
+    "type": "scavloc",
+    "region": "Knit Sack",
+    "game_coords": { 
+      "x": -6415, 
+      "y": 374 
+    }
+  },
   //#endregion
 
   //#region: Rot n Rusties - ScavLoc
-
+  "SL_AE24": {
+    "name": "SL - AE24",
+    "type": "scavloc",
+    "region": "Rot N Rusties",
+    "game_coords": { 
+      "x": -4744, 
+      "y": 678 
+    }
+  },
+  "SL_AC25": {
+    "name": "SL - AC25",
+    "type": "scavloc",
+    "region": "Rot N Rusties",
+    "game_coords": { 
+      "x": -5103, 
+      "y": 731 
+    }
+  },
+  "SL_AF21": {
+    "name": "SL - AF21",
+    "type": "scavloc",
+    "region": "Rot N Rusties",
+    "game_coords": { 
+      "x": -4538, 
+      "y": 10 
+    }
+  },
+  "SL_Z23": {
+    "name": "SL - Z23",
+    "type": "scavloc",
+    "region": "Rot N Rusties",
+    "game_coords": { 
+      "x": -5580, 
+      "y": 372 
+    }
+  },
+  "SL_AA21": {
+    "name": "SL - AA21",
+    "type": "scavloc",
+    "region": "Rot N Rusties",
+    "game_coords": { 
+      "x": -5329, 
+      "y": 41 
+    }
+  },
+  "SL_AD20": {
+    "name": "SL - AD20",
+    "type": "scavloc",
+    "region": "Rot N Rusties",
+    "game_coords": { 
+      "x": -4894, 
+      "y": -205 
+    }
+  },
+  "SL_AF15": {
+    "name": "SL - AF15",
+    "type": "scavloc",
+    "region": "Rot N Rusties",
+    "game_coords": { 
+      "x": -4443, 
+      "y": -1038 
+    }
+  },
+  "SL_AB14": {
+    "name": "SL - AB14",
+    "type": "scavloc",
+    "region": "Rot N Rusties",
+    "game_coords": { 
+      "x": -5211, 
+      "y": -1369 
+    }
+  },
+  "SL_AA12": {
+    "name": "SL - AA12",
+    "type": "scavloc",
+    "region": "Rot N Rusties",
+    "game_coords": { 
+      "x": -5395, 
+      "y": -1698 
+    }
+  },
+  "SL_AC11": {
+    "name": "SL - AC11",
+    "type": "scavloc",
+    "region": "Rot N Rusties",
+    "game_coords": { 
+      "x": -4999, 
+      "y": -1933 
+    }
+  },
+  "SL_Y8": {
+    "name": "SL - Y8",
+    "type": "scavloc",
+    "region": "Rot N Rusties",
+    "game_coords": { 
+      "x": -5687, 
+      "y": -2368 
+    }
+  },
+  "SL_AA17": {
+    "name": "SL - AA17",
+    "type": "scavloc",
+    "region": "Rot N Rusties",
+    "game_coords": { 
+      "x": -5334, 
+      "y": -677 
+    }
+  },
+  "SL_X14": {
+    "name": "SL - X14",
+    "type": "scavloc",
+    "region": "Rot N Rusties",
+    "game_coords": { 
+      "x": -6055, 
+      "y": -1290 
+    }
+  },
+  "SL_Y19": {
+    "name": "SL - Y19",
+    "type": "scavloc",
+    "region": "Rot N Rusties",
+    "game_coords": { 
+      "x": -5746, 
+      "y": -308 
+    }
+  },
   //#endregion
 
   //#region: The Heights - ScavLoc
-
+  "SL_W16": {
+    "name": "SL - W16",
+    "type": "scavloc",
+    "region": "The Heights",
+    "game_coords": { 
+      "x": -6295, 
+      "y": -841 
+    }
+  },
+  "SL_R17": {
+    "name": "SL - R17",
+    "type": "scavloc",
+    "region": "The Heights",
+    "game_coords": { 
+      "x": -7135, 
+      "y": -681 
+    }
+  },
+  "SL_R16": {
+    "name": "SL - R16",
+    "type": "scavloc",
+    "region": "The Heights",
+    "game_coords": { 
+      "x": -7193, 
+      "y": -886 
+    }
+  },
+  "SL_Q18": {
+    "name": "SL - Q18",
+    "type": "scavloc",
+    "region": "The Heights",
+    "game_coords": { 
+      "x": -7486, 
+      "y": -533 
+    }
+  },
+  "SL_M16": {
+    "name": "SL - M16",
+    "type": "scavloc",
+    "region": "The Heights",
+    "game_coords": { 
+      "x": -8088, 
+      "y": -973 
+    }
+  },
+  "SL_N12": {
+    "name": "SL - N12",
+    "type": "scavloc",
+    "region": "The Heights",
+    "game_coords": { 
+      "x": -7942, 
+      "y": -1747 
+    }
+  },
+  "SL_T13": {
+    "name": "SL - T13",
+    "type": "scavloc",
+    "region": "The Heights",
+    "game_coords": { 
+      "x": -6815, 
+      "y": -1518 
+    }
+  },
+  "SL_T10": {
+    "name": "SL - T10",
+    "type": "scavloc",
+    "region": "The Heights",
+    "game_coords": { 
+      "x": -6824, 
+      "y": -2150 
+    }
+  },
+  "SL_O9": {
+    "name": "SL - O9",
+    "type": "scavloc",
+    "region": "The Heights",
+    "game_coords": { 
+      "x": -7711, 
+      "y": -2214 
+    }
+  },
+  "SL_V7": {
+    "name": "SL - V7",
+    "type": "scavloc",
+    "region": "The Heights",
+    "game_coords": { 
+      "x": -6454, 
+      "y": -2667 
+    }
+  },
+  "SL_S5": {
+    "name": "SL - S5",
+    "type": "scavloc",
+    "region": "The Heights",
+    "game_coords": { 
+      "x": -6978, 
+      "y": -3166 
+    }
+  },
+  "SL_O2": {
+    "name": "SL - O2",
+    "type": "scavloc",
+    "region": "The Heights",
+    "game_coords": { 
+      "x": -7790, 
+      "y": -3691 
+    }
+  },
+  "SL_O6": {
+    "name": "SL - O6",
+    "type": "scavloc",
+    "region": "The Heights",
+    "game_coords": { 
+      "x": -7782, 
+      "y": -2850 
+    }
+  },
+  "SL_Q6": {
+    "name": "SL - Q6",
+    "type": "scavloc",
+    "region": "The Heights",
+    "game_coords": { 
+      "x": -7392, 
+      "y": -2822 
+    }
+  },
   //#endregion
 
   //#region: Wailing Wind - ScavLoc
@@ -3249,17 +3666,176 @@ const locationLibrary = {
   //#endregion
 
   //#region: PINK EYE - Scarecrow
-
+  
   //#region: Knit Sack - Scarecrow
-
+  "SC_X29": {
+    "name": "SC - X29",
+    "type": "scarecrow",
+    "region": "Knit Sack",
+    "game_coords": { 
+      "x": -6011, 
+      "y": 1564 
+    }
+  },
+  "SC_AA26": {
+    "name": "SC - AA26",
+    "type": "scarecrow",
+    "region": "Knit Sack",
+    "game_coords": { 
+      "x": -5474, 
+      "y": 957 
+    }
+  },
+  "SC_R28": {
+    "name": "SC - R28",
+    "type": "scarecrow",
+    "region": "Knit Sack",
+    "game_coords": { 
+      "x": -7230, 
+      "y": 1382 
+    }
+  },
+  "SC_U27": {
+    "name": "SC - U27",
+    "type": "scarecrow",
+    "region": "Knit Sack",
+    "game_coords": { 
+      "x": -6705, 
+      "y": 1253 
+    }
+  },
+  "SC_V25": {
+    "name": "SC - V25",
+    "type": "scarecrow",
+    "region": "Knit Sack",
+    "game_coords": { 
+      "x": -6449, 
+      "y": 794 
+    }
+  },
+  "SC_R24": {
+    "name": "SC - R24",
+    "type": "scarecrow",
+    "region": "Knit Sack",
+    "game_coords": { 
+      "x": -7189, 
+      "y": 554 
+    }
+  },
   //#endregion
 
   //#region: Rot n Rusties - Scarecrow
-
+  "SC_X18": {
+    "name": "SC - X18",
+    "type": "scarecrow",
+    "region": "Rot N Rusties",
+    "game_coords": { 
+      "x": -6080, 
+      "y": -623 
+    }
+  },
+  "SC_W13": {
+    "name": "SC - W13",
+    "type": "scarecrow",
+    "region": "Rot N Rusties",
+    "game_coords": { 
+      "x": -6268, 
+      "y": -1525 
+    }
+  },
+  "SC_Z10": {
+    "name": "SC - Z10",
+    "type": "scarecrow",
+    "region": "Rot N Rusties",
+    "game_coords": { 
+      "x": -5712, 
+      "y": -2120 
+    }
+  },
+  "SC_Y15": {
+    "name": "SC - Y15",
+    "type": "scarecrow",
+    "region": "Rot N Rusties",
+    "game_coords": { 
+      "x": -5821, 
+      "y": -1192 
+    }
+  },
+  "SC_Z20": {
+    "name": "SC - Z20",
+    "type": "scarecrow",
+    "region": "Rot N Rusties",
+    "game_coords": { 
+      "x": -5615, 
+      "y": -247 
+    }
+  },
+  "SC_AB23": {
+    "name": "SC - AB23",
+    "type": "scarecrow",
+    "region": "Rot N Rusties",
+    "game_coords": { 
+      "x": -5190, 
+      "y": 446 
+    }
+  },
+  "SC_Y22": {
+    "name": "SC - Y22",
+    "type": "scarecrow",
+    "region": "Rot N Rusties",
+    "game_coords": { 
+      "x": -5816, 
+      "y": 183 
+    }
+  },
+  "SC_AC18": {
+    "name": "SC - AC18",
+    "type": "scarecrow",
+    "region": "Rot N Rusties",
+    "game_coords": { 
+      "x": -5009, 
+      "y": -558 
+    }
+  },
   //#endregion
 
   //#region: The Heights - Scarecrow
-
+  "SC_Q13": {
+    "name": "SC - Q13",
+    "type": "scarecrow",
+    "region": "The Heights",
+    "game_coords": { 
+      "x": -7455, 
+      "y": -1477 
+    }
+  },
+  "SC_T16": {
+    "name": "SC - T16",
+    "type": "scarecrow",
+    "region": "The Heights",
+    "game_coords": { 
+      "x": -6841, 
+      "y": -999 
+    }
+  },
+  "SC_T18": {
+    "name": "SC - T18",
+    "type": "scarecrow",
+    "region": "The Heights",
+    "game_coords": { 
+      "x": -6757, 
+      "y": -489 
+    }
+  },
+  "SC_O17": {
+    "name": "SC - O17",
+    "type": "scarecrow",
+    "region": "The Heights",
+    "game_coords": { 
+      "x": -7858, 
+      "y": -832 
+    }
+  },
   //#endregion
 
   //#region: Wailing Wind - Scarecrow
@@ -3273,21 +3849,116 @@ const locationLibrary = {
   //#endregion
 
   //#region: PINK EYE - Death Race
-
+  "DR_EVEN_RIP": {
+    "name": "Death Race - Even Rip",
+    "type": "death race start",
+    "region": "Knit Sack",
+    "game_coords": { 
+      "x": -5087, 
+      "y": 1258 
+    }
+  },
+  "DR_TRICKY_PASS": {
+    "name": "Death Race - Tricky Pass",
+    "type": "death race start",
+    "region": "Rot N Rusties",
+    "game_coords": { 
+      "x": -4431, 
+      "y": -912 
+    }
+  },
+  "DR_MORTAL_BITE": {
+    "name": "Death Race - Mortal Bite",
+    "type": "death race start",
+    "region": "The Heights",
+    "game_coords": { 
+      "x": -7365, 
+      "y": -2831 
+    }
+  },
   //#endregion
 
   //#region: PINK EYE - Snipers
 
   //#region: Knit Sack - Snipers
-
+  "SN_R24": {
+    "name": "SN - R24",
+    "type": "sniper",
+    "region": "Knit Sack",
+    "game_coords": { 
+      "x": -7103, 
+      "y": 568 
+    }
+  },
+  "SN_T27": {
+    "name": "SN - T27",
+    "type": "sniper",
+    "region": "Knit Sack",
+    "game_coords": { 
+      "x": -6769, 
+      "y": 1318 
+    }
+  },
+  "SN_X26": {
+    "name": "SN - X26",
+    "type": "sniper",
+    "region": "Knit Sack",
+    "game_coords": { 
+      "x": -6022, 
+      "y": 958 
+    }
+  },
   //#endregion
 
   //#region: Rot n Rusties - Snipers
-
+  "SN_AB21": {
+    "name": "SN - AB21",
+    "type": "sniper",
+    "region": "Rot N Rusties",
+    "game_coords": { 
+      "x": -5187, 
+      "y": -38 
+    }
+  },
+  "SN_W16": {
+    "name": "SN - W16",
+    "type": "sniper",
+    "region": "Rot N Rusties",
+    "game_coords": { 
+      "x": -6144, 
+      "y": -879 
+    }
+  },
+  "SN_Z10": {
+    "name": "SN - Z10",
+    "type": "sniper",
+    "region": "Rot N Rusties",
+    "game_coords": { 
+      "x": -5680, 
+      "y": -2151 
+    }
+  },
   //#endregion
 
   //#region: The Heights - Snipers
-
+  "SN_O12": {
+    "name": "SN - O12",
+    "type": "sniper",
+    "region": "The Heights",
+    "game_coords": { 
+      "x": -7824, 
+      "y": -1700 
+    }
+  },
+  "SN_R13": {
+    "name": "SN - R13",
+    "type": "sniper",
+    "region": "The Heights",
+    "game_coords": { 
+      "x": -7187, 
+      "y": -1641 
+    }
+  },
   //#endregion
 
   //#region: Wailing Wind - Snipers
@@ -3301,21 +3972,242 @@ const locationLibrary = {
   //#endregion
 
   //#region: PINK EYE - Minefield
-
+  "MF_V28": {
+    "name": "MF - V28",
+    "type": "minefield",
+    "region": "Knit Sack",
+    "game_coords": { 
+      "x": -6449, 
+      "y": 1382 
+    }
+  },
+  "MF_Y25": {
+    "name": "MF - Y25",
+    "type": "minefield",
+    "region": "Knit Sack",
+    "game_coords": { 
+      "x": -5807, 
+      "y": 902 
+    }
+  },
+  "MF_AB22": {
+    "name": "MF - AB22",
+    "type": "minefield",
+    "region": "Rot N Rusties",
+    "game_coords": { 
+      "x": -5173, 
+      "y": 277 
+    }
+  },
+  "MF_AB19": {
+    "name": "MF - AB19",
+    "type": "minefield",
+    "region": "Rot N Rusties",
+    "game_coords": { 
+      "x": -5293, 
+      "y": -279 
+    }
+  },
+  "MF_V17": {
+    "name": "MF - V17",
+    "type": "minefield",
+    "region": "The Heights",
+    "game_coords": { 
+      "x": -6446, 
+      "y": -790 
+    }
+  },
+  "MF_O13": {
+    "name": "MF - O13",
+    "type": "minefield",
+    "region": "The Heights",
+    "game_coords": { 
+      "x": -7808, 
+      "y": -1415 
+    }
+  },
   //#endregion
 
   //#region: PINK EYE - Encounters
 
   //#region: Knit Sack - Encounters
-
+  "ENC_Y25": { //TODO: COULD BE INACCURATE
+    "name": "Encounter - Y25",
+    "type": "encounter",
+    "region": "Knit Sack",
+    "game_coords": { 
+      "x": -5810, 
+      "y": 770 
+    }
+  },
+  "ENC_X25": {
+    "name": "Encounter - X25",
+    "type": "encounter",
+    "region": "Knit Sack",
+    "game_coords": { 
+      "x": -6101, 
+      "y": 800 
+    }
+  },
+  "ENC_U23": { //TODO: COULD BE INACCURATE
+    "name": "Encounter - U23",
+    "type": "encounter",
+    "region": "Knit Sack",
+    "game_coords": { 
+      "x": -6610, 
+      "y": 548 
+    }
+  },
+  "ENC_U26": {
+    "name": "Encounter - U26",
+    "type": "encounter",
+    "region": "Knit Sack",
+    "game_coords": { 
+      "x": -6594, 
+      "y": 990 
+    }
+  },
+  "ENC_U27": {
+    "name": "Encounter - U27",
+    "type": "encounter",
+    "region": "Knit Sack",
+    "game_coords": { 
+      "x": -6639, 
+      "y": 1175 
+    }
+  },
+  "ENC_P30": { //TODO: COULD BE INACCURATE
+    "name": "Encounter - P30",
+    "type": "encounter",
+    "region": "Knit Sack",
+    "game_coords": { 
+      "x": -7724, 
+      "y": 1848 
+    }
+  },
   //#endregion
 
   //#region: Rot n Rusties - Encounters
-
+  "ENC_AB9": { //TODO: COULD BE INACCURATE
+    "name": "Encounter - AB9",
+    "type": "encounter",
+    "region": "Rot N Rusties",
+    "game_coords": { 
+      "x": -5301, 
+      "y": -2319 
+    }
+  },
+  "ENC_AG15": { //TODO: COULD BE INACCURATE
+    "name": "Encounter - AG15",
+    "type": "encounter",
+    "region": "Rot N Rusties",
+    "game_coords": { 
+      "x": -4329, 
+      "y": -1059 
+    }
+  },
+  "ENC_AA19": {
+    "name": "Encounter - AA19",
+    "type": "encounter",
+    "region": "Rot N Rusties",
+    "game_coords": { 
+      "x": -5368, 
+      "y": -326 
+    }
+  },
+  "ENC_Z18": { //TODO: COULD BE INACCURATE
+    "name": "Encounter - Z18",
+    "type": "encounter",
+    "region": "Rot N Rusties",
+    "game_coords": { 
+      "x": -5509, 
+      "y": -494 
+    }
+  },
+  "ENC_Z16": {
+    "name": "Encounter - Z16",
+    "type": "encounter",
+    "region": "Rot N Rusties",
+    "game_coords": { 
+      "x": -5736, 
+      "y": -988 
+    }
+  },
   //#endregion
 
   //#region: The Heights - Encounters
-
+  "ENC_AA6": {
+    "name": "Encounter - AA6",
+    "type": "encounter",
+    "region": "The Heights",
+    "game_coords": { 
+      "x": -5457, 
+      "y": -2974 
+    }
+  },
+  "ENC_Q6": { //#TODO: Could be inaccurate
+    "name": "Encounter - Q6",
+    "type": "encounter",
+    "region": "The Heights",
+    "game_coords": { 
+      "x": -7344, 
+      "y": -2786 
+    }
+  },
+  "ENC_Q13": {
+    "name": "Encounter - Q13",
+    "type": "encounter",
+    "region": "The Heights",
+    "game_coords": { 
+      "x": -7413, 
+      "y": -1495 
+    }
+  },
+  "ENC_Q15": {
+    "name": "Encounter - Q15",
+    "type": "encounter",
+    "region": "The Heights",
+    "game_coords": { 
+      "x": -7406, 
+      "y": -1115 
+    }
+  },
+  "ENC_O16": { //#TODO: Could be inaccurate
+    "name": "Encounter - O16",
+    "type": "encounter",
+    "region": "The Heights",
+    "game_coords": { 
+      "x": -7839, 
+      "y": -978 
+    }
+  },
+  "ENC_S17": {
+    "name": "Encounter - S17",
+    "type": "encounter",
+    "region": "The Heights",
+    "game_coords": { 
+      "x": -7086, 
+      "y": -835 
+    }
+  },
+  "ENC_S19": { //#TODO: Could be inaccurate
+    "name": "Encounter - S19",
+    "type": "encounter",
+    "region": "The Heights",
+    "game_coords": { 
+      "x": -7013, 
+      "y": -315 
+    }
+  },
+  "ENC_W17": {
+    "name": "Encounter - W17",
+    "type": "encounter",
+    "region": "The Heights",
+    "game_coords": { 
+      "x": -6295, 
+      "y": -841 
+    }
+  },
   //#endregion
 
   //#region: Wailing Wind - Encounters
@@ -3329,12 +4221,38 @@ const locationLibrary = {
   //#endregion
 
   //#region: PINK EYE - Balloon
-
+  "VO_KNIT_SACK": {
+    "name": "Knit Sack Balloon",
+    "type": "balloon",
+    "region": "Knit Sack",
+    "game_coords": { 
+      "x": -6251, 
+      "y": 1282 
+    }
+  },
+  "VO_ROT_N_RUSTIES": {
+    "name": "Rot N Rusties Balloon",
+    "type": "balloon",
+    "region": "Rot N Rusties",
+    "game_coords": { 
+      "x": -6004, 
+      "y": -323 
+    }
+  },
+  "VO_THE_HEIGHTS": {
+    "name": "The Heights Balloon",
+    "type": "balloon",
+    "region": "The Heights",
+    "game_coords": { 
+      "x": -7185, 
+      "y": -1240 
+    }
+  },
   //#endregion
 
   //#endregion
 
-  //#region: The Dumps
+  //#region: The Dump
 
   //#region: The Dumps - ScavLoc
 
@@ -3714,7 +4632,7 @@ const locationLibrary = {
   "MISSION_DWD_START": {
     "name": "Start Dance With Death",
     "type": "dance with death",
-    "region": "Gastown",
+    "region": "The Dumps",
     "game_coords": { 
       "x": -3790, 
       "y": -3254
@@ -3861,6 +4779,45 @@ const locationLibrary = {
       "y": 4807
     }
   },
+  "WMISSION_ITBB_NORTHERN_TUNNEL": {
+    "name": "Drive into the Northern Tunnel",
+    "type": "wasteland mission",
+    "region": "Rot N Rusties",
+    "game_coords": { 
+      "x": -5687, 
+      "y": -2368
+    }
+  },
+  "WMISSION_ITBB_REACH_RIG": {
+    "name": "Reach War Rig",
+    "type": "wasteland mission",
+    "region": "Rot N Rusties",
+    "game_coords": { 
+      "x": -5619, 
+      "y": -2596
+    }
+  },
+  "WMISSION_ITBB_SEARCH_RIG": {
+    "name": "Search War Rig",
+    "type": "wasteland mission",
+    "region": "Rot N Rusties",
+    "game_coords": { 
+      "x": -5605, 
+      "y": -2629
+    }
+  },
+  //#endregion
+
+  //#region: Ghosts of the Past
+  "WMISSION_GOTP_START": {
+    "name": "Start Ghosts of the Past",
+    "type": "wasteland mission",
+    "region": "The Dumps",
+    "game_coords": { 
+      "x": -3792, 
+      "y": -3240
+    }
+  },
   //#endregion
 
   //#region: Ironclad Faith
@@ -3939,7 +4896,7 @@ const locationLibrary = {
   "WMISSION_IDT_ENTER_TYRANTS_LASH": {
     "name": "Drive to Tyrant's Lash",
     "type": "wasteland mission",
-    "region": "Rot 'n' Rusties",
+    "region": "Rot N Rusties",
     "game_coords": { 
       "x": -5402, 
       "y": -493
@@ -3948,7 +4905,7 @@ const locationLibrary = {
   "WMISSION_IDT_DEFEAT_TOP_DOG": {
     "name": "Defeat Top Dog",
     "type": "wasteland mission",
-    "region": "Rot 'n' Rusties",
+    "region": "Rot N Rusties",
     "game_coords": { 
       "x": -5374, 
       "y": -488
@@ -3957,7 +4914,7 @@ const locationLibrary = {
   "WMISSION_IDT_REACH_SILO": {
     "name": "Reach The Silo",
     "type": "wasteland mission",
-    "region": "Rot 'n' Rusties",
+    "region": "Rot N Rusties",
     "game_coords": { 
       "x": -5297, 
       "y": -486
@@ -3966,7 +4923,7 @@ const locationLibrary = {
   "WMISSION_IDT_ROOF": {
     "name": "Reach The Roof",
     "type": "wasteland mission",
-    "region": "Rot 'n' Rusties",
+    "region": "Rot N Rusties",
     "game_coords": { 
       "x": -5289, 
       "y": -482
@@ -4053,7 +5010,7 @@ const locationLibrary = {
   "WMISSION_ASWT_START": {
     "name": "Start As The Wrench Turns",
     "type": "wasteland mission",
-    "region": "Gastown",
+    "region": "The Dumps",
     "game_coords": { 
       "x": -3926, 
       "y": -1332
@@ -4065,7 +5022,7 @@ const locationLibrary = {
   "WMISSION_WTIS_START": {
     "name": "Start Where There Is Smoke",
     "type": "wasteland mission",
-    "region": "Gastown",
+    "region": "The Dumps",
     "game_coords": { 
       "x": -3940, 
       "y": -1324
