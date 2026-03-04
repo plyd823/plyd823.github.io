@@ -3275,11 +3275,54 @@ const locationLibrary = {
   //#endregion
 
   //#region: Wailing Wind - Camps
-
+  "CAMP_HELLS_GRILL": {
+    "name": "Camp - Hell's Grill",
+    "type": "camp",
+    "region": "Wailing Winds",
+    "game_coords": { 
+      "x": -8615, 
+      "y": -464 
+    }
+  },
+  "CAMP_STONEHOLD": {
+    "name": "Camp - Stonehold",
+    "type": "camp",
+    "region": "Wailing Winds",
+    "game_coords": { 
+      "x": -7887, 
+      "y": 614 
+    }
+  },
   //#endregion
 
   //#region: Grandrise - Camps
-
+  "CAMP_THE_DROP": {
+    "name": "Camp - The Drop",
+    "type": "camp",
+    "region": "Grandrise",
+    "game_coords": { 
+      "x": -9976, 
+      "y": -1839 
+    }
+  },
+  "CAMP_OLD_HOLE": {
+    "name": "Camp - Old Hole",
+    "type": "camp",
+    "region": "Grandrise",
+    "game_coords": { 
+      "x": -9538, 
+      "y": -748 
+    }
+  },
+  "CAMP_THE_CHOKE": {
+    "name": "Camp - The Choke",
+    "type": "camp",
+    "region": "Grandrise",
+    "game_coords": { 
+      "x": -7964, 
+      "y": -2579 
+    }
+  },
   //#endregion
 
   //#endregion
@@ -3656,7 +3699,141 @@ const locationLibrary = {
   //#endregion
 
   //#region: Wailing Wind - ScavLoc
-
+  "SL_O26": {
+    "name": "SL - O26",
+    "type": "scavloc",
+    "region": "Wailing Winds",
+    "game_coords": { 
+      "x": -7737, 
+      "y": 930 
+    }
+  },
+  "SL_N26": {
+    "name": "SL - N26",
+    "type": "scavloc",
+    "region": "Wailing Winds",
+    "game_coords": { 
+      "x": -8007, 
+      "y": 959 
+    }
+  },
+  "SL_L26": {
+    "name": "SL - L26",
+    "type": "scavloc",
+    "region": "Wailing Winds",
+    "game_coords": { 
+      "x": -8336, 
+      "y": 954 
+    }
+  },
+  "SL_L24": {
+    "name": "SL - L24",
+    "type": "scavloc",
+    "region": "Wailing Winds",
+    "game_coords": { 
+      "x": -8279, 
+      "y": 685 
+    }
+  },
+  "SL_L23": {
+    "name": "SL - L23",
+    "type": "scavloc",
+    "region": "Wailing Winds",
+    "game_coords": { 
+      "x": -8427, 
+      "y": 408 
+    }
+  },
+  "SL_F30": {
+    "name": "SL - F30",
+    "type": "scavloc",
+    "region": "Wailing Winds",
+    "game_coords": { 
+      "x": -9364, 
+      "y": 1803 
+    }
+  },
+  "SL_H23": {
+    "name": "SL - H23",
+    "type": "scavloc",
+    "region": "Wailing Winds",
+    "game_coords": { 
+      "x": -8976, 
+      "y": 496 
+    }
+  },
+  "SL_L21": {
+    "name": "SL - L21",
+    "type": "scavloc",
+    "region": "Wailing Winds",
+    "game_coords": { 
+      "x": -8357, 
+      "y": 49 
+    }
+  },
+  "SL_K22": {
+    "name": "SL - K22",
+    "type": "scavloc",
+    "region": "Wailing Winds",
+    "game_coords": { 
+      "x": -8637, 
+      "y": 162 
+    }
+  },
+  "SL_H19": {
+    "name": "SL - H19",
+    "type": "scavloc",
+    "region": "Wailing Winds",
+    "game_coords": { 
+      "x": -9015, 
+      "y": -271 
+    }
+  },
+  "SL_F18": {
+    "name": "SL - F18",
+    "type": "scavloc",
+    "region": "Wailing Winds",
+    "game_coords": { 
+      "x": -9296, 
+      "y": -512 
+    }
+  },
+  "SL_H17": {
+    "name": "SL - H17",
+    "type": "scavloc",
+    "region": "Wailing Winds",
+    "game_coords": { 
+      "x": -8884, 
+      "y": -698 
+    }
+  },
+  "SL_M18": {
+    "name": "SL - M18",
+    "type": "scavloc",
+    "region": "Wailing Winds",
+    "game_coords": { 
+      "x": -8135, 
+      "y": -503 
+    }
+  },
+  "SL_O20": {
+    "name": "SL - O20",
+    "type": "scavloc",
+    "region": "Wailing Winds",
+    "game_coords": { 
+      "x": -7819, 
+      "y": -178 
+    }
+  },
+  "SL_O22": {
+    "name": "SL - O22",
+    "type": "scavloc",
+    "region": "Wailing Winds",
+    "game_coords": { 
+      "x": -7826, 
+      "y": 354 
+    }
+  },
   //#endregion
 
   //#region: Grandrise - ScavLoc
@@ -3839,7 +4016,60 @@ const locationLibrary = {
   //#endregion
 
   //#region: Wailing Wind - Scarecrow
-
+  "SC_P22": {
+    "name": "SC - P22",
+    "type": "scarecrow",
+    "region": "Wailing Winds",
+    "game_coords": { 
+      "x": -7648, 
+      "y": 338 
+    }
+  },
+  "SC_N22": {
+    "name": "SC - N22",
+    "type": "scarecrow",
+    "region": "Wailing Winds",
+    "game_coords": { 
+      "x": -7990, 
+      "y": 315 
+    }
+  },
+  "SC_O27": {
+    "name": "SC - O27",
+    "type": "scarecrow",
+    "region": "Wailing Winds",
+    "game_coords": { 
+      "x": -7824, 
+      "y": 1152 
+    }
+  },
+  "SC_P19": {
+    "name": "SC - P19",
+    "type": "scarecrow",
+    "region": "Wailing Winds",
+    "game_coords": { 
+      "x": -7642, 
+      "y": -258 
+    }
+  },
+  "SC_M19": {
+    "name": "SC - M19",
+    "type": "scarecrow",
+    "region": "Wailing Winds",
+    "game_coords": { 
+      "x": -8231, 
+      "y": -327 
+    }
+  },
+  "SC_K20": {
+    "name": "SC - K20",
+    "type": "scarecrow",
+    "region": "Wailing Winds",
+    "game_coords": { 
+      "x": -8646, 
+      "y": -197 
+    }
+  },
   //#endregion
 
   //#region: Grandrise - Scarecrow
@@ -3874,6 +4104,24 @@ const locationLibrary = {
     "game_coords": { 
       "x": -7365, 
       "y": -2831 
+    }
+  },
+  "DR_THE_RECONVENE": {
+    "name": "Death Race - The Reconvene",
+    "type": "death race start",
+    "region": "Wailing Winds",
+    "game_coords": { 
+      "x": -8881, 
+      "y": -519 
+    }
+  },
+  "DR_BARRELING_BARROWS": {
+    "name": "Death Race - Barreling Barrows",
+    "type": "death race start",
+    "region": "Grandrise",
+    "game_coords": { 
+      "x": -9195, 
+      "y": -2800 
     }
   },
   //#endregion
@@ -3962,7 +4210,24 @@ const locationLibrary = {
   //#endregion
 
   //#region: Wailing Wind - Snipers
-
+  "SN_O22": {
+    "name": "SN - O22",
+    "type": "sniper",
+    "region": "Wailing Winds",
+    "game_coords": { 
+      "x": -7743, 
+      "y": 320 
+    }
+  },
+  "SN_L19": {
+    "name": "SN - L19",
+    "type": "sniper",
+    "region": "Wailing Winds",
+    "game_coords": { 
+      "x": -8469, 
+      "y": -299 
+    }
+  },
   //#endregion
 
   //#region: Grandrise - Snipers
@@ -4024,6 +4289,42 @@ const locationLibrary = {
     "game_coords": { 
       "x": -7808, 
       "y": -1415 
+    }
+  },
+  "MF_L19": {
+    "name": "MF - L19",
+    "type": "minefield",
+    "region": "Wailing Winds",
+    "game_coords": { 
+      "x": -8371, 
+      "y": -321 
+    }
+  },
+  "MF_N22": {
+    "name": "MF - N22",
+    "type": "minefield",
+    "region": "Wailing Winds",
+    "game_coords": { 
+      "x": -8010, 
+      "y": 186 
+    }
+  },
+  "MF_L11": {
+    "name": "MF - L11",
+    "type": "minefield",
+    "region": "Grandrise",
+    "game_coords": { 
+      "x": -8337, 
+      "y": -1895 
+    }
+  },
+  "MF_G13": {
+    "name": "MF - G13",
+    "type": "minefield",
+    "region": "Grandrise",
+    "game_coords": { 
+      "x": -9153, 
+      "y": -1533 
     }
   },
   //#endregion
@@ -4211,7 +4512,33 @@ const locationLibrary = {
   //#endregion
 
   //#region: Wailing Wind - Encounters
-
+  "ENC_J19": {
+    "name": "Encounter - J19",
+    "type": "encounter",
+    "region": "Wailing Winds",
+    "game_coords": { 
+      "x": -8821, 
+      "y": -367 
+    }
+  },
+  "ENC_R21": {
+    "name": "Encounter - R21",
+    "type": "encounter",
+    "region": "Wailing Winds",
+    "game_coords": { 
+      "x": -7280, 
+      "y": -33 
+    }
+  },
+  "ENC_N25": { //#TODO: COULD BE INACCURATE
+    "name": "Encounter - N25",
+    "type": "encounter",
+    "region": "Wailing Winds",
+    "game_coords": { 
+      "x": -8046, 
+      "y": 795 
+    }
+  },
   //#endregion
 
   //#region: Grandrise - Encounters
@@ -4246,6 +4573,24 @@ const locationLibrary = {
     "game_coords": { 
       "x": -7185, 
       "y": -1240 
+    }
+  },
+  "VO_WAILING_WINDS": {
+    "name": "Wailing Winds Balloon",
+    "type": "balloon",
+    "region": "Wailing Winds",
+    "game_coords": { 
+      "x": -8092, 
+      "y": 78 
+    }
+  },
+  "VO_GRANDRISE": {
+    "name": "Grandrise Balloon",
+    "type": "balloon",
+    "region": "Grandrise",
+    "game_coords": { 
+      "x": -8800, 
+      "y": -1725 
     }
   },
   //#endregion
