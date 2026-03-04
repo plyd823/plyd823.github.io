@@ -3837,7 +3837,87 @@ const locationLibrary = {
   //#endregion
 
   //#region: Grandrise - ScavLoc
-
+  "SL_E8": {
+    "name": "SL - E8",
+    "type": "scavloc",
+    "region": "Grandrise",
+    "game_coords": { 
+      "x": -9428, 
+      "y": -2501 
+    }
+  },
+  "SL_H8": {
+    "name": "SL - H8",
+    "type": "scavloc",
+    "region": "Grandrise",
+    "game_coords": { 
+      "x": -8974, 
+      "y": -2538 
+    }
+  },
+  "SL_J3": {
+    "name": "SL - J3",
+    "type": "scavloc",
+    "region": "Grandrise",
+    "game_coords": { 
+      "x": -8838, 
+      "y": -3378 
+    }
+  },
+  "SL_L6": {
+    "name": "SL - L6",
+    "type": "scavloc",
+    "region": "Grandrise",
+    "game_coords": { 
+      "x": -8452, 
+      "y": -2864 
+    }
+  },
+  "SL_G10": {
+    "name": "SL - G10",
+    "type": "scavloc",
+    "region": "Grandrise",
+    "game_coords": { 
+      "x": -9108, 
+      "y": -2021 
+    }
+  },
+  "SL_H15": {
+    "name": "SL - H15",
+    "type": "scavloc",
+    "region": "Grandrise",
+    "game_coords": { 
+      "x": -9030, 
+      "y": -1152 
+    }
+  },
+  "SL_F16": {
+    "name": "SL - F16",
+    "type": "scavloc",
+    "region": "Grandrise",
+    "game_coords": { 
+      "x": -9383, 
+      "y": -956 
+    }
+  },
+  "SL_K16": {
+    "name": "SL - K16",
+    "type": "scavloc",
+    "region": "Grandrise",
+    "game_coords": { 
+      "x": -8616, 
+      "y": -893 
+    }
+  },
+  "SL_L12": {
+    "name": "SL - L12",
+    "type": "scavloc",
+    "region": "Grandrise",
+    "game_coords": { 
+      "x": -8426, 
+      "y": -1732 
+    }
+  },
   //#endregion
 
   //#endregion
@@ -4073,7 +4153,60 @@ const locationLibrary = {
   //#endregion
 
   //#region: Grandrise - Scarecrow
-
+  "SC_F15": {
+    "name": "SC - F15",
+    "type": "scarecrow",
+    "region": "Grandrise",
+    "game_coords": { 
+      "x": -9338, 
+      "y": -1125 
+    }
+  },
+  "SC_K15": {
+    "name": "SC - K15",
+    "type": "scarecrow",
+    "region": "Grandrise",
+    "game_coords": { 
+      "x": -8517, 
+      "y": -1079 
+    }
+  },
+  "SC_H12": {
+    "name": "SC - H12",
+    "type": "scarecrow",
+    "region": "Grandrise",
+    "game_coords": { 
+      "x": -8996, 
+      "y": -1694 
+    }
+  },
+  "SC_E11": {
+    "name": "SC - E11",
+    "type": "scarecrow",
+    "region": "Grandrise",
+    "game_coords": { 
+      "x": -9637, 
+      "y": -1879 
+    }
+  },
+  "SC_J8": {
+    "name": "SC - J8",
+    "type": "scarecrow",
+    "region": "Grandrise",
+    "game_coords": { 
+      "x": -8818, 
+      "y": -2445 
+    }
+  },
+  "SC_L10": {
+    "name": "SC - L10",
+    "type": "scarecrow",
+    "region": "Grandrise",
+    "game_coords": { 
+      "x": -8438, 
+      "y": -2113 
+    }
+  },
   //#endregion
 
   //#endregion
@@ -4231,7 +4364,33 @@ const locationLibrary = {
   //#endregion
 
   //#region: Grandrise - Snipers
-
+  "SN_K9": {
+    "name": "SN - K9",
+    "type": "sniper",
+    "region": "Grandrise",
+    "game_coords": { 
+      "x": -8470, 
+      "y": -2253 
+    }
+  },
+  "SN_E10": {
+    "name": "SN - E10",
+    "type": "sniper",
+    "region": "Grandrise",
+    "game_coords": { 
+      "x": -9460, 
+      "y": -2035 
+    }
+  },
+  "SN_K15": {
+    "name": "SN - K15",
+    "type": "sniper",
+    "region": "Grandrise",
+    "game_coords": { 
+      "x": -8576, 
+      "y": -1163 
+    }
+  },
   //#endregion
 
   //#endregion
@@ -4542,7 +4701,51 @@ const locationLibrary = {
   //#endregion
 
   //#region: Grandrise - Encounters
-
+  "ENC_H15": { // not marked on TA map (loot encounter)
+    "name": "Encounter - H15",
+    "type": "encounter",
+    "region": "Grandrise",
+    "game_coords": { 
+      "x": -8977, 
+      "y": -1144 
+    }
+  },
+  "ENC_N11": { //#TODO: Could Be Inaccurate
+    "name": "Encounter - N11",
+    "type": "encounter",
+    "region": "Grandrise",
+    "game_coords": { 
+      "x": -8040, 
+      "y": -1829 
+    }
+  },
+  "ENC_O8": {
+    "name": "Encounter - O8",
+    "type": "encounter",
+    "region": "Grandrise",
+    "game_coords": { 
+      "x": -7675, 
+      "y": -2462 
+    }
+  },
+  "ENC_D12": {
+    "name": "Encounter - D12",
+    "type": "encounter",
+    "region": "Grandrise",
+    "game_coords": { 
+      "x": -9627, 
+      "y": -1609 
+    }
+  },
+  "ENC_D18": {
+    "name": "Encounter - D18",
+    "type": "encounter",
+    "region": "Grandrise",
+    "game_coords": { 
+      "x": -9713, 
+      "y": -617 
+    }
+  },
   //#endregion
 
   //#endregion
