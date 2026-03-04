@@ -48,6 +48,14 @@ const locationLibrary = {
       "y": -3238 
     }
   },
+  "STR_UNDERDUNE": {
+    "name": "Underdune",
+    "type": "underdunes",
+    "game_coords": { 
+      "x": -508, 
+      "y": -731 
+    }
+  },
   //#endregion
 
   //#region OUTERGRAVES
@@ -4803,23 +4811,535 @@ const locationLibrary = {
   //#region: The Dump
 
   //#region: The Dumps - ScavLoc
-
+  "SL_AN9": {
+    "name": "SL - AN9",
+    "type": "scavloc",
+    "region": "The Dump",
+    "game_coords": { 
+      "x": -2896, 
+      "y": -2370 
+    }
+  },
+  "SL_AN6": {
+    "name": "SL - AN6",
+    "type": "scavloc",
+    "region": "The Dump",
+    "game_coords": { 
+      "x": -2823, 
+      "y": -2846 
+    }
+  },
+  "SL_AK4": {
+    "name": "SL - AK4",
+    "type": "scavloc",
+    "region": "The Dump",
+    "game_coords": { 
+      "x": -3566, 
+      "y": -3274 
+    }
+  },
+  "SL_AH4": {
+    "name": "SL - AH4",
+    "type": "scavloc",
+    "region": "The Dump",
+    "game_coords": { 
+      "x": -4090, 
+      "y": -3319 
+    }
+  },
+  "SL_AI6": {
+    "name": "SL - AI6",
+    "type": "scavloc",
+    "region": "The Dump",
+    "game_coords": { 
+      "x": -3951, 
+      "y": -2832 
+    }
+  },
+  "SL_AJ7": {
+    "name": "SL - AJ7",
+    "type": "scavloc",
+    "region": "The Dump",
+    "game_coords": { 
+      "x": -3582, 
+      "y": -2758 
+    }
+  },
+  "SL_AL9": {
+    "name": "SL - AL9",
+    "type": "scavloc",
+    "region": "The Dump",
+    "game_coords": { 
+      "x": -3299, 
+      "y": -2391 
+    }
+  },
+  "SL_AI9": {
+    "name": "SL - AI9",
+    "type": "scavloc",
+    "region": "The Dump",
+    "game_coords": { 
+      "x": -3830, 
+      "y": -2338 
+    }
+  },
+  "SL_AG9": {
+    "name": "SL - AG9",
+    "type": "scavloc",
+    "region": "The Dump",
+    "game_coords": { 
+      "x": -4268, 
+      "y": -2343 
+    }
+  },
+  "SL_AE8": {
+    "name": "SL - AE8",
+    "type": "scavloc",
+    "region": "The Dump",
+    "game_coords": { 
+      "x": -4652, 
+      "y": -2469 
+    }
+  },
+  "SL_AF7": {
+    "name": "SL - AF7",
+    "type": "scavloc",
+    "region": "The Dump",
+    "game_coords": { 
+      "x": -4448, 
+      "y": -2773 
+    }
+  },
+  "SL_AF11": {
+    "name": "SL - AF11",
+    "type": "scavloc",
+    "region": "The Dump",
+    "game_coords": { 
+      "x": -4507, 
+      "y": -1899 
+    }
+  },
+  "SL_AI11": {
+    "name": "SL - AI11",
+    "type": "scavloc",
+    "region": "The Dump",
+    "game_coords": { 
+      "x": -3870, 
+      "y": -1986 
+    }
+  },
+  "SL_AM10": {
+    "name": "SL - AM10",
+    "type": "scavloc",
+    "region": "The Dump",
+    "game_coords": { 
+      "x": -3166, 
+      "y": -2014 
+    }
+  },
   //#endregion
 
   //#region: The Dumps - Scarecrows
-
+  "SC_AK8": {
+    "name": "SC - AK8",
+    "type": "scarecrow",
+    "region": "The Dump",
+    "game_coords": { 
+      "x": -3478, 
+      "y": -2486 
+    }
+  },
+  "SC_AI6": {
+    "name": "SC - AI6",
+    "type": "scarecrow",
+    "region": "The Dump",
+    "game_coords": { 
+      "x": -3859, 
+      "y": -2812 
+    }
+  },
+  "SC_AG9": {
+    "name": "SC - AG9",
+    "type": "scarecrow",
+    "region": "The Dump",
+    "game_coords": { 
+      "x": -4255, 
+      "y": -2250 
+    }
+  },
+  "SC_AF10": {
+    "name": "SC - AF10",
+    "type": "scarecrow",
+    "region": "The Dump",
+    "game_coords": { 
+      "x": -4490, 
+      "y": -2089 
+    }
+  },
+  "SC_AI10": {
+    "name": "SC - AI10",
+    "type": "scarecrow",
+    "region": "The Dump",
+    "game_coords": { 
+      "x": -3806, 
+      "y": -2065 
+    }
+  },
   //#endregion
 
   //#region: The Dumps - Minefields
-
+  "MF_AM8": {
+    "name": "MF - AM8",
+    "type": "minefield",
+    "region": "The Dump",
+    "game_coords": { 
+      "x": -3008, 
+      "y": -2558 
+    }
+  },
   //#endregion
 
   //#region: The Dumps - Snipers
-
+  "SN_AJ9": {
+    "name": "SN - AJ9",
+    "type": "sniper",
+    "region": "The Dump",
+    "game_coords": { 
+      "x": -3678, 
+      "y": -2292 
+    }
+  },
+  "SN_AH8": {
+    "name": "SN - AH8",
+    "type": "sniper",
+    "region": "The Dump",
+    "game_coords": { 
+      "x": -4111, 
+      "y": -2481 
+    }
+  },
   //#endregion
 
   //#region: The Dumps - Encounters
+  "ENC_AH13": {
+    "name": "ENC - AH13",
+    "type": "encounter",
+    "region": "The Dump",
+    "game_coords": { 
+      "x": -4088, 
+      "y": -1576 
+    }
+  },
+  "ENC_AG11": { //#TODO: Could be inaccurate
+    "name": "ENC - AG11",
+    "type": "encounter",
+    "region": "The Dump",
+    "game_coords": { 
+      "x": -4357, 
+      "y": -1854 
+    }
+  },
+  "ENC_AH12": { //#TODO: Could be inaccurate
+    "name": "ENC - AH12",
+    "type": "encounter",
+    "region": "The Dump",
+    "game_coords": { 
+      "x": -4022, 
+      "y": -1598 
+    }
+  },
+  "ENC_AJ13": { //#TODO: Could be inaccurate
+    "name": "ENC - AJ13",
+    "type": "encounter",
+    "region": "The Dump",
+    "game_coords": { 
+      "x": -3645, 
+      "y": -1555 
+    }
+  },
+  "ENC_AH7": {
+    "name": "ENC - AH7",
+    "type": "encounter",
+    "region": "The Dump",
+    "game_coords": { 
+      "x": -4063, 
+      "y": -2669 
+    }
+  },
+  "ENC_AF8": {
+    "name": "ENC - AF8",
+    "type": "encounter",
+    "region": "The Dump",
+    "game_coords": { 
+      "x": -4435, 
+      "y": -2492 
+    }
+  },
+  "ENC_AH10": { //#TODO: Could be inaccurate
+    "name": "ENC - AH10",
+    "type": "encounter",
+    "region": "The Dump",
+    "game_coords": { 
+      "x": -4074, 
+      "y": -2069 
+    }
+  },
+  "ENC_AH8": { //#TODO: Could be inaccurate
+    "name": "ENC - AH8",
+    "type": "encounter",
+    "region": "The Dump",
+    "game_coords": { 
+      "x": -4045, 
+      "y": -2499 
+    }
+  },
+  "ENC_AL7": { //#TODO: Could be inaccurate
+    "name": "ENC - AL7",
+    "type": "encounter",
+    "region": "The Dump",
+    "game_coords": { 
+      "x": -3377, 
+      "y": -2650 
+    }
+  },
+  "ENC_AK7": { //#TODO: Could be inaccurate
+    "name": "ENC - AK7",
+    "type": "encounter",
+    "region": "The Dump",
+    "game_coords": { 
+      "x": -3436, 
+      "y": -2644 
+    }
+  },
+  "ENC_AK10": { //#TODO: Could be inaccurate
+    "name": "ENC - AK10",
+    "type": "encounter",
+    "region": "The Dump",
+    "game_coords": { 
+      "x": -3557, 
+      "y": -2147 
+    }
+  },
+  "ENC_AM8": { //#TODO: Could be inaccurate
+    "name": "ENC - AM8",
+    "type": "encounter",
+    "region": "The Dump",
+    "game_coords": { 
+      "x": -2993, 
+      "y": -2402 
+    }
+  },
+  "ENC_AJ4": { //#TODO: Could be inaccurate
+    "name": "ENC - AJ4",
+    "type": "encounter",
+    "region": "The Dump",
+    "game_coords": { 
+      "x": -3669, 
+      "y": -3259 
+    }
+  },
+  //#endregion
 
+  //#region: The Dunes - Balloon
+  "VO_THE_DUMP": {
+    "name": "The Dump Balloon",
+    "type": "balloon",
+    "region": "The Dump",
+    "game_coords": { 
+      "x": -62539801, 
+      "y": -2149 
+    }
+  },
+  //#endregion
+
+  //#endregion
+
+  //#region: The Dunes
+
+  //#region: The Dunes - ScavLoc
+  "SL_AO27": {
+    "name": "SL - AO27",
+    "type": "scavloc",
+    "region": "The Dunes",
+    "game_coords": { 
+      "x": -2747, 
+      "y": 1150 
+    }
+  },
+  "SL_AJ24": {
+    "name": "SL - AJ24",
+    "type": "scavloc",
+    "region": "The Dunes",
+    "game_coords": { 
+      "x": -3722, 
+      "y": 596 
+    }
+  },
+  "SL_AG19": {
+    "name": "SL - AG19",
+    "type": "scavloc",
+    "region": "The Dunes",
+    "game_coords": { 
+      "x": -4181, 
+      "y": -397 
+    }
+  },
+  "SL_AP18": {
+    "name": "SL - AP18",
+    "type": "scavloc",
+    "region": "The Dunes",
+    "game_coords": { 
+      "x": -2457, 
+      "y": -478 
+    }
+  },
+  "SL_AL21": {
+    "name": "SL - AL21",
+    "type": "scavloc",
+    "region": "The Dunes",
+    "game_coords": { 
+      "x": -3182, 
+      "y": 23 
+    }
+  },
+  "SL_AN15": {
+    "name": "SL - AN15",
+    "type": "scavloc",
+    "region": "The Dunes",
+    "game_coords": { 
+      "x": -2980, 
+      "y": -1128 
+    }
+  },
+  "SL_AS11": {
+    "name": "SL - AS11",
+    "type": "scavloc",
+    "region": "The Dunes",
+    "game_coords": { 
+      "x": -1840, 
+      "y": -1855 
+    }
+  },
+  "SL_AV9": {
+    "name": "SL - AV9",
+    "type": "scavloc",
+    "region": "The Dunes",
+    "game_coords": { 
+      "x": -1237, 
+      "y": -2187 
+    }
+  },
+  "SL_AV12": {
+    "name": "SL - AV12",
+    "type": "scavloc",
+    "region": "The Dunes",
+    "game_coords": { 
+      "x": -1285, 
+      "y": -1780 
+    }
+  },
+  "SL_AV14": {
+    "name": "SL - AV14",
+    "type": "scavloc",
+    "region": "The Dunes",
+    "game_coords": { 
+      "x": -1329, 
+      "y": -1381 
+    }
+  },
+  "SL_AZ10": {
+    "name": "SL - AZ10",
+    "type": "scavloc",
+    "region": "The Dunes",
+    "game_coords": { 
+      "x": -507, 
+      "y": -2023 
+    }
+  },
+  "SL_AZ18": {
+    "name": "SL - AZ18",
+    "type": "scavloc",
+    "region": "The Dunes",
+    "game_coords": { 
+      "x": -563, 
+      "y": -558 
+    }
+  },
+  "SL_BA13": {
+    "name": "SL - BA13",
+    "type": "scavloc",
+    "region": "The Dunes",
+    "game_coords": { 
+      "x": -265, 
+      "y": -1526 
+    }
+  },
+  "SL_BA12": {
+    "name": "SL - BA12",
+    "type": "scavloc",
+    "region": "The Dunes",
+    "game_coords": { 
+      "x": -293, 
+      "y": -1788 
+    }
+  },
+  "SL_AZ12": {
+    "name": "SL - AZ12",
+    "type": "scavloc",
+    "region": "The Dunes",
+    "game_coords": { 
+      "x": -488, 
+      "y": -1585 
+    }
+  },
+  "SL_AZ13": {
+    "name": "SL - AZ13",
+    "type": "scavloc",
+    "region": "The Dunes",
+    "game_coords": { 
+      "x": -590, 
+      "y": -1527 
+    }
+  },
+  "SL_BE12": {
+    "name": "SL - BE12",
+    "type": "scavloc",
+    "region": "The Dunes",
+    "game_coords": { 
+      "x": 376, 
+      "y": -1803 
+    }
+  },
+  "SL_AY17": {
+    "name": "SL - AY17",
+    "type": "scavloc",
+    "region": "The Dunes",
+    "game_coords": { 
+      "x": 376, 
+      "y": -1803 
+    }
+  },
+  "SL_AT21": {
+    "name": "SL - AT21",
+    "type": "scavloc",
+    "region": "The Dunes",
+    "game_coords": { 
+      "x": 376, 
+      "y": -1803 
+    }
+  },
+  //#endregion
+
+  //#region: The Dunes - Encounters
+  "ENC_AY17": { //#TODO: Could Be Inaccurate
+    "name": "ENC - AY17",
+    "type": "encounter",
+    "region": "The Dunes",
+    "game_coords": { 
+      "x": -1049, 
+      "y": -679 
+    }
+  },
   //#endregion
 
   //#endregion
@@ -5186,10 +5706,72 @@ const locationLibrary = {
       "y": -3254
     }
   },
+  "MISSION_DWD_ENTER_UNDERDUNE": {
+    "name": "Enter Underdune",
+    "type": "dance with death",
+    "region": "The Dunes",
+    "game_coords": { 
+      "x": -405, 
+      "y": -946
+    }
+  },
+  "MISSION_DWD_FIND_LIGHTS": {
+    "name": "Find Lights",
+    "type": "dance with death",
+    "region": "The Dunes",
+    "game_coords": { 
+      "x": -397, 
+      "y": -1970
+    }
+  },
+  "MISSION_DWD_REACH_LIGHTS": {
+    "name": "Reach Lights",
+    "type": "dance with death",
+    "region": "The Dunes",
+    "game_coords": { 
+      "x": -411, 
+      "y": -1952
+    }
+  },
+  "MISSION_DWD_ESCAPE_UNDERDUNE": {
+    "name": "Escape Underdune",
+    "type": "dance with death",
+    "region": "The Dunes",
+    "game_coords": { 
+      "x": -453, 
+      "y": -822
+    }
+  },
+  "MISSION_DWD_END": {
+    "name": "Finish Dance With Death",
+    "type": "dance with death",
+    "region": "The Dump",
+    "game_coords": { 
+      "x": -3791, 
+      "y": -3255
+    }
+  },
   //#endregion
 
   //#region: Fumehead's Debt
-  
+  "MISSION_FD_START": {
+    "name": "Start Fumehead's Debt",
+    "type": "fumehead's debt",
+    "region": "The Heights",
+    "game_coords": { 
+      "x": -7360, 
+      "y": -2832
+    }
+  },
+  "MISSION_FD_SPEAK_TENDERLOIN": {
+    "name": "Speak With Tenderloin",
+    "type": "fumehead's debt",
+    "region": "The Heights",
+    "game_coords": { 
+      "x": -7394, 
+      "y": -2821
+    }
+  },
   //#endregion
 
   //#region: Immortal Enemy
