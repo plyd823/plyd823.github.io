@@ -72,7 +72,6 @@ const locationLibrary = {
   },
   //#endregion
 
-
   //#region OUTERGRAVES - Scav Location
   "SL_AL57": {
     "name": "SL - AL57",
@@ -129,7 +128,6 @@ const locationLibrary = {
     }
   },
   //#endregion
-
 
   //#region OUTERGRAVES - Scarecrow
   "SC_AL55": {
@@ -4810,7 +4808,7 @@ const locationLibrary = {
 
   //#region: The Dump
 
-  //#region: The Dumps - ScavLoc
+  //#region: The Dump - ScavLoc
   "SL_AN9": {
     "name": "SL - AN9",
     "type": "scavloc",
@@ -4939,7 +4937,7 @@ const locationLibrary = {
   },
   //#endregion
 
-  //#region: The Dumps - Scarecrows
+  //#region: The Dump - Scarecrows
   "SC_AK8": {
     "name": "SC - AK8",
     "type": "scarecrow",
@@ -4987,7 +4985,7 @@ const locationLibrary = {
   },
   //#endregion
 
-  //#region: The Dumps - Minefields
+  //#region: The Dump - Minefields
   "MF_AM8": {
     "name": "MF - AM8",
     "type": "minefield",
@@ -4999,7 +4997,7 @@ const locationLibrary = {
   },
   //#endregion
 
-  //#region: The Dumps - Snipers
+  //#region: The Dump - Snipers
   "SN_AJ9": {
     "name": "SN - AJ9",
     "type": "sniper",
@@ -5020,7 +5018,7 @@ const locationLibrary = {
   },
   //#endregion
 
-  //#region: The Dumps - Encounters
+  //#region: The Dump - Encounters
   "ENC_AH13": {
     "name": "ENC - AH13",
     "type": "encounter",
@@ -5129,13 +5127,13 @@ const locationLibrary = {
       "y": -2402 
     }
   },
-  "ENC_AJ4": { //#TODO: Could be inaccurate
+  "ENC_AJ4": {
     "name": "ENC - AJ4",
     "type": "encounter",
     "region": "The Dump",
     "game_coords": { 
-      "x": -3669, 
-      "y": -3259 
+      "x": -3709, 
+      "y": -3236 
     }
   },
   //#endregion
@@ -5146,7 +5144,7 @@ const locationLibrary = {
     "type": "balloon",
     "region": "The Dump",
     "game_coords": { 
-      "x": -62539801, 
+      "x": -3980, 
       "y": -2149 
     }
   },
@@ -5700,7 +5698,7 @@ const locationLibrary = {
   "MISSION_DWD_START": {
     "name": "Start Dance With Death",
     "type": "dance with death",
-    "region": "The Dumps",
+    "region": "The Dump",
     "game_coords": { 
       "x": -3790, 
       "y": -3254
@@ -5772,26 +5770,255 @@ const locationLibrary = {
       "y": -2821
     }
   },
+  "MISSION_FD_WIN_RACE": {
+    "name": "Win Speed Demon Race",
+    "type": "fumehead's debt",
+    "region": "Knit Sack",
+    "game_coords": { 
+      "x": -6887, 
+      "y": 100
+    }
+  },
+  "MISSION_FD_END": {
+    "name": "Recruit Tenderloin",
+    "type": "fumehead's debt",
+    "region": "The Heights",
+    "game_coords": { 
+      "x": -7394, 
+      "y": 2821
+    }
+  },
   //#endregion
 
   //#region: Immortal Enemy
-  
+  "MISSION_IE_START": {
+    "name": "Start Immortal Enemy",
+    "type": "immortal enemy",
+    "region": "The Dump",
+    "game_coords": { 
+      "x": -3790, 
+      "y": -3255
+    }
+  },
+  "MISSION_IE_WIN_RACE": { // fast travel
+    "name": "Win Race",
+    "type": "immortal enemy",
+    "region": "The Dump",
+    "game_coords": { 
+      "x": -3750, 
+      "y": -3354
+    }
+  },
+  "MISSION_IE_WIN_RACE_START": { // fast travel
+    "name": "Fight Tenderloin",
+    "type": "immortal enemy",
+    "region": "The Dump",
+    "game_coords": { 
+      "x": -3794, 
+      "y": -3347
+    }
+  },
+  "MISSION_IE_DEFEAT_SCROTUS": { // fast travel
+    "name": "Defeat Scrotus",
+    "type": "immortal enemy",
+    "region": "The Dump",
+    "game_coords": { 
+      "x": -3793, 
+      "y": -3436
+    }
+  },
+  "MISSION_IE_FINISH": { // fast travel
+    "name": "Finish Immortal Enemy",
+    "type": "immortal enemy",
+    "region": "The Dump",
+    "game_coords": { 
+      "x": -3710, 
+      "y": -3273
+    }
+  },
+  "MISSION_IE_TRIGGER_DIALOGUE": {
+    "name": "Trigger Chum's Dialogue After IE",
+    "type": "immortal enemy",
+    "region": "The Dump",
+    "game_coords": { 
+      "x": -3760, 
+      "y": -3240
+    }
+  },
   //#endregion
 
   //#region: The Big Chief
-  
+  "MISSION_TBC_START": {
+    "name": "Start The Big Chief",
+    "type": "the big chief",
+    "region": "The Dump",
+    "game_coords": { 
+      "x": -3629,
+      "y": -3231
+    }
+  },
+  "MISSION_TBC_FIND_BIG_CHIEF": {
+    "name": "Find The Big Chief",
+    "type": "the big chief",
+    "region": "The Dump",
+    "game_coords": { 
+      "x": -3646,
+      "y": -3132
+    }
+  },
+  "MISSION_TBC_END": {
+    "name": "Finish The Big Chief",
+    "type": "the big chief",
+    "region": "The Dump",
+    "game_coords": { 
+      "x": -3943,
+      "y": -1403
+    }
+  },
   //#endregion
 
   //#region: In It For Glory
-  
+  "MISSION_IIFG_START": {
+    "name": "Start In It For Glory",
+    "type": "in it for glory",
+    "region": "The Dunes",
+    "game_coords": { 
+      "x": -551,
+      "y": -2240
+    }
+  },
+  "MISSION_IIFG_BREAK_GATE": {
+    "name": "Break The Gate",
+    "type": "in it for glory",
+    "region": "The Dunes",
+    "game_coords": { 
+      "x": -260,
+      "y": -1770
+    }
+  },
+  "MISSION_IIFG_REACH_DIG_SITES": {
+    "name": "Reach Dig Sites",
+    "type": "in it for glory",
+    "region": "The Dunes",
+    "game_coords": { 
+      "x": 442,
+      "y": -1769
+    }
+  },
+  "MISSION_IIFG_DIG_SITE_RIGHT": {
+    "name": "Right Dig Site",
+    "type": "in it for glory",
+    "region": "The Dunes",
+    "game_coords": { 
+      "x": 442,
+      "y": -1769
+    }
+  },
+  "MISSION_IIFG_DIG_SITE_LEFT": {
+    "name": "Left Dig Site",
+    "type": "in it for glory",
+    "region": "The Dunes",
+    "game_coords": { 
+      "x": 406,
+      "y": -1755
+    }
+  },
+  "MISSION_IIFG_DIG_SITE_MIDDLE": {
+    "name": "Middle Dig Site",
+    "type": "in it for glory",
+    "region": "The Dunes",
+    "game_coords": { 
+      "x": 345,
+      "y": -1844
+    }
+  },
+  "MISSION_IIFG_INVESTIGATE_NOISE": {
+    "name": "Investigate Noise",
+    "type": "in it for glory",
+    "region": "The Dunes",
+    "game_coords": { 
+      "x": 339,
+      "y": -1774
+    }
+  },
+  "MISSION_IIFG_DRIVE_GLORY": {
+    "name": "Drive Glory to her Mother",
+    "type": "in it for glory",
+    "region": "The Dump",
+    "game_coords": { 
+      "x": -3947,
+      "y": -1398
+    }
+  },
   //#endregion
 
   //#region: All Is Lost Forever
-  
+  "MISSION_AILF_START": {
+    "name": "Start All Is Lost Forever",
+    "type": "all is lost forever",
+    "region": "Outer Graves",
+    "game_coords": { 
+      "x": -3251,
+      "y": -6418
+    }
+  },
+  "MISSION_AILF_END": {
+    "name": "Drive To Deep Friah",
+    "type": "all is lost forever",
+    "region": "The Dump",
+    "game_coords": { 
+      "x": -3137,
+      "y": -6435
+    }
+  },
+  "MISSION_AILF_TELEPORT": { // fast travel
+    "name": "(ailf teleport)",
+    "type": "all is lost forever",
+    "region": "The Big Nothing",
+    "game_coords": { 
+      "x": -9640,
+      "y": 65
+    }
+  },
   //#endregion
 
   //#region: Paint My Name In Blood
-
+  "MISSION_PMNIB_START": {
+    "name": "Start Paint My Name In Blood",
+    "type": "paint my name in blood",
+    "region": "The Dump",
+    "game_coords": { 
+      "x": -3709,
+      "y": -3289
+    }
+  },
+  "MISSION_PMNIB_DEFEAT_LANDMOVER": { // fast travel
+    "name": "Defeat Landmover",
+    "type": "paint my name in blood",
+    "region": "The Big Nothing",
+    "game_coords": { 
+      "x": -2387,
+      "y": -14636
+    }
+  },
+  "MISSION_PMNIB_DEFEAT_SCROTUS": { // fast travel
+    "name": "Defeat Scrotus",
+    "type": "paint my name in blood",
+    "region": "The Big Nothing",
+    "game_coords": { 
+      "x": -2672,
+      "y": -14978
+    }
+  },
+  "MISSION_PMNIB_TELEPORT": { // fast travel
+    "name": "Postgame Teleport",
+    "type": "paint my name in blood",
+    "region": "The Heights",
+    "game_coords": { 
+      "x": -7156,
+      "y": -1914
+    }
+  },
   //#endregion
 
   //#endregion
@@ -5942,10 +6169,28 @@ const locationLibrary = {
   "WMISSION_GOTP_START": {
     "name": "Start Ghosts of the Past",
     "type": "wasteland mission",
-    "region": "The Dumps",
+    "region": "The Dump",
     "game_coords": { 
       "x": -3792, 
       "y": -3240
+    }
+  },
+  "WMISSION_GOTP_DRIVE_TOTR": {
+    "name": "Drive To Tomb of the Rider",
+    "type": "wasteland mission",
+    "region": "Parch Moon",
+    "game_coords": { 
+      "x": -7485, 
+      "y": 6937
+    }
+  },
+  "WMISSION_GOTP_DRIVE_STRONGHOLD": {
+    "name": "Drive To A Stronghold",
+    "type": "wasteland mission",
+    "region": "Parch Moon",
+    "game_coords": { 
+      "x": -7061, 
+      "y": 4846
     }
   },
   //#endregion
@@ -5999,6 +6244,33 @@ const locationLibrary = {
       "y": 4834
     }
   },
+  "WMISSION_ASOTG_FIND_ENTRANCE": {
+    "name": "Find Entrance",
+    "type": "wasteland mission",
+    "region": "Knit Sack",
+    "game_coords": { 
+      "x": -7766, 
+      "y": 1855
+    }
+  },
+  "WMISSION_ASOTG_REACH_SIGN": {
+    "name": "Reach The Sign",
+    "type": "wasteland mission",
+    "region": "Knit Sack",
+    "game_coords": { 
+      "x": -7687, 
+      "y": 2019
+    }
+  },
+  "WMISSION_ASOTG_MARK_SIGN": {
+    "name": "Mark The Sign",
+    "type": "wasteland mission",
+    "region": "Knit Sack",
+    "game_coords": { 
+      "x": -7684, 
+      "y": 2033
+    }
+  },
   //#endregion
 
   //#region: Playing with Fire
@@ -6009,6 +6281,33 @@ const locationLibrary = {
     "game_coords": { 
       "x": -3621, 
       "y": 3958
+    }
+  },
+  "WMISSION_PWF_GET_TRUCK": { // moving target, this is just where i got it
+    "name": "Get Jeet Fuel Truck",
+    "type": "wasteland mission",
+    "region": "Fuel Veins",
+    "game_coords": { 
+      "x": -3982, 
+      "y": 2911
+    }
+  },
+  "WMISSION_PWF_BRING_TRUCK": {
+    "name": "Bring Jeet Fuel Truck",
+    "type": "wasteland mission",
+    "region": "Balefire Flatlands",
+    "game_coords": { 
+      "x": -3613, 
+      "y": 3908
+    }
+  },
+  "WMISSION_PWF_DRIVE_TRUCK_TO_BREACH": {
+    "name": "Drive Truck To Breach Point",
+    "type": "wasteland mission",
+    "region": "Fuel Veins",
+    "game_coords": { 
+      "x": -3544, 
+      "y": 783
     }
   },
   //#endregion
@@ -6140,10 +6439,28 @@ const locationLibrary = {
   "WMISSION_ASWT_START": {
     "name": "Start As The Wrench Turns",
     "type": "wasteland mission",
-    "region": "The Dumps",
+    "region": "The Dump",
     "game_coords": { 
       "x": -3926, 
       "y": -1332
+    }
+  },
+  "WMISSION_ASWT_DRIVE_TO_ENTRANCE": {
+    "name": "Drive To Entrance",
+    "type": "wasteland mission",
+    "region": "The Dump",
+    "game_coords": { 
+      "x": -4060, 
+      "y": -3234
+    }
+  },
+  "WMISSION_ASWT_SEARCH_WRENCH": {
+    "name": "Search For Chum's Wrench",
+    "type": "wasteland mission",
+    "region": "The Dump",
+    "game_coords": { 
+      "x": -4046, 
+      "y": -3367
     }
   },
   //#endregion
@@ -6152,10 +6469,205 @@ const locationLibrary = {
   "WMISSION_WTIS_START": {
     "name": "Start Where There Is Smoke",
     "type": "wasteland mission",
-    "region": "The Dumps",
+    "region": "The Dump",
     "game_coords": { 
       "x": -3940, 
       "y": -1324
+    }
+  },
+  "WMISSION_WTIS_ENTER_UNDERBELLY": {
+    "name": "Enter Underbelly",
+    "type": "wasteland mission",
+    "region": "The Dump",
+    "game_coords": { 
+      "x": -3591, 
+      "y": -3227
+    }
+  },
+  "WMISSION_WTIS_ENTER_BOWELS": {
+    "name": "Enter Bowels",
+    "type": "wasteland mission",
+    "region": "The Dump",
+    "game_coords": { 
+      "x": -3561, 
+      "y": -3262
+    }
+  },
+  "WMISSION_WTIS_VALVE_ONE": {
+    "name": "Valve 1",
+    "type": "wasteland mission",
+    "region": "The Dump",
+    "game_coords": { 
+      "x": -3488, 
+      "y": -3252
+    }
+  },
+  "WMISSION_WTIS_VALVE_TWO": {
+    "name": "Valve 2",
+    "type": "wasteland mission",
+    "region": "The Dump",
+    "game_coords": { 
+      "x": -3466, 
+      "y": -3296
+    }
+  },
+  "WMISSION_WTIS_VALVE_THREE": {
+    "name": "Valve 3",
+    "type": "wasteland mission",
+    "region": "The Dump",
+    "game_coords": { 
+      "x": -3523, 
+      "y": -3246
+    }
+  },
+  "WMISSION_WTIS_EXIT_BOWELS": {
+    "name": "Exit Bowels",
+    "type": "wasteland mission",
+    "region": "The Dump",
+    "game_coords": { 
+      "x": -3419, 
+      "y": -3229
+    }
+  },
+  //#endregion
+
+  //#region: Rustle Dazzle
+  "WMISSION_RD_START": {
+    "name": "Start Rustle Dazzle",
+    "type": "wasteland mission",
+    "region": "The Dump",
+    "game_coords": { 
+      "x": -3789, 
+      "y": -3254
+    }
+  },
+  "WMISSION_RD_FIND_CAR": {
+    "name": "Find Crow Dazzle's Car",
+    "type": "wasteland mission",
+    "region": "The Heights",
+    "game_coords": { 
+      "x": -7402, 
+      "y": -2794
+    }
+  },
+  "WMISSION_RD_RETURN_CAR": {
+    "name": "Return Crow Dazzle's Car",
+    "type": "wasteland mission",
+    "region": "The Dump",
+    "game_coords": { 
+      "x": -3778, 
+      "y": -3238
+    }
+  },
+  //#endregion
+
+  //#region: Torch Them All
+  "WMISSION_TTA_START": {
+    "name": "Start Torch Them All",
+    "type": "wasteland mission",
+    "region": "The Dump",
+    "game_coords": { 
+      "x": -3940, 
+      "y": -1321
+    }
+  },
+  "WMISSION_TTA_SCOUT": {
+    "name": "Reach Burning Mound and Scout",
+    "type": "wasteland mission",
+    "region": "The Heights",
+    "game_coords": { 
+      "x": -7066, 
+      "y": -2834
+    }
+  },
+  "WMISSION_TTA_MARK_SITE": {
+    "name": "Mark Site",
+    "type": "wasteland mission",
+    "region": "The Heights",
+    "game_coords": { 
+      "x": -7785, 
+      "y": -3692
+    }
+  },
+  //#endregion
+
+  //#region: Exodus
+  "WMISSION_E_START": {
+    "name": "Start Exodus",
+    "type": "wasteland mission",
+    "region": "Knit Sack",
+    "game_coords": { 
+      "x": -6911, 
+      "y": -29
+    }
+  },
+  "WMISSION_E_DRIVE_TO_LAUNCH_POINT": {
+    "name": "Drive To Launch Point",
+    "type": "wasteland mission",
+    "region": "Knit Sack",
+    "game_coords": { 
+      "x": -9902, 
+      "y": 2432
+    }
+  },
+  //#endregion
+
+  //#region: A Shot In The Dark
+  "WMISSION_ASITD_START": {
+    "name": "Start A Shot In The Dark",
+    "type": "wasteland mission",
+    "region": "The Dump",
+    "game_coords": { 
+      "x": -3944, 
+      "y": -1351
+    }
+  },
+  "WMISSION_ASITD_OPEN_HATCH": {
+    "name": "Open The Hatch",
+    "type": "wasteland mission",
+    "region": "The Dunes",
+    "game_coords": { 
+      "x": -2045, 
+      "y": 342
+    }
+  },
+  "WMISSION_ASITD_BIG_MAMA_PATCH_KIT": {
+    "name": "Search The Area",
+    "type": "wasteland mission",
+    "region": "The Dunes",
+    "game_coords": { 
+      "x": -1944, 
+      "y": 354
+    }
+  },
+  //#endregion
+
+  //#region: Beat To Quarters
+  "WMISSION_BTQ_START": {
+    "name": "Start Beat To Quarters",
+    "type": "wasteland mission",
+    "region": "Parch Moon",
+    "game_coords": { 
+      "x": -7059, 
+      "y": 4834
+    }
+  },
+  "WMISSION_BTQ_FIRST_ATTACK": {
+    "name": "Stop First Attack",
+    "type": "wasteland mission",
+    "region": "Parch Moon",
+    "game_coords": { 
+      "x": -6633, 
+      "y": 4998
+    }
+  },
+  "WMISSION_BTQ_SECOND_ATTACK": {
+    "name": "Stop Second Attack",
+    "type": "wasteland mission",
+    "region": "Parch Moon",
+    "game_coords": { 
+      "x": -7533, 
+      "y": 4728
     }
   },
   //#endregion
