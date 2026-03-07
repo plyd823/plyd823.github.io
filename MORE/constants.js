@@ -18,6 +18,18 @@ const icons = {
         iconAnchor: [16, 16], 
         popupAnchor: [0, -15] 
     }),
+    underdunes: L.icon({ 
+        iconUrl: 'icons/underdunes.png', 
+        iconSize: [24, 24], 
+        iconAnchor: [16, 16], 
+        popupAnchor: [0, -15] 
+    }),
+    griffa: L.icon({ 
+        iconUrl: 'icons/griffa.png', 
+        iconSize: [24, 24], 
+        iconAnchor: [16, 16], 
+        popupAnchor: [0, -15] 
+    }),
     camp: L.icon({ 
         iconUrl: 'icons/transfertankcamp.png', 
         iconSize: [24, 24], 
@@ -200,7 +212,7 @@ let iconsVisible = true;
 
 let currentActiveIndex = null;
 let activeRoute = [];
-const markers = {};
+let markers = [];
 
 let backgroundLine;
 let activeLine;

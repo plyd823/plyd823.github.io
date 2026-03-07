@@ -1,5 +1,10 @@
 let backgroundArrows, activeArrows; 
 
+function toggleSettings() {
+    const menu = document.getElementById('settings-menu');
+    menu.classList.toggle('hidden');
+}
+
 // Builds region filter dynamically
 function initRegionHUD() {
     const regionList = document.getElementById('region-list');
@@ -63,17 +68,6 @@ function applyRegionFilter(region) {
         }
     }
 
-    // updates visuals on buttons
-    document.querySelectorAll('#region-list .hud-btn').forEach(button => {
-        const buttonRegion = button.getAttribute('data-region');
-
-        if (activeRegionFilters.includes(buttonRegion)) {
-            button.classList.add('active-filter');
-        } else {
-            button.classList.remove('active-filter');
-        }
-    });
-
     refreshMap();
 }
 
@@ -97,18 +91,16 @@ function toggleStats() {
 
 // toggles the route lines on the map
 function toggleLines() {
-    const btn = document.getElementById('line-toggle-btn');
+    const btn = document.getElementById('line-toggle-led');
 
     if (linesVisible) {
         map.removeLayer(linesLayer);
-        btn.innerText = "Show Overlay";
-        btn.classList.add('border-gray-500', 'text-gray-500');
-        btn.classList.remove('border-orange-500/50', 'text-orange-500');
+        btn.classList.remove('bg-green-500');
+        btn.classList.add('bg-red-500');
     } else {
         map.addLayer(linesLayer);
-        btn.innerText = "Hide Overlay";
-        btn.classList.remove('border-gray-500', 'text-gray-500');
-        btn.classList.add('border-orange-500/50', 'text-orange-500');
+        btn.classList.remove('bg-red-500');
+        btn.classList.add('bg-green-500');
     }
 
     linesVisible = !linesVisible;
@@ -129,13 +121,24 @@ function refreshMap() {
 // toggles the icons on the map
 function toggleIcons() {
     iconsVisible = !iconsVisible;
+    const btn = document.getElementById('icon-toggle-led');
 
     if(!iconsVisible) {
         Object.values(markers).forEach(m => map.removeLayer(m));
         for (let key in markers) {
             delete markers[key];
         }
+
+        // change led color to red
+        btn.classList.remove('bg-green-500');
+        btn.classList.add('bg-red-500');
+    } else {
+        // change led color to green
+        btn.classList.remove('bg-red-500');
+        btn.classList.add('bg-green-500');
     }
+
+    
 
     renderRoute();
 }
@@ -185,14 +188,16 @@ function updateLines(pathPoints, currentLegPoints) {
 }
 
 // updates marker on map
-function addMarker(index, coords, data) {
+function addMarker(index, coords, data, opacity = 1.0, note = null) {
     if(!iconsVisible) return;
 
     const iconToUse = icons[data.type] || icons.default;
 
     if(!markers[index]) {
+        
         markers[index] = L.marker(coords, { 
-            icon: iconToUse 
+            icon: iconToUse,
+            opacity: opacity
         }).addTo(map)
         .bindPopup(`<b class="text-zinc-900">${data.name}</b>`)
         .on('click', () => selectStep(index));

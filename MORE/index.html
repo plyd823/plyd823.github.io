@@ -11,6 +11,8 @@
         <script src="https://unpkg.com/leaflet-polylinedecorator@1.6.0/dist/leaflet.polylineDecorator.js"></script>
 
         <script src="https://cdn.tailwindcss.com"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
     </head>
 
     <body class="flex bg-black text-gray-200 font-sans overflow-hidden">
@@ -69,96 +71,68 @@
             </div>
 
             <!-- Bottom right pixel coords display (CURRENT OVERWRITTEN BY NODE LOGGING #TODO: CHANGE BACK) -->
-            <div id="coord-helper" class="absolute bottom-6 right-6 bg-black/90 p-3 text-[11px] text-orange-400 font-mono z-[1000] border border-orange-500/20 rounded-md shadow-2xl">
+            <!--<div id="coord-helper" class="absolute bottom-6 right-6 bg-black/90 p-3 text-[11px] text-orange-400 font-mono z-[1000] border border-orange-500/20 rounded-md shadow-2xl">
                 Click map for pixel coordinates
-            </div>
-
-            <!-- Top Right buttons -->
-            <div class="absolute top-6 right-6 z-[1000] flex gap-2">
-                <button onclick="toggleIcons()" id="icon-toggle-btn" 
-                    class="bg-black/80 border border-blue-500/50 text-blue-500 px-3 py-2 text-[10px] font-black uppercase tracking-widest hover:bg-blue-500 hover:text-black transition-all shadow-2xl rounded">
-                    Toggle Icons
-                </button>
-                <button onclick="toggleLines()" id="line-toggle-btn" 
-                    class="bg-black/80 border border-orange-500/50 text-orange-500 px-3 py-2 text-[10px] font-black uppercase tracking-widest hover:bg-orange-500 hover:text-black transition-all shadow-2xl rounded">
-                    Hide Overlay
-                </button>
-            </div>
+            </div>-->
             
-            <!-- Bottom Left Filters -->
-            <div id="filter-hud" class="absolute bottom-24 left-6 z-[1000] flex flex-col gap-2 p-1 border border-orange-500/20 bg-black/80 backdrop-blur-sm shadow-2xl rounded-sm">
-                <div class="px-2 py-1 border-b border-orange-500/10 mb-1 flex justify-between items-center">
-                    <span class="text-[8px] font-black text-orange-500/50 uppercase tracking-[0.3em]">
-                        Object Filters
-                    </span>
-                </div>
-                <!-- Object Filters -->
-                <div class="flex flex-col gap-1 w-32">
-
-                    <button onclick="applyFilter('all')" data-type="all" class="hud-btn active-filter">
-                        <div class="led">
-                            <!-- LED button -->
-                        </div> 
-                        <span>
-                            All Signals
-                        </span>
-                    </button>
-
-                    <button onclick="applyFilter('stronghold')" data-type="stronghold" class="hud-btn">
-                        <div class="led">
-                            <!-- LED button -->
-                        </div> 
-                        <span>
-                            Strongholds
-                        </span>
-                    </button>
-
-                    <button onclick="applyFilter('camp')" data-type="camp" class="hud-btn">
-                        <div class="led">
-                            <!-- LED button -->
-                        </div> 
-                        <span>
-                            Camps
-                        </span>
-                    </button>
-
-                    <button onclick="applyFilter('scavloc')" data-type="scavloc" class="hud-btn">
-                        <div class="led">
-                            <!-- LED button -->
-                        </div> 
-                        <span>
-                            Scrap
-                        </span>
-                    </button>
-
-                    <button onclick="applyFilter('minefield')" data-type="minefield" class="hud-btn">
-                        <div class="led">
-                            <!-- LED button -->
-                        </div> 
-                        <span>
-                            Mines
-                        </span>
-                    </button>
-                    
-                    <button onclick="applyFilter('mission')" data-type="mission" class="hud-btn">
-                        <div class="led">
-                            <!-- LED button -->
-                        </div> 
-                        <span>
-                            Missions
-                        </span>
-                    </button>
-                </div>
+            <!-- Settings Menu -->
+            <div class = "absolute top-4 right-4 z-[1001] flex gap-2">
+                <button onclick="toggleSettings()" class="bg-black/80 border border-white/30 p-2 hover:bg-stone-900 transition-colors">
+                    <span class="text-[12px] font-black text-white uppercase tracking-widest px-2">Settings</span>
+                </button>
             </div>
-            <!-- Region Filters -->
-            <div id="region-hud" class="absolute bottom-24 left-44 z-[1000] flex flex-col gap-2 p-1 border border-blue-500/20 bg-black/80 backdrop-blur-sm shadow-2xl rounded-sm">
-                <div class="px-2 py-1 border-b border-blue-500/10 mb-1">
-                    <span class="text-[8px] font-black text-blue-400/50 uppercase tracking-[0.3em]">
-                        Region Filter
-                    </span>
-                </div>
-                <div id="region-list" class="flex flex-col gap-0.5 w-40 max-h-64 overflow-y-auto">
-                    <!-- Automatically filled in with code -->
+
+            <div id="settings-menu" class="hidden absolute top-16 right-4 z-[1000] w-64 bg-black/95 backdrop-blur-md border border-white/30 max-h-[80vh] overflow-y-auto">
+                <div class="p-4 flex flex-col gap-6">
+                    <section>
+                        <h3 class="text-[10px] font-black text-orange-500 uppercase tracking-[0.2em] mb-3 border-b border-orange-500/10 pb-1 text-center">
+                            Display
+                        </h3>
+                        <div class="flex flex-col gap-2">
+                            <!-- Toggle Road Lines -->
+                            <button onclick="toggleLines()" class="font-black flex items-center text-[11px] text-gray-400 hover:text-white group">
+                                <div id="line-toggle-led" class="w-2 h-2 rounded-full bg-green-500"></div>
+                                <span>
+                                    Show Road Overlay
+                                </span>
+                                
+                            </button>
+
+                            <!-- Toggle Icons -->
+                            <button onclick="toggleIcons()" class="font-black flex items-center text-[11px] text-gray-400 hover:text-white group">
+                                <div id="icon-toggle-led" class="w-2 h-2 rounded-full bg-green-500"></div>
+                                <span>
+                                    Show Icons
+                                </span>
+                                
+                            </button>
+                        </div>
+                    </section>
+                    </div>
+
+                    <section class="mt-4 border-t border-zinc-800 pt-2">
+                        <h3 class="text-[10px] font-black text-orange-500 uppercase tracking-[0.2em] mb-3 border-b border-orange-500/10 pb-1 text-center">Route Management</h3>
+                        <div class="flex flex-col gap-2">
+                            <label class="flex flex-col items-center justify-center w-full h-20 border-2 border-dashed border-zinc-800 rounded-sm cursor-pointer hover:bg-zinc-900 hover:border-blue-500/30 transition-all group">
+                                <div class="flex flex-col items-center justify-center pt-2">
+                                    <span class="text-[12px] font-black text-white text-zinc-500 group-hover:text-zinc-300">
+                                        Select .yaml file here
+                                    </span>
+                                </div>
+                                <input id="route-upload" type="file" class="hidden" accept=".yaml" onchange="importRoute(event)" />
+                            </label>
+                        </div>
+                    </section>
+
+                    <section class="mt-4 border-t border-white">
+                        <div class="flex flex-col gap-2 border-white">
+                            <button onclick="exportToLSS()" class="icon-toggle-btn">
+                                <h3 class = "bg-black/80 border border-white/50 text-white px-3 py-2 text-[10px] font-black uppercase tracking-widest hover:bg-zinc-400 hover:text-zinc-300 transition-all shadow-2xl rounded">
+                                    Export As .lss File
+                                </h3>
+                            </button>
+                        </div>
+                    </section>
                 </div>
             </div>
         </div>
@@ -166,7 +140,9 @@
         <!-- Make sure to have data before code or else code breaks -->
         <script src="road_network.js"></script>
         <script src="map_locations.js"></script>
+        <script src="route_manager.js"></script>
 
+        <script src="lss_converter.js"></script>
         <script src="map_generator.js"></script>
         <script src="constants.js"></script>
         <script src="pathfinding.js"></script>

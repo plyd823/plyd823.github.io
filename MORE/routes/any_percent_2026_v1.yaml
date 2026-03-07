@@ -1,0 +1,18 @@
+- id: STR_CHUM
+
+- id: STR_GUTGASH
+
+- id: SL_AL57
+
+- id: STR_JEET
+  fast_travel: true
+
+- id: SL_AL55
+
+- id: SL_AJ55
+  fast_travel: true
+
+- id: SL_AQ53
+  hidden: true
+
+- id: SL_AS54

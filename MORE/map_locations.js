@@ -58,6 +58,116 @@ const locationLibrary = {
   },
   //#endregion
 
+  //#region Extra Stuff
+
+  //#region: Griffa
+  "G_OUTER_GRAVES": {
+    "name": "Outer Graves Griffa",
+    "type": "griffa",
+    "region": "Outer Graves",
+    "game_coords": { 
+      "x": -3012, 
+      "y": 7008 
+    }
+  },
+  "G_BALEFIRE_FLATLANDS": {
+    "name": "Balefire Flatlands Griffa",
+    "type": "griffa",
+    "region": "Balefire Flatlands",
+    "game_coords": { 
+      "x": -3056, 
+      "y": 4587 
+    }
+  },
+  "G_FUEL_VEINS": {
+    "name": "Fuel Veins Griffa",
+    "type": "griffa",
+    "region": "Fuel Veins",
+    "game_coords": { 
+      "x": -4672, 
+      "y": 1986 
+    }
+  },
+  "G_GRIT_CANYONS": {
+    "name": "Grit Canyons Griffa",
+    "type": "griffa",
+    "region": "Grit Canyons",
+    "game_coords": { 
+      "x": -5116, 
+      "y": 4810 
+    }
+  },
+  "G_PARCH_MOON": {
+    "name": "Parch Moon Griffa",
+    "type": "griffa",
+    "region": "Parch Moon",
+    "game_coords": { 
+      "x": -7543, 
+      "y": 6131 
+    }
+  },
+  "G_CHALKIES": {
+    "name": "Chalkies Griffa",
+    "type": "griffa",
+    "region": "Chalkies",
+    "game_coords": { 
+      "x": -7668, 
+      "y": 2733 
+    }
+  },
+  "G_KNIT_SACK": {
+    "name": "Knit Sack Griffa",
+    "type": "griffa",
+    "region": "Knit Sack",
+    "game_coords": { 
+      "x": -6386, 
+      "y": 579 
+    }
+  },
+  "G_ROT_N_RUSTIES": {
+    "name": "Rot N Rusties Griffa",
+    "type": "griffa",
+    "region": "Rot N Rusties",
+    "game_coords": { 
+      "x": -5802, 
+      "y": -1636 
+    }
+  },
+  "G_THE_HEIGHTS": {
+    "name": "The Heights Griffa",
+    "type": "griffa",
+    "region": "The Heights",
+    "game_coords": { 
+      "x": -6580, 
+      "y": -1021 
+    }
+  },
+  "G_GRANDRISE": {
+    "name": "Grandrise Griffa",
+    "type": "griffa",
+    "region": "Grandrise",
+    "game_coords": { 
+      "x": -8497, 
+      "y": -1575 
+    }
+  },
+  "G_THE_DUMP": {
+    "name": "The Dump Griffa",
+    "type": "griffa",
+    "region": "The Dump",
+    "game_coords": { 
+      "x": -4162, 
+      "y": -1858 
+    }
+  },
+  //#endregion
+
+  //#region: Wasteland Vehicles
+
+  //#endregion
+
+  //#endregion
+
   //#region OUTERGRAVES
 
   //#region OUTERGRAVES - Camps
@@ -5429,7 +5539,7 @@ const locationLibrary = {
       "y": 6187
     }
   },
-  "MISSION_FM_GRAVEYARD": {
+  "MISSION_MO_GRAVEYARD": {
     "name": "Drive To The Graveyard",
     "type": "magnum opus",
     "region": "Outer Graves",

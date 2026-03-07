@@ -1,6 +1,20 @@
 let currentRouteLine = null;
 let routeDecorator = null;
 
+let currentStepIndex = 0;
+const ICON_WINDOW_SIZE = 3;
+
+const LEG_COLORS = [
+    '#24fc03',
+    '#03fcbe',
+    '#037ffc',
+    '#9803fc',
+    '#fc0388',
+    '#fc0303',
+    '#fc7b03',
+    '#fcf403',
+];
+
 // Converts the in-game coords to the pixel location of the map
 function gameToMap(gx, gy) {
     const x = (gx * CALIBRATION.scale) + CALIBRATION.offsetX;
@@ -13,12 +27,12 @@ function renderRoute() {
     const routeList = document.getElementById('route-list');
     const statsContainer = document.getElementById('stats-container');
     const progressPercentText = document.getElementById('total-progress-percent');
+
+    if(!routeList) return;
     
     routeList.innerHTML = '';
     let pathPoints = [];
     const currentLegPoints = [];
-    
-    activeRoute = getFilteredRoute();
 
     linesLayer.clearLayers();
 
@@ -40,7 +54,7 @@ function renderRoute() {
 
     // Calculate Current Progress
     const progressByType = {};
-    const lastCompletedIndex = currentActiveIndex !== null ? currentActiveIndex : 0;
+    const lastCompletedIndex = currentStepIndex !== null ? currentStepIndex : 0;
     for (let i = 0; i <= lastCompletedIndex; i++) {
         const stepId = activeRoute[i] && activeRoute[i].id;
         if (!stepId || stepId.endsWith('_START')) continue;
@@ -62,6 +76,17 @@ function renderRoute() {
     }
     progressPercentText.innerText = percent + '% COMPLETE';
 
+    linesLayer.clearLayers();
+    for (let i = 0; i < markers.length; i++) {
+        if (markers[i]) {
+            map.removeLayer(markers[i]);
+        }
+    }
+    markers = [];
+
+    const startIndex = Math.max(0, currentStepIndex - ICON_WINDOW_SIZE);
+    const endIndex = Math.min(activeRoute.length - 1, currentStepIndex + ICON_WINDOW_SIZE);
+
     // Render step by step
     activeRoute.forEach((step, index) => {
         const locData = locationLibrary[step.id];
@@ -72,101 +97,26 @@ function renderRoute() {
             locData.game_coords.y
         );
 
-        // Draw path between previous step and current step
-        if (index > 0) {
-            const prevStep = activeRoute[index - 1];
-            const prevData = locationLibrary[prevStep.id];
-
-            if (!step.fast_travel && prevData){
-                const startNode = getClosestNode(
-                    prevData.game_coords.x, 
-                    prevData.game_coords.y
-                );
-                const endNode = getClosestNode(
-                    locData.game_coords.x, 
-                    locData.game_coords.y
-                );
-                const computedPath = findPath(startNode, endNode, roadGraph, roadNetwork);
-
-                // draw from start to end node
-                if (computedPath && computedPath.length > 0) {
-                    const isIndexActive = index === currentActiveIndex;
-
-                    // Set Waypoints
-                    const startWaypoint = gameToMap(
-                        prevData.game_coords.x, 
-                        prevData.game_coords.y
-                    );
-                    const firstNode = roadNetwork.nodes[computedPath[0].fromId];
-                    const jumpStart = [
-                        startWaypoint, 
-                        gameToMap(firstNode.x, firstNode.y)
-                    ];
-                    
-                    pathPoints = pathPoints.concat(jumpStart);
-                    if (isIndexActive) {
-                        L.polyline(jumpStart, { 
-                            color: '#00cb00', 
-                            weight: 6, 
-                            opacity: 0.6, 
-                            lineJoin: 'round',
-                            lineCap: 'round' 
-                        }).addTo(linesLayer);
-                    }
-
-                    // draw each segment along road
-                    computedPath.forEach(seg => {
-                        const nodeA = roadNetwork.nodes[seg.fromId];
-                        const nodeB = roadNetwork.nodes[seg.toId];
-
-                        const segmentPoints = [
-                            gameToMap(nodeA.x, nodeA.y), 
-                            gameToMap(nodeB.x, nodeB.y)
-                        ];
-                        
-                        pathPoints.push(segmentPoints[1]);
-                        if (isIndexActive) {
-                            L.polyline(segmentPoints, { 
-                                color: '#00cb00', 
-                                weight: 6, 
-                                opacity: seg.type === 'road' ? 1.0 : 0.6, // Road vs Off-road
-                            }).addTo(linesLayer);
-                        }
-                    });
-
-                    const lastNode = roadNetwork.nodes[
-                        computedPath[computedPath.length - 1].toId
-                    ];
-                    const endWaypoint = translatedCoords;
-                    const jumpEnd = [
-                        gameToMap(lastNode.x, lastNode.y), 
-                        endWaypoint
-                    ];
-
-                    pathPoints.push(endWaypoint);
-                    if (isIndexActive) {
-                        L.polyline(jumpEnd, { 
-                            color: '#00cb00', 
-                            weight: 6, 
-                            opacity: 0.6, 
-                        }).addTo(linesLayer);
-                    }
-                }
+        if (index >= startIndex && index <= endIndex) {
+            let iconOpacity = 0.2;
+            if(index === currentStepIndex || index === currentStepIndex - 1) {
+                iconOpacity = 1.0;
+            } else if (index === currentStepIndex + 1) {
+                iconOpacity = 0.5;
             }
-        } else {
-            // first point in route
-            pathPoints.push(translatedCoords);
+
+            addMarker(index, translatedCoords, locData, iconOpacity);
+            
+            // Highlight the current active marker
+            if (index === currentStepIndex && markers[index]) {
+                markers[index].getElement()?.classList.add('active-step-marker');
+            }
         }
 
-        addMarker(index, translatedCoords, locData);
-
-        // Skip UI Card for for first entry
-        if (index === 0) return;
-
-        const isActive = currentActiveIndex === index;
+        const isActive = currentStepIndex === index;
 
         const card = document.createElement('div');
-
+        
         card.id = `step-${index}`;
         card.className = 
             `p-6 border-b border-white/5 cursor-pointer transition-all hover:bg-zinc-900/50 
@@ -177,22 +127,53 @@ function renderRoute() {
         // creates each card, could probably look better
         card.innerHTML = `
             <div class="flex items-start gap-4">
-                <div class="w-8 h-8 rounded bg-zinc-800 flex items-center justify-center text-[10px] font-bold text-orange-500 border border-orange-500/20">
+                <div class="w-8 h-8 rounded bg-zinc-800 flex items-center justify-center text-[10px] font-bold 
+                    ${step.fast_travel
+                        ? `text-purple-500 border border-purple-500/20`
+                        : `text-green-500 border border-green-500/20`}">
                     ${index}
                 </div>
                 <div class="flex-grow min-w-0">
-                    <span class="text-[9px] text-orange-500/50 font-black uppercase tracking-widest truncate">
+                    <span class="text-[9px] 
+                        ${step.fast_travel 
+                            ? `text-purple-500/50`
+                            : `text-green-500/50`} 
+                    font-black uppercase tracking-widest truncate">
                         ${locData.type}
                     </span>
                     <h3 class="font-bold text-gray-100 text-lg leading-tight truncate">
                         ${locData.name}
                     </h3>
+
+                    ${step.note ? `
+                        <p class = "text-[14px] text-zinc-200/90">
+                            - ${step.note}
+                        </p>
+                    `: ''}
                 </div>
             </div>
         `;
 
         //actually add card
         routeList.appendChild(card);
+
+        if (index === currentStepIndex && index <= activeRoute.length - 1) {
+            const prevData = locationLibrary[activeRoute[index - 1]?.id];
+
+            if (prevData) {
+                let numFastTravels = 0;
+                for (let i = 0; i <= index; i++) {
+                    if (activeRoute[i].fast_travel) {
+                        numFastTravels++;
+                    }
+                }
+
+                const currentColor = LEG_COLORS[numFastTravels % LEG_COLORS.length];
+
+                const isFastTravel = step.fast_travel === true;
+                drawPathSegment(prevData, locData, isFastTravel, currentColor);
+            }
+        }
     });
 
     // all object filter types - TODO: FIX DEATH RACE STUFF
@@ -281,6 +262,72 @@ function renderRoute() {
     updateLines(pathPoints, currentLegPoints);
 }
 
+function drawPathSegment(startData, endData, isFastTravel = false, legColor) {
+    let latLngs = [];
+    
+    let lineOptions = {
+        color: legColor,
+        weight: 8,
+        opacity: 0.8,
+        lineJoin: 'round'
+    };
+
+    if (isFastTravel) {
+        latLngs = [
+            gameToMap(
+                startData.game_coords.x, 
+                startData.game_coords.y
+            ),
+            gameToMap(
+                endData.game_coords.x, 
+                endData.game_coords.y
+            )
+        ];
+
+        lineOptions.color = '#a855f7';
+        lineOptions.weight = 6;
+        lineOptions.dashArray = '5, 25';
+    } else {
+        const startNodeId = getClosestNode(
+            startData.game_coords.x, 
+            startData.game_coords.y
+        );
+        const endNodeId = getClosestNode(
+            endData.game_coords.x, 
+            endData.game_coords.y
+        );
+
+        if (!startNodeId || !endNodeId) return;
+
+        const graph = buildGraph(roadNetwork);
+        const path = findPath(startNodeId, endNodeId, graph, roadNetwork);
+
+        if (path && path.length > 0) {
+            latLngs = path.map(segment => {
+                const node = roadNetwork.nodes[segment.toId];
+                return gameToMap(node.x, node.y);
+            });
+
+            const firstNode = roadNetwork.nodes[startNodeId];
+            latLngs.unshift(gameToMap(firstNode.x, firstNode.y));
+        } else {
+            latLngs = [
+                gameToMap(
+                    startData.game_coords.x, 
+                    startData.game_coords.y
+                ),
+                gameToMap(
+                    endData.game_coords.x, 
+                    endData.game_coords.y
+                )
+            ];
+            lineOptions.dashArray = '5, 10';
+        }
+    }
+
+    L.polyline(latLngs, lineOptions).addTo(linesLayer);
+}
+
 function drawRouteOnMap(path) {
     // clear any former layers
     if (currentRouteLine) {
@@ -322,59 +369,51 @@ function drawRouteOnMap(path) {
 
 // clicking a card in the sidebar
 function selectStep(stepIndex) {
-    currentActiveIndex = stepIndex;
+    currentStepIndex = stepIndex;
     
     const currData = locationLibrary[activeRoute[stepIndex].id];
-    const prevData = locationLibrary[activeRoute[stepIndex - 1].id];
-    
-    if (!currData || !prevData) return;
+    if(!currData) return;
 
     const targetCoords = gameToMap(
         currData.game_coords.x, 
         currData.game_coords.y
     );
-    const startCoords = gameToMap(
-        prevData.game_coords.x, 
-        prevData.game_coords.y
-    );
-    
-    const legBounds = L.latLngBounds([startCoords, targetCoords]);
-    
-    // pans camera to leg position
-    map.flyToBounds(legBounds, { 
-        padding: [100, 100], 
-        duration: 1.2,
-        maxZoom: 0 // could zoom in but looks weird
-    });
 
-    renderRoute(); // redraw the route
-    
-    // scroll card in sidebar into center
-    const card = document.getElementById(`step-${stepIndex}`);
-    if (card) {
-        card.scrollIntoView({ 
-            behavior: 'smooth', 
-            block: 'center' 
-        });
+    if (stepIndex > 0 && activeRoute[stepIndex - 1]) {
+        const prevData = locationLibrary[activeRoute[stepIndex - 1].id];
+        if (prevData) {
+            const startCoords = gameToMap(prevData.game_coords.x, prevData.game_coords.y);
+            
+            const legBounds = L.latLngBounds([
+                startCoords, 
+                targetCoords
+            ]);
+
+            map.flyToBounds(legBounds, {
+                padding: [200, 200],
+                duration: 1.2,
+                maxZoom: 0
+            });
+        }
+    } else {
+        map.flyTo(targetCoords, 0, { duration: 1.2 });
     }
-    
-    // right now, the pop up kind of just gets in the way. May change it later
-    /*
-    if (markers[stepIndex]) { 
-        markers[stepIndex].openPopup(); 
-    }*/
+
+    renderRoute();
+
+    const card = document.getElementById(`step-${stepIndex}`);
+    if(card) {
+        card.scrollIntoView({
+            behavior: 'smooth',
+            block: 'center'
+        });
+        }
 }
 
 window.addEventListener('keydown', function(e) {
     if (!activeRoute || activeRoute.length === 0) return;
 
-    let newIndex;
-
-    if(currentActiveIndex === null) {
-        newIndex = 0;
-    } else {
-        newIndex = currentActiveIndex;
-    }
+    let newIndex = currentStepIndex;
 
     if (e.key === 'ArrowDown') {
         e.preventDefault(); // prevents screen scroll

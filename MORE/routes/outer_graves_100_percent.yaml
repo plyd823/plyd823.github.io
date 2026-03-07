@@ -1,0 +1,85 @@
+#region: Outer Graves 1
+
+#region: Feral Man
+- id: MISSION_FM_START
+
+- id: MISSION_FM_WATER
+
+- id: MISSION_FM_CHUMBUCKET
+
+- id: SL_AL57
+
+- id: MISSION_FM_WIRE
+
+- id: MISSION_FM_RETURN_CHUM
+
+- id: MISSION_FM_END
+
+#endregion Feral Man
+
+#region: Magnum Opus
+
+- id: MISSION_MO_START
+
+- id: SL_AQ53
+
+- id: SL_AS54
+
+- id: MISSION_MO_FUEL
+
+- id: MISSION_MO_GATE
+
+- id: MISSION_MO_GRAVEYARD
+
+- id: SL_AS50
+
+- id: MISSION_MO_BUZZARDS
+
+- id: MISSION_MO_END
+
+#endregion Magnum Opus
+
+#region: Righteous Work
+
+- id: STR_CHUM
+  fast_travel: true
+
+- id: MISSION_RW_START
+
+- id: SC_AL55
+
+- id: SC_AM54
+
+- id: SC_AN54
+
+- id: MISSION_RW_SCOUT
+
+- id: MISSION_RW_ENTER_CAMP
+
+- id: MISSION_RW_DESTROY_OIL_PUMP
+
+- id: CAMP_UNDERTOW
+
+- id: MISSION_RW_TALK_TO_GRIFFA
+
+- id: MISSION_RW_NITRO_TEST
+
+- id: SL_AL55
+
+- id: MISSION_RW_END
+
+- id: SL_AJ55
+  note: "Buy the jimmy bar before this"
+
+- id: STR_CHUM
+  fast_travel: true
+
+#endregion Righteous Work
+
+#region: Cleanup
+
+- id: MISSION_IM_START
+
+#endregion Cleanup
+
+#endregion Outer Graves 1
