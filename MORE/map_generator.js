@@ -32,6 +32,27 @@ L.imageOverlay('images/road_lines.png', roadBounds, {
     opacity: 0.7
 }).addTo(map);
 
+// ADD REGION LINES
+const REG_LINE_CALIBRATION = {
+    scale: 1.0,
+    offsetX: 0,
+    offsetY: 0
+};
+const reg_sw_corner = [
+    REG_LINE_CALIBRATION.offsetY,
+    REG_LINE_CALIBRATION.offsetX
+];
+const reg_ne_corner = [
+    (mapSize * REG_LINE_CALIBRATION.scale) + REG_LINE_CALIBRATION.offsetY,
+    (mapSize * REG_LINE_CALIBRATION.scale) + REG_LINE_CALIBRATION.offsetX
+]
+const regionBounds = [reg_sw_corner, reg_ne_corner];
+
+L.imageOverlay('images/region_lines.png', regionBounds, { 
+    interactive: false, 
+    opacity: 1
+}).addTo(map);
+
 // ADD TERRITORY LINES
 const TERR_LINE_CALIBRATION = {
     scale: 1.0,
@@ -52,6 +73,8 @@ L.imageOverlay('images/territory_lines.png', territoryBounds, {
     interactive: false, 
     opacity: 1
 }).addTo(map);
+
+
 
 // CONFIGURE MAP TO BOUNDS
 map.fitBounds(mapBounds);
