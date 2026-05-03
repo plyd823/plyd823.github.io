@@ -1,0 +1,158 @@
+#region: Feral Man
+- id: MISSION_FM_START
+
+- id: MISSION_FM_WATER
+
+- id: MISSION_FM_CHUMBUCKET
+
+- id: MISSION_FM_WIRE
+
+- id: MISSION_FM_RETURN_CHUM
+
+- id: MISSION_FM_END
+
+#endregion Feral Man
+
+#region: Magnum Opus
+
+- id: MISSION_MO_START
+
+- id: MISSION_MO_FUEL
+
+- id: MISSION_MO_GATE
+
+- id: MISSION_MO_GRAVEYARD
+
+- id: MISSION_MO_BUZZARDS
+
+- id: MISSION_MO_END
+
+#endregion Magnum Opus
+
+#region: Righteous Work
+
+- id: STR_CHUM
+  fast_travel: true
+
+- id: MISSION_RW_START
+
+- id: SC_AL55
+
+- id: SC_AM54
+
+- id: SC_AN54
+
+- id: MISSION_RW_SCOUT
+
+- id: MISSION_RW_ENTER_CAMP
+
+- id: MISSION_RW_DESTROY_OIL_PUMP
+
+- id: CAMP_UNDERTOW
+
+- id: MISSION_RW_TALK_TO_GRIFFA
+
+- id: MISSION_RW_NITRO_TEST
+
+- id: MISSION_RW_END
+
+- id: STR_CHUM
+  fast_travel: true
+
+#endregion Righteous Work
+
+#region: Camp Run 1
+
+- id: CAMP_BONECRACK
+
+- id: CAMP_THE_DREDGES
+
+#endregion
+
+#region: Camp Run 2
+
+- id: MISSION_DRIVE_TO_JEET
+
+- id: CAMP_HOLLOW_POINT
+
+- id: CAMP_THE_PIPES
+
+- id: CAMP_BLACK_SANDS
+
+- id: CAMP_IRON_CLAD
+
+- id: CAMP_LARGE_BLADE
+
+- id: CAMP_OVERLOOK
+
+- id: CAMP_SAND_SIFTER
+
+- id: CAMP_GASWORKS
+
+- id: CAMP_THE_EDGE
+
+- id: CAMP_GOB_STONE
+
+- id: CAMP_BLACK_COVE
+
+- id: CAMP_ROOK_NEST
+
+- id: CAMP_STORM_SHELTER
+
+- id: CAMP_SCORCHED_SAND
+
+- id: CAMP_BLOOD_RIDGE
+
+- id: CAMP_FINGER_PEAK
+
+- id: CAMP_BLOOD_BEACH
+
+- id: CAMP_JUGULAR_CANYON
+
+- id: CAMP_PROVING_GROUNDS
+
+#endregion
+
+#region: Camp Run 3
+
+- id: STR_JEET
+  fast_travel: true
+
+- id: CAMP_WRECK_HILL
+
+- id: CAMP_GREAT_WATCHER
+
+- id: CAMP_RUST_BIRD
+
+#endregion
+
+#region: Camp Run 4
+
+- id: DR_CRAZY_RACY
+  fast_travel: true
+
+- id: CAMP_HAVOC_POINT
+
+- id: CAMP_STONEHOLD
+
+- id: CAMP_HELLS_GRILL
+
+- id: CAMP_OLD_HOLE
+
+- id: CAMP_THE_DROP
+
+- id: CAMP_THE_CHOKE
+
+- id: CAMP_SKULL_TOP
+
+- id: CAMP_GRAVE_BRIDGE
+
+- id: CAMP_DEAD_END
+
+- id: CAMP_TYRANTS_LASH
+
+- id: CAMP_TWIN_SISTERS
+
+- id: CAMP_WHEEL_GREASER
+
+#endregion
