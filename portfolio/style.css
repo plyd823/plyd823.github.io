@@ -36,10 +36,15 @@
 */
 
 .stats {
-    display: flex;
-    gap: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px;
     text-align: center;
-    padding: 60px 10%;
+    padding: 20px 10%;
+}
+
+.stats .stat:nth-child(3) {
+    grid-column: span 2;
 }
 
 .stat .count {
@@ -146,3 +151,29 @@
     opacity: 0;
     transition: transform 0.3s cubic-bezier(0.075, 0.82, 0.165, 1)
 }
+
+/*
+* Socials Section Styling
+*/
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.socials img {
+    opacity: 0;
+    width: 50px;
+    transition: transform 0.3s;
+    animation: fadeIn 0.6s ease forwards;
+}
+
+.socials img:hover {
+    opacity: 1;
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.8));
+}
+
+.socials img.discord { animation-delay: 0.2s;}
+.socials img.gmail { animation-delay: 0.35s;}
+.socials img.twitter { animation-delay: 0.5s;}
