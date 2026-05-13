@@ -41,6 +41,7 @@
     gap: 0px;
     text-align: center;
     padding: 20px 10%;
+    margin-bottom: 0;
 }
 
 .stats .stat:nth-child(3) {
@@ -65,6 +66,7 @@
 /*
 * Video Grid Section Styling
 */
+
 .top-videos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
